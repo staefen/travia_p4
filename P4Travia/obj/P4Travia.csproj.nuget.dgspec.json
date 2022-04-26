@@ -1,0 +1,52 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/stephenhuynh/Downloads/P4Travia/P4Travia/P4Travia.csproj": {}
+  },
+  "projects": {
+    "/Users/stephenhuynh/Downloads/P4Travia/P4Travia/P4Travia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/stephenhuynh/Downloads/P4Travia/P4Travia/P4Travia.csproj",
+        "projectName": "P4Travia",
+        "projectPath": "/Users/stephenhuynh/Downloads/P4Travia/P4Travia/P4Travia.csproj",
+        "packagesPath": "/Users/stephenhuynh/.nuget/packages/",
+        "outputPath": "/Users/stephenhuynh/Downloads/P4Travia/P4Travia/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/stephenhuynh/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid12.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid12.0": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid12.0": {
+          "dependencies": {
+            "Xamarin.AndroidX.AppCompat": {
+              "target": "Package",
+              "version": "[1.2.0.5, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
+            "Xamarin.Google.Android.Material": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

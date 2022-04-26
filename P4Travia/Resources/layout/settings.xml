@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFFBF6"
+	android:minWidth="25px"
+	android:minHeight="25px">
+
+	<TextView
+		android:id="@+id/settings"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="60sp"
+		android:layout_marginBottom="20sp"
+		android:textSize="28sp"
+		android:gravity="center"
+		android:textStyle="bold"
+		android:text="@string/action_settings"/>
+
+    <TextView
+        android:text="@string/edit_profile"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30sp"
+        android:paddingTop="20sp"
+        android:paddingBottom="20sp"
+        android:background="@drawable/back"
+        android:id="@+id/editProfile"/>
+
+	<TextView
+		android:text="@string/account"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="30sp"
+		android:paddingTop="20sp"
+		android:paddingBottom="20sp"
+		android:id="@+id/account" />
+	
+	<TextView
+		android:text="@string/notifications"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="30sp"
+		android:paddingTop="20sp"
+		android:paddingBottom="20sp"
+		android:background="@drawable/back"
+		android:id="@+id/textView1" />
+
+	<TextView
+		android:text="@string/privacy"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="30sp"
+		android:paddingTop="20sp"
+		android:paddingBottom="20sp"		
+		android:id="@+id/privacy" />
+
+	<TextView
+		android:text="@string/help"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="30sp"
+		android:paddingTop="20sp"
+		android:paddingBottom="20sp"
+		android:background="@drawable/back"
+		android:id="@+id/help" />
+
+	<TextView
+		android:text="@string/about"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="30sp"
+		android:paddingTop="20sp"
+		android:paddingBottom="20sp"
+		android:id="@+id/about" />
+
+    <TextView
+        android:text="   "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingBottom="80sp"
+		android:background="@drawable/back"
+        android:id="@+id/emptyspace" />
+
+    <TextView
+        android:text="@string/log_out"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:paddingTop="20sp"
+        android:paddingBottom="20dp"
+        android:id="@+id/logOut" />
+
+</LinearLayout>
+

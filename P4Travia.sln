@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P4Travia", "P4Travia\P4Travia.csproj", "{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00CE50D8-1988-47DC-B840-65F3F572F6F8}
+	EndGlobalSection
+EndGlobal
