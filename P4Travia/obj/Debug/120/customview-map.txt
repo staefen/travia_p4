@@ -80,6 +80,7 @@ resources;obj\Debug\120\res\values\dimens.xml
 resources;obj\Debug\120\res\values\ic_launcher_background.xml
 resources;obj\Debug\120\res\values\strings.xml
 resources;obj\Debug\120\res\values\styles.xml
+ScrollView;obj\Debug\120\res\layout\profile.xml
 ScrollView;obj\Debug\120\res\layout\viewactivity.xml
 shape;obj\Debug\120\res\drawable\back.xml
 solid;obj\Debug\120\res\drawable\back.xml
