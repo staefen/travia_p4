@@ -9,7 +9,12 @@
     android:paddingTop="1dp"
     android:minWidth="25px"
     android:minHeight="25px">
- 
+
+    <FrameLayout
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"
@@ -24,6 +29,5 @@
         android:minWidth="25px"
         android:minHeight="25px">
     </com.google.android.material.bottomnavigation.BottomNavigationView>
-
 
 </RelativeLayout>

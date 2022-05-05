@@ -1,4 +1,5 @@
-﻿using Android.App;
+﻿using System.Collections.Generic;
+using Android.App;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -11,7 +12,8 @@ namespace P4Travia
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity, BottomNavigationView.IOnNavigationItemSelectedListener
     {
-        TextView textMessage;
+        //Liste af fragments
+        List<AndroidX.Fragment.App.Fragment> fragments;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -19,26 +21,39 @@ namespace P4Travia
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.bottom_nav_bar);
 
-            textMessage = FindViewById<TextView>(Resource.Id.message);
+            //Elementer i listen som refererer til de fragments vi har lavet
+            fragments = new List<AndroidX.Fragment.App.Fragment>();
+            fragments.Add(new ProfileFragment());
+            fragments.Add(new MainPageFragment());
+            fragments.Add(new CalendarFragment());
+
+            SupportFragmentManager.BeginTransaction()
+                                    .Replace(Resource.Id.fragmentcontainer, fragments[0])
+                                    .Commit();
+
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
             navigation.SetOnNavigationItemSelectedListener(this);
 
         }
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
         public bool OnNavigationItemSelected(IMenuItem item)
         {
             switch (item.ItemId)
             {
                 case Resource.Id.navigation_profile:
+                    SupportFragmentManager.BeginTransaction()
+                                    .Replace(Resource.Id.fragmentcontainer, fragments[0])
+                                    .Commit();
                     return true;
                 case Resource.Id.navigation_main:
+                    SupportFragmentManager.BeginTransaction()
+                                    .Replace(Resource.Id.fragmentcontainer, fragments[1])
+                                    .Commit();
                     return true;
                 case Resource.Id.navigation_calendar:
+                    SupportFragmentManager.BeginTransaction()
+                                    .Replace(Resource.Id.fragmentcontainer, fragments[2])
+                                    .Commit();
                     return true;
             }
             return false;

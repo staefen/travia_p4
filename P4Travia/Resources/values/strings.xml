@@ -81,4 +81,7 @@
 	<string name="title_main">Categories</string>
 	<string name="title_calendar">My Activities</string>
 
+	<!-- Bottom Navigation bar -->
+	<string name="myactivities_title">My Activities</string>
+
 </resources>

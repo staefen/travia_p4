@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,7 +16,8 @@
         android:layout_marginTop="60dp"
         android:minWidth="25px"
         android:minHeight="25px"
-        android:id="@+id/circleImageView2" />
+        android:layout_centerHorizontal="true"
+        android:id="@+id/circleImageView2"/>
 
     <TextView
         android:text="Oliver Kahr"
@@ -25,20 +28,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:id="@+id/textView1" />
+        android:id="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/circleImageView2"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:layout_height="50dp">
+        android:layout_height="50dp"
+        android:layout_below="@+id/username"
+        android:id="@+id/profileicons">
 
         <HorizontalScrollView
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-            <!-- info Layout (skal nok være relativ eller grid) -->
 
             <LinearLayout
                 android:id="@+id/callLayout"
@@ -105,13 +110,16 @@
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2" />
+        android:id="@+id/biotitle"
+        android:layout_below="@+id/profileicons"/>
+
     <EditText
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:background="@android:drawable/editbox_background"
-        android:id="@+id/editText1" />
+        android:id="@+id/bioinput"
+        android:layout_below="@+id/biotitle"/>
 
     <TextView
         android:text="INTERESTS"
@@ -119,13 +127,17 @@
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView3" />
+        android:id="@+id/interests"
+        android:layout_below="@+id/bioinput"/>
+
     <EditText
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:drawable/editbox_background"
-        android:id="@+id/editText2" />
+        android:id="@+id/interestsinput"
+        android:layout_below="@+id/interests"/>
+
     <Button
         android:text="REPORT"
         android:layout_width="match_parent"
@@ -135,7 +147,9 @@
         android:layout_marginLeft="90dp"
         android:layout_marginRight="90dp"
         android:layout_marginTop="30dp"
-        android:id="@+id/button1" />
+        android:id="@+id/reportbutton"
+        android:layout_below="@+id/interestsinput"/>
 
 
-</LinearLayout>
+
+</RelativeLayout>
