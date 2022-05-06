@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AyoMn/pMz2vDdHzNINsWesmfs5A6t55niWkBZgULhXj08avFf0+TbXJGv+RZ3+R7mGxlMvRuD8DtpfqYSiVbpQ==",
+  "dgSpecHash": "XJxZl8M4FlPZwzHaZm5d5fDbEjuBSwS6B0EbUN9djQVAh0E1tZBJhLs91JXhuTsfmPOOmwd7hxpk/HmGYhEPwQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj",
   "expectedPackageFiles": [
@@ -64,6 +64,7 @@
     "C:\\Users\\chris\\.nuget\\packages\\xamarin.firebase.database.collection\\118.0.0.3\\xamarin.firebase.database.collection.118.0.0.3.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\xamarin.firebase.firestore\\123.0.3.3\\xamarin.firebase.firestore.123.0.3.3.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\xamarin.firebase.protolitewellknowntypes\\118.0.0.3\\xamarin.firebase.protolitewellknowntypes.118.0.0.3.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\xamarin.firebase.storage\\118.1.0\\xamarin.firebase.storage.118.1.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\xamarin.google.android.material\\1.0.0.1\\xamarin.google.android.material.1.0.0.1.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\xamarin.google.code.findbugs.jsr305\\3.0.2.2\\xamarin.google.code.findbugs.jsr305.3.0.2.2.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\xamarin.google.errorprone.annotations\\2.4.0.1\\xamarin.google.errorprone.annotations.2.4.0.1.nupkg.sha512",
