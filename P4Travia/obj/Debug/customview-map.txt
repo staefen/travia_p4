@@ -18,7 +18,6 @@ Button;obj/Debug/res/layout/signup_5.xml
 Button;obj/Debug/res/layout/signup_6.xml
 Button;obj/Debug/res/layout/signup_start.xml
 Button;obj/Debug/res/layout/viewactivity.xml
-cache-path;/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/lp/64/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 color;obj/Debug/res/values/colors.xml
 color;obj/Debug/res/values/ic_launcher_background.xml
 com.google.android.material.bottomnavigation.BottomNavigationView;obj/Debug/res/layout/bottom_nav_bar.xml
@@ -29,8 +28,6 @@ EditText;obj/Debug/res/layout/signup_1.xml
 EditText;obj/Debug/res/layout/signup_5.xml
 EditText;obj/Debug/res/layout/signup_6.xml
 EditText;obj/Debug/res/layout/signup_start.xml
-external-cache-path;/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/lp/64/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
-external-path;/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/lp/64/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 foreground;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_round.xml
 FrameLayout;obj/Debug/res/layout/bottom_nav_bar.xml
@@ -61,7 +58,6 @@ LinearLayout;obj/Debug/res/layout/signup_6.xml
 LinearLayout;obj/Debug/res/layout/signup_start.xml
 LinearLayout;obj/Debug/res/layout/viewactivity.xml
 menu;obj/Debug/res/menu/navigation.xml
-paths;/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/lp/64/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 ProgressBar;obj/Debug/res/layout/signup_1.xml
 ProgressBar;obj/Debug/res/layout/signup_2.xml
 ProgressBar;obj/Debug/res/layout/signup_3.xml

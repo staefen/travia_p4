@@ -59,7 +59,7 @@ namespace P4Travia.Signup
             user.Location = location;
 
             // user inn i databasen
-            /*  mAuth.CreateUserWithEmailAndPassword(user.Email, user.Password).AddOnSuccessListener(this, taskCompletionListeners)
+            /* mAuth.CreateUserWithEmailAndPassword(user.Email, user.Password).AddOnSuccessListener(this, taskCompletionListeners)
                  .AddOnFailureListener(this, taskCompletionListeners);
 
               taskCompletionListeners.Success += (success, args) =>

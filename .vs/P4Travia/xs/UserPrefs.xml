@@ -1,19 +1,27 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Signup/Signup6.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.P4Travia PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Resources/values/styles.xml">
     <Files>
-      <File FileName="P4Travia/Signup/Signup6.cs" Line="68" Column="27" />
-      <File FileName="P4Travia/MainActivity.cs" Line="38" Column="1" />
+      <File FileName="P4Travia/Signup/Signup1.cs" Line="38" Column="34" />
+      <File FileName="P4Travia/Signup/Signup6.cs" Line="70" Column="58" />
+      <File FileName="P4Travia/Resources/layout/signup_4.xml" Line="1" Column="1" />
+      <File FileName="P4Travia/Signup/Signup4.cs" Line="57" Column="23" />
+      <File FileName="P4Travia/Resources/values/styles.xml" Line="12" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="P4Travia" expanded="True">
             <Node name="P4Travia" expanded="True">
-              <Node name="Datamodels" expanded="True" />
-              <Node name="EventListener" expanded="True" />
               <Node name="Resources" expanded="True">
                 <Node name="layout" expanded="True" />
-                <Node name="values" expanded="True" />
+                <Node name="values" expanded="True">
+                  <Node name="styles.xml" selected="True" />
+                </Node>
               </Node>
               <Node name="Signup" expanded="True" />
             </Node>
@@ -25,13 +33,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.Pixel_3a_API_32_arm64-v8a" AndroidDesignerPreferredDevice="pixel_3" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_32_arm64-v8a" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
-  <MultiItemStartupConfigurations />
 </Properties>
