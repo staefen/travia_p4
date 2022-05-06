@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+ android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     
     <Button
-        android:id="@+id/openLogin"
+        android:id="@+id/btnLogin1"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_gravity="center_vertical"
         android:layout_marginRight="80dp"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="260dp"
-        android:text="Login"
+        android:text="@string/login"
         android:textSize="24sp"
-         />
+        android:textAllCaps="false"/>
+
     <Button
-        android:text="Sign up"
+        android:id="@+id/btnSignupStart"
+        android:text="@string/signup"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:id="@+id/buttonLogIn"
         android:layout_marginLeft="80dp"
         android:layout_marginRight="80dp"
         android:layout_marginTop="25dp"
-        android:textSize="24sp"/>
-        android:id="@+id/openSignUp" />
+        android:textSize="24sp"
+        android:textAllCaps="false"/>
    
 </LinearLayout>

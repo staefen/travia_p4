@@ -1687,28 +1687,23 @@
     }
   },
   "projectFileDependencyGroups": {
-    "MonoAndroid,Version=v12.0": [
-      "Xamarin.AndroidX.AppCompat >= 1.2.0.5",
-      "Xamarin.Essentials >= 1.6.1",
-      "Xamarin.Google.Android.Material >= 1.0.0.1"
-    ]
+    "MonoAndroid,Version=v12.0": []
   },
   "packageFolders": {
-    "C:\\Users\\chris\\.nuget\\packages\\": {}
+    "/Users/stephenhuynh/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj",
+      "projectUniqueName": "/Users/stephenhuynh/Downloads/P4Travia/P4Travia/P4Travia.csproj",
       "projectName": "P4Travia",
-      "projectPath": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj",
-      "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\obj\\",
+      "projectPath": "/Users/stephenhuynh/Downloads/P4Travia/P4Travia/P4Travia.csproj",
+      "packagesPath": "/Users/stephenhuynh/.nuget/packages/",
+      "outputPath": "/Users/stephenhuynh/Downloads/P4Travia/P4Travia/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/stephenhuynh/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid12.0"
@@ -1724,22 +1719,7 @@
       }
     },
     "frameworks": {
-      "monoandroid12.0": {
-        "dependencies": {
-          "Xamarin.AndroidX.AppCompat": {
-            "target": "Package",
-            "version": "[1.2.0.5, )"
-          },
-          "Xamarin.Essentials": {
-            "target": "Package",
-            "version": "[1.6.1, )"
-          },
-          "Xamarin.Google.Android.Material": {
-            "target": "Package",
-            "version": "[1.0.0.1, )"
-          }
-        }
-      }
+      "monoandroid12.0": {}
     }
   }
 }
