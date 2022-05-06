@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Fragments\BrowseActivitiesFragment.cs" />
     <Compile Include="Resources\Fragments\CalendarFragment.cs" />
     <Compile Include="Resources\Fragments\MainPageFragment.cs" />
     <Compile Include="Resources\Fragments\ProfileFragment.cs" />
@@ -211,6 +212,14 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\myactivities.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\browseActivities.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\add_icon.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

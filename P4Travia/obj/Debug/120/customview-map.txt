@@ -3,6 +3,8 @@ adaptive-icon;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher_round.xml
 androidx.cardview.widget.CardView;obj\Debug\120\res\layout\browse.xml
 androidx.cardview.widget.CardView;obj\Debug\120\res\layout\mainpage.xml
 androidx.cardview.widget.CardView;obj\Debug\120\res\layout\viewactivity.xml
+androidx.coordinatorlayout.widget.CoordinatorLayout;obj\Debug\120\res\layout\browseactivities.xml
+androidx.recyclerview.widget.RecyclerView;obj\Debug\120\res\layout\browseactivities.xml
 androidx.recyclerview.widget.RecyclerView;obj\Debug\120\res\layout\myactivities.xml
 background;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher.xml
 background;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher_round.xml
@@ -18,11 +20,11 @@ Button;obj\Debug\120\res\layout\signup_more_info.xml
 Button;obj\Debug\120\res\layout\signup_name.xml
 Button;obj\Debug\120\res\layout\signup_photo.xml
 Button;obj\Debug\120\res\layout\viewactivity.xml
-cache-path;C:\Users\Thaod\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+cache-path;C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 color;obj\Debug\120\res\values\colors.xml
 color;obj\Debug\120\res\values\ic_launcher_background.xml
 com.google.android.material.bottomnavigation.BottomNavigationView;obj\Debug\120\res\layout\bottom_nav_bar.xml
-de.hdodenhof.circleimageview.CircleImageView;obj\Debug\120\res\layout\profile.xml
+com.google.android.material.floatingactionbutton.FloatingActionButton;obj\Debug\120\res\layout\browseactivities.xml
 dimen;obj\Debug\120\res\values\dimens.xml
 EditText;obj\Debug\120\res\layout\login.xml
 EditText;obj\Debug\120\res\layout\profile.xml
@@ -31,8 +33,8 @@ EditText;obj\Debug\120\res\layout\signup_location.xml
 EditText;obj\Debug\120\res\layout\signup_mail.xml
 EditText;obj\Debug\120\res\layout\signup_more_info.xml
 EditText;obj\Debug\120\res\layout\signup_name.xml
-external-cache-path;C:\Users\Thaod\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
-external-path;C:\Users\Thaod\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-cache-path;C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-path;C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher.xml
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher_round.xml
 FrameLayout;obj\Debug\120\res\layout\bottom_nav_bar.xml
@@ -48,6 +50,7 @@ item;obj\Debug\120\res\menu\navigation.xml
 item;obj\Debug\120\res\values\styles.xml
 LinearLayout;obj\Debug\120\res\layout\activity_main.xml
 LinearLayout;obj\Debug\120\res\layout\browse.xml
+LinearLayout;obj\Debug\120\res\layout\browseactivities.xml
 LinearLayout;obj\Debug\120\res\layout\login.xml
 LinearLayout;obj\Debug\120\res\layout\login_signup_start.xml
 LinearLayout;obj\Debug\120\res\layout\profile.xml
@@ -62,7 +65,8 @@ LinearLayout;obj\Debug\120\res\layout\signup_name.xml
 LinearLayout;obj\Debug\120\res\layout\signup_photo.xml
 LinearLayout;obj\Debug\120\res\layout\viewactivity.xml
 menu;obj\Debug\120\res\menu\navigation.xml
-paths;C:\Users\Thaod\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+path;obj\Debug\120\res\drawable\add_icon.xml
+paths;C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 ProgressBar;obj\Debug\120\res\layout\signup_gender.xml
 ProgressBar;obj\Debug\120\res\layout\signup_language.xml
 ProgressBar;obj\Debug\120\res\layout\signup_location.xml
@@ -90,6 +94,7 @@ stroke;obj\Debug\120\res\drawable\back.xml
 style;obj\Debug\120\res\values\styles.xml
 TextView;obj\Debug\120\res\layout\activity_main.xml
 TextView;obj\Debug\120\res\layout\browse.xml
+TextView;obj\Debug\120\res\layout\browseactivities.xml
 TextView;obj\Debug\120\res\layout\login.xml
 TextView;obj\Debug\120\res\layout\mainpage.xml
 TextView;obj\Debug\120\res\layout\myactivities.xml
@@ -104,3 +109,4 @@ TextView;obj\Debug\120\res\layout\signup_more_info.xml
 TextView;obj\Debug\120\res\layout\signup_name.xml
 TextView;obj\Debug\120\res\layout\signup_photo.xml
 TextView;obj\Debug\120\res\layout\viewactivity.xml
+vector;obj\Debug\120\res\drawable\add_icon.xml
