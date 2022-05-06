@@ -11,8 +11,9 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using AndroidX.RecyclerView.Widget;
+using Google.Android.Material.FloatingActionButton;
 
-namespace P4Travia.Resources.Fragments
+namespace P4Travia
 {
     public class BrowseActivitiesFragment : AndroidX.Fragment.App.Fragment
     {
@@ -20,44 +21,30 @@ namespace P4Travia.Resources.Fragments
         RecyclerView activityRecyclerView;
         
 
-
         // Varibales
         string category;
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            base.OnCreate(savedInstanceState);
+            Xamarin.Essentials.Platform.Init(this.Activity, savedInstanceState);
 
             View view = inflater.Inflate(Resource.Layout.browseActivities, container, false);
             return view;
 
             // Set our view from the "main" layout resource
-            
 
+            categoryTextView = (TextView)view.FindViewById(Resource.Id.category);
+            activityRecyclerView = (RecyclerView)view.FindViewById(Resource.Id.activityRecyclerView);
 
-            categoryTextView = (TextView)FindViewById(Resource.Id.category);
-            activityRecyclerView = (RecyclerView)FindViewById(Resource.Id.activityRecyclerView); // måske er det her forkert
-
-            category = Intent.GetStringExtra("category");
+            category = this.Activity.Intent.GetStringExtra("category");
             categoryTextView.Text = category;
 
 
-            FloatingActionButton floatingAddButton = (FloatingActionButton)FindViewById(Resource.Id.floatingAddButton);
+            FloatingActionButton floatingAddButton = (FloatingActionButton)view.FindViewById(Resource.Id.floatingAddButton);
 
-
-            floatingAddButton.Click += floatingAddButton_Click;
-            CreateData();
-            SetupRecyclerView();
-
-        }
-
-        private void floatingAddButton_Click(object sender, EventArgs e)
-        {
-            createPostFragment = new CreatePostFragment();
-            var trans = SupportFragmentManager.BeginTransaction();
-            createPostFragment.Show(trans, "new post");  // forstår ikke helt det her
-            createPostFragment.OnPostRegistered += CreatePostFragment_OnPostRegistered;
         }
 
     }
+
 }

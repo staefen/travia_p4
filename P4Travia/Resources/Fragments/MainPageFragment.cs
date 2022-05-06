@@ -11,14 +11,16 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using AndroidX.AppCompat.App;
-using P4Travia.Resources.Fragments;
+using P4Travia;
 
-namespace P4Travia.Resources.Fragments
+namespace P4Travia
 {
     public class MainPageFragment : AndroidX.Fragment.App.Fragment
     {
         ImageView allButton;
         ImageView foodButton;
+        BrowseActivitiesFragment browseActivitiesFragment;
+
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -32,6 +34,7 @@ namespace P4Travia.Resources.Fragments
             allButton.Click += AllButton_Click;
             foodButton.Click += FoodButton_Click;
 
+            
         }
 
         private void AllButton_Click(object sender, EventArgs e)
@@ -43,12 +46,17 @@ namespace P4Travia.Resources.Fragments
 
         private void FoodButton_Click(object sender, EventArgs e)
         {
-            Intent intent = new Intent(this.Activity, typeof(BrowseActivitiesFragment));
-            intent.PutExtra("category", "Food");
-            StartActivity(intent);
+            Toast.MakeText(this.Activity, "det virker", ToastLength.Long).Show();
+           
         }
+
+        /*Intent intent = new Intent(this.Activity, typeof(BrowseActivitiesFragment));
+        intent.PutExtra("category", "Food");
+            browseActivitiesFragment = new BrowseActivitiesFragment();
+        var transaction = FragmentManager.BeginTransaction()
+            .Add(Resource.Id.fragmentcontainer, browseActivitiesFragment, "BrowseActivitiesFragment")
+            .Commit();*/
 
     }
 
-}
 }
