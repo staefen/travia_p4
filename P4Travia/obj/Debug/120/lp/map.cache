@@ -1,4 +1,5 @@
 Jsr305Binding.dll
+Plugin.Media.dll
 Square.OkHttp.dll
 Square.OkIO.dll
 Xamarin.AndroidX.Activity.dll
@@ -49,6 +50,7 @@ Xamarin.Firebase.Components.dll
 Xamarin.Firebase.Database.Collection.dll
 Xamarin.Firebase.Firestore.dll
 Xamarin.Firebase.ProtoliteWellKnownTypes.dll
+Xamarin.Firebase.Storage.dll
 Xamarin.Google.Android.Material.dll
 Xamarin.Google.ErrorProne.Annotations.dll
 Xamarin.Google.Guava.FailureAccess.dll
@@ -108,11 +110,11 @@ playservicestasks-17.2.1.aar
 playservicesbase-17.6.0.aar
 playservicessafetynet-17.0.1.aar
 playservicesauthapiphone-17.5.1.aar
-protolitewellknowntypes-18.0.0.aar
-firebasedatabasecollection-18.0.0.aar
 firebasecomponents-17.0.0.aar
 firebasecommon-20.0.0.aar
 firebaseauthinterop-20.0.0.aar
+firebasestorage-18.1.0.aar
+protolitewellknowntypes-18.0.0.aar
+firebasedatabasecollection-18.0.0.aar
 firebasefirestore-23.0.3.aar
 firebaseauth-21.0.1.aar
-Plugin.Media.dll

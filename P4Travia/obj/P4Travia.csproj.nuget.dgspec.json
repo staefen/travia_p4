@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[123.0.3.3, )"
             },
+            "Xamarin.Firebase.Storage": {
+              "target": "Package",
+              "version": "[118.1.0, )"
+            },
             "Xamarin.Google.Android.Material": {
               "target": "Package",
               "version": "[1.0.0.1, )"
