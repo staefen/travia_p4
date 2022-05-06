@@ -1,4 +1,4 @@
-<resources>
+﻿<resources>
 	<string name="app_name">Travia</string>
 	<string name="action_settings">Settings</string>
 
@@ -46,16 +46,17 @@
 	<string name="log_out">Log out</string>
 	<string name="email">Email</string>
 	<string name="password">Password</string>
-	<string name="birthdate">Birthday</string>
+	<string name="birthday">Birthday</string>
 	<string name="delete_account">Delete account</string>
 	<string name="account_settings">Account</string>
 
 	<!-- Sign up -->
 	<string name="letsstart">Let us start!</string>
-	<string name="letsstart_desc">This will be used as your login.</string>
+	<string name="letsstart_desc">This will be used as your login</string>
 	<string name="next">Next </string>
+	<string name="username">Username </string>
 	<string name="enter_info">Enter personal information</string>
-	<string name="name_birthday_desc">This information will be visible to other users.</string>
+	<string name="name_birthday_desc">This information will be visible to other users</string>
 	<string name="name">Name</string>
 	<string name="more_info">Tell us more about you!</string>
 	<string name="gender">Gender</string>
@@ -68,6 +69,37 @@
 	<string name="bio">Biography</string>
 	<string name="enter_location"> What is your destination?</string>
 	<string name="enter_location_desc"> Enter your location to get started!</string>
+	<string name="confirmPassword"> Confirm Password</string>
+	<string name="skip">Skip</string>
+	<string name="login">Login</string>
+	<string name="signup">Sign up</string>
+	<string name="forgot_password"> Forgot password</string>
+	<string name="enter_languages_desc"> Select the languages you spreak</string>
+	<string name="add_photo_desc"> Personalise your profile with a picture of yourself</string>
+		<string-array name="gender_dropdown">
+		<item>She/her</item>
+		<item>He/his</item>  
+		<item>They/them</item>  
+		<item>Xe/xem</item>  
+		<item>Ve/ver</item>  
+		<item>Per/per</item>
+    </string-array>
+	<string-array name="nationality_dropdown">
+		<item>Denmark</item>
+		<item>Sweden</item>  
+		<item>Norway</item>  
+		<item>Germany</item>  
+		<item>France</item>  
+		<item>England</item>
+	</string-array>
+	<string-array name="language_dropdown">
+		<item>Danish</item>
+		<item>Swedish</item>  
+		<item>Norwegian</item>  
+		<item>German</item>  
+		<item>French</item>  
+		<item>English</item>
+	</string-array>
 
 	<!-- View activity -->
 	<string name="location">location</string>
