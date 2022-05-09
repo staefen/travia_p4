@@ -19,6 +19,7 @@ namespace P4Travia
     {
         ImageView allButton;
         ImageView foodButton;
+        TextView all;
         BrowseActivitiesFragment browseActivitiesFragment;
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -30,11 +31,19 @@ namespace P4Travia
 
             allButton = (ImageView)view.FindViewById(Resource.Id.allimage);
             foodButton = (ImageView)view.FindViewById(Resource.Id.foodrounded);
+            all = (TextView)view.FindViewById(Resource.Id.othertext);
+
 
             allButton.Click += AllButton_Click;
             foodButton.Click += FoodButton_Click;
+            all.Click += All_Click;
 
             
+        }
+
+        private void All_Click(object sender, EventArgs e)
+        {
+            Toast.MakeText(this.Activity, "det virker", ToastLength.Long).Show();
         }
 
         private void AllButton_Click(object sender, EventArgs e)
@@ -49,6 +58,9 @@ namespace P4Travia
             Toast.MakeText(this.Activity, "det virker", ToastLength.Long).Show();
            
         }
+
+        
+
 
         /*Intent intent = new Intent(this.Activity, typeof(BrowseActivitiesFragment));
         intent.PutExtra("category", "Food");
