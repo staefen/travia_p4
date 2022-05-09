@@ -335,12 +335,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\CreatePostActivity.cs" />
+    <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Fragments\ProgressDialogFragment.cs" />
     <Compile Include="Helpers\AppDataHelper.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Resources\Fragments\CalendarFragment.cs" />
-    <Compile Include="Resources\Fragments\MainPageFragment.cs" />
-    <Compile Include="Resources\Fragments\ProfileFragment.cs" />
+    <Compile Include="Fragments\CalendarFragment.cs" />
+    <Compile Include="Fragments\MainPageFragment.cs" />
+    <Compile Include="Fragments\ProfileFragment.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Signup\SignupStart.cs" />
@@ -392,8 +393,10 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
     <AndroidResource Include="Resources\layout\signup_3.xml">
-      <SubType></SubType>
-      <Generator></Generator>
+      <SubType>
+      </SubType>
+      <Generator>
+      </Generator>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
@@ -403,6 +406,12 @@
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0.5" />
     <PackageReference Include="Xamarin.AndroidX.CardView">
       <Version>1.0.0.15</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout">
+      <Version>2.1.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.DynamicAnimation">
+      <Version>1.0.0.13</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Firebase.Auth">
       <Version>121.0.1.4</Version>
@@ -522,9 +531,7 @@
     <AndroidResource Include="Resources\layout\myactivities.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Signup\" />
-    <Folder Include="EventListener\" />
-    <Folder Include="Datamodels\" />
+    <AndroidResource Include="Resources\drawable\SplashScreen.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\create_post.xml">
@@ -541,6 +548,9 @@
     <AndroidResource Include="Resources\layout\progress_dialog.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\TraviaLaunchIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -6,7 +6,7 @@ using Android.Widget;
 using AndroidX.AppCompat.App;
 using Plugin.Media;
 using System;
-//using P4Travia.EventListeners;
+using P4Travia.EventListeners;
 using P4Travia.Helpers;
 using Java.Util;
 using Firebase.Firestore;

@@ -55,7 +55,6 @@ namespace P4Travia.Signup
         {
             Spinner spinner = (Spinner)sender;
             nationality = string.Format("{0}", spinner.GetItemAtPosition(e.Position));
-            Toast.MakeText(this, nationality, ToastLength.Long).Show();
         }
 
         //gender spinner
@@ -63,7 +62,6 @@ namespace P4Travia.Signup
         {
             Spinner spinner = (Spinner)sender;
             gender = string.Format("{0}", spinner.GetItemAtPosition(e.Position));
-            Toast.MakeText(this, gender, ToastLength.Long).Show();
         }
 
         private void Signup2_Click(object sender, EventArgs e)

@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:gravity="center"
+        android:layout_marginLeft="30dp"
         android:text="@string/enter_info"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="35sp"
@@ -27,7 +27,8 @@
         android:id="@+id/nameBirthdayDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center" 
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:text="@string/name_birthday_desc"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -35,7 +36,7 @@
         android:id="@+id/signupNameText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="60dp"
         android:text="@string/name"
         android:textAppearance="?android:attr/textAppearanceMedium"/>
@@ -53,7 +54,7 @@
         android:id="@+id/signupBirthdayText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
         android:gravity="left"
         android:text="@string/birthday"

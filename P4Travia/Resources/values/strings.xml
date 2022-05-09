@@ -113,9 +113,6 @@
 	<string name="title_main">Categories</string>
 	<string name="title_calendar">My Activities</string>
 
-	<!-- Bottom Navigation bar -->
-	<string name="myactivities_title">My Activities</string>
-
 	<!-- Create Post -->
 	<string name="post">Post</string>
 	<string name="description_post">Description</string>
@@ -128,5 +125,10 @@
 
 	<!-- Dialog Fragment -->
 	<string name="on_hold">Please wait...</string>
+
+
+	<!-- Bottom Navigation bar -->
+	<string name="myactivities_title">My Activities</string>
+
 
 </resources>

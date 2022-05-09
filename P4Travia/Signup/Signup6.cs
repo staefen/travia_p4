@@ -1,27 +1,29 @@
 ﻿using Android.App;
 using Android.OS;
 using Android.Widget;
-using AndroidX.AppCompat.App;
 using Firebase.Firestore;
 using System;
+using AndroidX.AppCompat.App;
 using DocumentReference = Firebase.Firestore.DocumentReference;
 using Java.Util;
 using Firebase.Auth;
 using P4Travia.EventListeners;
-//using P4Travia.Helpers;
+using P4Travia.Helpers;
 using Android.Runtime;
 using Android.Content;
+using P4Travia.Fragments;
 
 
 namespace P4Travia.Signup
 {
-    [Activity(Label = "Signup6")]
-    public class Signup6 : Activity
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = false)]
+    public class Signup6 : AppCompatActivity
     {
         Button signup6;
-       // FirebaseFirestore database;
-       // FirebaseAuth mAuth;
+        FirebaseFirestore database;
+        FirebaseAuth mAuth;
         TaskCompletionListeners taskCompletionListeners = new TaskCompletionListeners();
+        ProgressDialogFragment progressDialogue;
         EditText locationText;
         string location;
 
@@ -37,8 +39,8 @@ namespace P4Travia.Signup
 
             locationText = (EditText)FindViewById(Resource.Id.signuplocation);
 
- //           database = AppDataHelper.GetFirestore();
- //           mAuth = AppDataHelper.GetFirebaseAuth();
+            database = AppDataHelper.GetFirestore();
+            mAuth = AppDataHelper.GetFirebaseAuth();
         }
 
 
@@ -59,10 +61,11 @@ namespace P4Travia.Signup
             user.Location = location;
 
             // user inn i databasen
-            /*  mAuth.CreateUserWithEmailAndPassword(user.Email, user.Password).AddOnSuccessListener(this, taskCompletionListeners)
-                 .AddOnFailureListener(this, taskCompletionListeners);
+            ShowProgressDialogue("Registering...");
+            mAuth.CreateUserWithEmailAndPassword(user.Email, user.Password).AddOnSuccessListener(this, taskCompletionListeners)
+                .AddOnFailureListener(this, taskCompletionListeners);
 
-              taskCompletionListeners.Success += (success, args) =>
+            taskCompletionListeners.Success += (success, args) =>
               {
                   HashMap userMap = new HashMap();
                   userMap.Put("mail", user.Email);
@@ -75,24 +78,37 @@ namespace P4Travia.Signup
 
                   DocumentReference userReference = database.Collection("users").Document(mAuth.CurrentUser.Uid);
                   userReference.Set(userMap);
-
+                  CloseProgressDialogue();
                   StartActivity(typeof(MainActivity));
                   Finish();
               };
+
+
               // Registration Failure Callback
               taskCompletionListeners.Failure += (failure, args) =>
               {
+                  CloseProgressDialogue();
                   Toast.MakeText(this, "Registration Failed : " + args.Cause, ToastLength.Short).Show();
               };
-            */
+            
           }
-           
 
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
+
+        void ShowProgressDialogue(string status)
         {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            progressDialogue = new ProgressDialogFragment(status);
+            var trans = SupportFragmentManager.BeginTransaction();
+            progressDialogue.Cancelable = false;
+            progressDialogue.Show(trans, "Progress");
+        }
 
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        void CloseProgressDialogue()
+        {
+            if (progressDialogue != null)
+            {
+                progressDialogue.Dismiss();
+                progressDialogue = null;
+            }
         }
     }
 }

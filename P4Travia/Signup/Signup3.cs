@@ -70,7 +70,6 @@ namespace P4Travia.Signup
         {
             Spinner spinner = (Spinner)sender;
             language = string.Format("{0}", spinner.GetItemAtPosition(e.Position));
-            Toast.MakeText(this, language, ToastLength.Long).Show();
         }
 
         private void Signup3_Click(object sender, EventArgs e) //skal ha betingelser som gjør at man skal fylle ut feltene først

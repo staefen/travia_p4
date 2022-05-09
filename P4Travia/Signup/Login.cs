@@ -2,9 +2,9 @@
 using Android.OS;
 using Android.Widget;
 using AndroidX.AppCompat.App;
-//using P4Travia.EventListeners;
-//using P4Travia.Helpers;
-//using Firebase.Auth;
+using P4Travia.EventListeners;
+using P4Travia.Helpers;
+using Firebase.Auth;
 using System;
 using Android.Runtime;
 
@@ -15,8 +15,8 @@ namespace P4Travia.Signup
     {
         EditText emailText, passwordText;
         Button login2;
-       // TaskCompletionListeners taskCompletionListeners = new TaskCompletionListeners();
-        // FirebaseAuth mAuth;
+        TaskCompletionListeners taskCompletionListeners = new TaskCompletionListeners();
+        FirebaseAuth mAuth;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -31,7 +31,7 @@ namespace P4Travia.Signup
             login2 = FindViewById<Button>(Resource.Id.btnLogin2);
             login2.Click += Login2_Click;
 
-         //   mAuth = AppDataHelper.GetFirebaseAuth();
+            mAuth = AppDataHelper.GetFirebaseAuth();
 
         }
 
@@ -52,7 +52,7 @@ namespace P4Travia.Signup
                 return;
             }
 
-            /*
+            
             mAuth.SignInWithEmailAndPassword(email, password).AddOnSuccessListener(taskCompletionListeners)
             .AddOnFailureListener(taskCompletionListeners);
 
@@ -65,7 +65,7 @@ namespace P4Travia.Signup
             taskCompletionListeners.Failure += (success, args) =>
             {
                 Toast.MakeText(this, "Login Failed : " + args.Cause, ToastLength.Short).Show();
-            };*/
+            };
 
         }
 

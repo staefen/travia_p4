@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
 using Android.App;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
-using Android.Widget;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.BottomNavigation;
 
@@ -28,7 +26,7 @@ namespace P4Travia
             fragments.Add(new CalendarFragment());
 
             SupportFragmentManager.BeginTransaction()
-                                    .Replace(Resource.Id.fragmentcontainer, fragments[0])
+                                    .Replace(Resource.Id.fragmentcontainer, fragments[1])
                                     .Commit();
 
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
