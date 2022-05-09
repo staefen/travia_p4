@@ -3,7 +3,7 @@ using Android.OS;
 using Android.Widget;
 using AndroidX.AppCompat.App;
 using System;
-//using P4Travia.Helpers;
+using P4Travia.Helpers;
 using Android.Runtime;
 using System.Linq;
 using Android.Content;
@@ -57,8 +57,8 @@ namespace P4Travia.Signup
             }
             else
             {
-                // Signup1 user = new Signup1();
-                // user.PassInfo(email, password);
+                Signup1 user = new Signup1();
+                user.PassInfo(email, password);
 
                 var intent = new Intent(this, typeof(Signup1));
                 intent.PutExtra("Email", email);

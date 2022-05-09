@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:gravity="center"
+        android:layout_marginLeft="30dp"
         android:text="@string/enter_bio"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="35sp"
@@ -27,22 +27,22 @@
         android:id="@+id/signupBioText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="60dp"
-        android:gravity="left"
         android:text="@string/bio"
         android:textAppearance="?android:attr/textAppearanceMedium"/>
 
 	<EditText
         android:id="@+id/signupBio"
-        android:inputType="text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:padding="100dp"
-        android:gravity ="start"
-        android:background="@android:drawable/editbox_background" />
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:inputType="textMultiLine"
+        android:background="@drawable/curvededges_white"/>
 
     <LinearLayout
         android:layout_width="wrap_content"

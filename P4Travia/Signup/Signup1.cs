@@ -58,11 +58,11 @@ namespace P4Travia.Signup
             }
         }
 
-        /*public void PassInfo(string _email, string _password)
+        public void PassInfo(string _email, string _password)
         {
             email = _email;
             password = _password;
-        }*/
+        }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

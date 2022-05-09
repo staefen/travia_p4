@@ -1,80 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <declare-styleable name="AnimatedStateListDrawableCompat">
-        <!-- Indicates whether the drawable should be initially visible. -->
-        <attr name="android:visible"/>
-        <!-- If true, allows the drawable's padding to change based on the
-             current state that is selected.  If false, the padding will
-             stay the same (based on the maximum padding of all the states).
-             Enabling this feature requires that the owner of the drawable
-             deal with performing layout when the state changes, which is
-             often not supported. -->
-        <attr name="android:variablePadding"/>
-        <!-- If true, the drawable's reported internal size will remain
-             constant as the state changes; the size is the maximum of all
-             of the states.  If false, the size will vary based on the
-             current state. -->
-        <attr name="android:constantSize"/>
-        <!-- Enables or disables dithering of the bitmap if the bitmap does not have the
-             same pixel configuration as the screen (for instance: a ARGB 8888 bitmap with
-             an RGB 565 screen). -->
-        <attr name="android:dither"/>
-        <!-- Amount of time (in milliseconds) to fade in a new state drawable. -->
-        <attr name="android:enterFadeDuration"/>
-        <!-- Amount of time (in milliseconds) to fade out an old state drawable. -->
-        <attr name="android:exitFadeDuration"/>
-        <!-- Indicates if the drawable needs to be mirrored when its layout direction is
-             RTL (right-to-left). -->
-        <!--<attr name="autoMirrored"/>-->
-    </declare-styleable>
-    <declare-styleable name="AnimatedStateListDrawableItem">
-        <!-- Reference to a drawable resource to use for the frame.  If not
-             given, the drawable must be defined by the first child tag. -->
-        <attr name="android:drawable"/>
-        <!-- Keyframe identifier for use in specifying transitions. -->
-        <attr name="android:id"/>
-    </declare-styleable>
-    <declare-styleable name="AnimatedStateListDrawableTransition">
-        <!-- Keyframe identifier for the starting state. -->
-        <attr name="android:fromId"/>
-        <!-- Keyframe identifier for the ending state. -->
-        <attr name="android:toId"/>
-        <!-- Reference to a animation drawable resource to use for the frame.  If not
-             given, the animation drawable must be defined by the first child tag. -->
-        <attr name="android:drawable"/>
-        <!-- Whether this transition is reversible. -->
-        <attr name="android:reversible"/>
-    </declare-styleable>
-    <declare-styleable name="StateListDrawable">
-        <!-- Indicates whether the drawable should be initially visible. -->
-        <attr name="android:visible"/>
-        <!-- If true, allows the drawable's padding to change based on the
-             current state that is selected.  If false, the padding will
-             stay the same (based on the maximum padding of all the states).
-             Enabling this feature requires that the owner of the drawable
-             deal with performing layout when the state changes, which is
-             often not supported. -->
-        <attr name="android:variablePadding"/>
-        <!-- If true, the drawable's reported internal size will remain
-             constant as the state changes; the size is the maximum of all
-             of the states.  If false, the size will vary based on the
-             current state. -->
-        <attr name="android:constantSize"/>
-        <!-- Enables or disables dithering of the bitmap if the bitmap does not have the
-             same pixel configuration as the screen (for instance: a ARGB 8888 bitmap with
-             an RGB 565 screen). -->
-        <attr name="android:dither"/>
-        <!-- Amount of time (in milliseconds) to fade in a new state drawable. -->
-        <attr name="android:enterFadeDuration"/>
-        <!-- Amount of time (in milliseconds) to fade out an old state drawable. -->
-        <attr name="android:exitFadeDuration"/>
-        <!-- Indicates if the drawable needs to be mirrored when its layout direction is
-             RTL (right-to-left). -->
-        <!--<attr name="autoMirrored"/>-->
-    </declare-styleable>
-    <declare-styleable name="StateListDrawableItem">
-        <!-- Reference to a drawable resource to use for the state. If not
-             given, the drawable must be defined by the first child tag. -->
-        <attr name="android:drawable"/>
-    </declare-styleable>
+<?xml version="1.0" encoding='utf-8' standalone='no'?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!-- java/com/google/android/gmscore/integ/client/base/res/values/colors.xml -->
+<eat-comment/>
+<color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
+<color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
+<color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
+<color name="common_google_signin_btn_text_dark_pressed">@android:color/white</color>
+<color name="common_google_signin_btn_text_light_default">#90000000</color>
+<color name="common_google_signin_btn_text_light_disabled">#1F000000</color>
+<color name="common_google_signin_btn_text_light_focused">#90000000</color>
+<color name="common_google_signin_btn_text_light_pressed">#DE000000</color>
+<!-- java/com/google/android/gmscore/integ/client/base/res/values/strings.xml -->
+<eat-comment/>
+<string name="common_google_play_services_enable_button" msgid="2523291102206661146">Enable</string>
+<string name="common_google_play_services_enable_text" msgid="227660514972886228"><xliff:g id="app_name">%1$s</xliff:g> won\'t work unless you enable Google Play services.</string>
+<string name="common_google_play_services_enable_title" msgid="5122002158466380389">Enable Google Play services</string>
+<string name="common_google_play_services_install_button" msgid="7153882981874058840">Install</string>
+<string name="common_google_play_services_install_text"><xliff:g id="app_name">%1$s</xliff:g> won\'t run without Google Play services, which are missing from your device.</string>
+<string name="common_google_play_services_install_title" msgid="7215213145546190223">Get Google Play services</string>
+<string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+<string name="common_google_play_services_notification_ticker">Google Play services error</string>
+<string name="common_google_play_services_unsupported_text"><xliff:g id="app_name">%1$s</xliff:g> won\'t run without Google Play services, which are not supported by your device.</string>
+<string name="common_google_play_services_update_button" msgid="6556509956452265614">Update</string>
+<string name="common_google_play_services_update_text" msgid="9053896323427875356"><xliff:g id="app_name">%1$s</xliff:g> won\'t run unless you update Google Play services.</string>
+<string name="common_google_play_services_update_title" msgid="6006316683626838685">Update Google Play services</string>
+<string name="common_google_play_services_updating_text"><xliff:g id="app_name">%1$s</xliff:g> won\'t run without Google Play services, which are currently updating.</string>
+<string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+<string name="common_open_on_phone">Open on phone</string>
+<string name="common_signin_button_text">Sign in</string>
+<string name="common_signin_button_text_long">Sign in with Google</string>
+<!-- java/com/google/android/gmscore/integ/client/base/res/values/attrs.xml -->
+<eat-comment/>
+<declare-styleable name="LoadingImageView"><attr name="imageAspectRatioAdjust">
+<enum name="none" value="0"/>
+
+<enum name="adjust_width" value="1"/>
+
+<enum name="adjust_height" value="2"/>
+
+</attr>
+
+<attr name="imageAspectRatio" format="float"/>
+
+<attr name="circleCrop" format="boolean"/>
+</declare-styleable>
+<declare-styleable name="SignInButton"><attr name="buttonSize" format="reference">
+<enum name="standard" value="0"/>
+
+<enum name="wide" value="1"/>
+
+<enum name="icon_only" value="2"/>
+
+</attr>
+<attr name="colorScheme" format="reference">
+<enum name="dark" value="0"/>
+
+<enum name="light" value="1"/>
+
+<enum name="auto" value="2"/>
+
+</attr>
+
+<attr name="scopeUris" format="reference|string"/>
+</declare-styleable>
 </resources>
