@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "XJxZl8M4FlPZwzHaZm5d5fDbEjuBSwS6B0EbUN9djQVAh0E1tZBJhLs91JXhuTsfmPOOmwd7hxpk/HmGYhEPwQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj",
@@ -89,5 +90,11 @@
     "C:\\Users\\chris\\.nuget\\packages\\xamarin.io.perfmark.perfmarkapi\\0.19.0\\xamarin.io.perfmark.perfmarkapi.0.19.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\xamarin.protobuf.javalite\\3.14.0.1\\xamarin.protobuf.javalite.3.14.0.1.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "yiUM5NO0RIrcO3OXwS1Gy+IXbAGSBBDThxG9vxygp1XCPX2UfzsX0qa+Qb+2FX42YXtBGHAD8aUHCpgUM0A75Q==",
+  "success": true,
+  "projectFilePath": "/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/P4Travia.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> main
   "logs": []
 }

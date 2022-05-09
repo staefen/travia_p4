@@ -3326,6 +3326,7 @@
     }
   },
   "projectFileDependencyGroups": {
+<<<<<<< HEAD
     "MonoAndroid,Version=v12.0": [
       "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.AndroidX.AppCompat >= 1.2.0.5",
@@ -3337,6 +3338,9 @@
       "Xamarin.Google.Android.Material >= 1.0.0.1",
       "Xamarin.Google.Guava >= 31.1.0"
     ]
+=======
+    "MonoAndroid,Version=v12.0": []
+>>>>>>> main
   },
   "packageFolders": {
     "C:\\Users\\chris\\.nuget\\packages\\": {}
@@ -3369,6 +3373,7 @@
       }
     },
     "frameworks": {
+<<<<<<< HEAD
       "monoandroid12.0": {
         "dependencies": {
           "Xam.Plugin.Media": {
@@ -3409,6 +3414,9 @@
           }
         }
       }
+=======
+      "monoandroid12.0": {}
+>>>>>>> main
     }
   }
 }

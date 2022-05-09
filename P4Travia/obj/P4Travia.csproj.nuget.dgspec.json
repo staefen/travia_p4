@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj": {}
   },
   "projects": {
@@ -17,6 +18,23 @@
         "configFilePaths": [
           "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+    "/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/P4Travia.csproj": {}
+  },
+  "projects": {
+    "/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/P4Travia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/P4Travia.csproj",
+        "projectName": "P4Travia",
+        "projectPath": "/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/P4Travia.csproj",
+        "packagesPath": "/Users/MariaKristineTommer/.nuget/packages/",
+        "outputPath": "/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/MariaKristineTommer/.config/NuGet/NuGet.Config"
+>>>>>>> main
         ],
         "originalTargetFrameworks": [
           "monoandroid12.0"
@@ -32,6 +50,7 @@
         }
       },
       "frameworks": {
+<<<<<<< HEAD
         "monoandroid12.0": {
           "dependencies": {
             "Xam.Plugin.Media": {
@@ -72,6 +91,9 @@
             }
           }
         }
+=======
+        "monoandroid12.0": {}
+>>>>>>> main
       }
     }
   }
