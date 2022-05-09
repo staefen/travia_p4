@@ -10,7 +10,7 @@
 	4. Sign Up
 	5. Bottom Navigation Bar
 	6. Create Post
-	7.
+	7. Dialog Fragment
 	8.
 	9.
 	10.
@@ -90,5 +90,8 @@
 	<string name="time_post">Time</string>
 	<string name="date_post">Date</string>
 	<string name="title_post">Title</string>
+
+	<!-- Dialog Fragment -->
+	<string name="on_hold">Please wait...</string>
 
 </resources>

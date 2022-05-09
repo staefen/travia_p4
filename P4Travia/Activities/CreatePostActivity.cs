@@ -10,16 +10,16 @@ using System;
 using P4Travia.Helpers;
 using Java.Util;
 using Firebase.Firestore;
-//using P4Travia.Fragments;
 using Android.Views;
 using Firebase.Storage;
+using P4Travia.Fragments;
 
 namespace P4Travia.Activities
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = false)]
     public class CreatePostActivity : AppCompatActivity
     {
-        AndroidX.AppCompat.Widget.Toolbar toolbar;
+        //AndroidX.AppCompat.Widget.Toolbar toolbar;
         ImageView postImage;
         Button postButton;
         EditText titleEditText;
@@ -40,7 +40,7 @@ namespace P4Travia.Activities
         };
 
         byte[] fileBytes;
-       // ProgressDialogFragment progressDialogue;
+        ProgressDialogFragment progressDialogue;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -94,7 +94,7 @@ namespace P4Travia.Activities
             postMap.Put("image_id", postKey);
 
 
-            //ShowProgressDialogue("Saving Information ...");
+            ShowProgressDialogue("Posting ...");
 
             // Save Post Image to Firebase Storaage
             StorageReference storageReference = null;
@@ -209,22 +209,22 @@ namespace P4Travia.Activities
 
         }
 
-        //void ShowProgressDialogue(string status)
-        //{
-        //    progressDialogue = new ProgressDialogFragment(status);
-        //    var trans = SupportFragmentManager.BeginTransaction();
-        //    progressDialogue.Cancelable = false;
-        //    progressDialogue.Show(trans, "Progress");
-        //}
+        void ShowProgressDialogue(string status)
+        {
+            progressDialogue = new ProgressDialogFragment(status);
+            var trans = SupportFragmentManager.BeginTransaction();
+            progressDialogue.Cancelable = false;
+            progressDialogue.Show(trans, "Progress");
+        }
 
-        //void CloseProgressDialogue()
-        //{
-        //    if (progressDialogue != null)
-        //    {
-        //        progressDialogue.Dismiss();
-        //        progressDialogue = null;
-        //    }
-        //}
+        void CloseProgressDialogue()
+        {
+            if (progressDialogue != null)
+            {
+                progressDialogue.Dismiss();
+                progressDialogue = null;
+            }
+        }
 
 
         string GenerateRandomString(int lenght)
