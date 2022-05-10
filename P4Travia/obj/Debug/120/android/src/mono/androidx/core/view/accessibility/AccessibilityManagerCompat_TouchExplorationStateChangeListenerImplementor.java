@@ -11,15 +11,9 @@ public class AccessibilityManagerCompat_TouchExplorationStateChangeListenerImple
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-<<<<<<< HEAD
-			"n_onTouchExplorationStateChanged:(Z)V:GetOnTouchExplorationStateChanged_ZHandler:AndroidX.Core.View.Accessibiity.AccessibilityManagerCompat/ITouchExplorationStateChangeListenerInvoker, Xamarin.AndroidX.Core\n" +
-			"";
-		mono.android.Runtime.register ("AndroidX.Core.View.Accessibiity.AccessibilityManagerCompat+ITouchExplorationStateChangeListenerImplementor, Xamarin.AndroidX.Core", AccessibilityManagerCompat_TouchExplorationStateChangeListenerImplementor.class, __md_methods);
-=======
 			"n_onTouchExplorationStateChanged:(Z)V:GetOnTouchExplorationStateChanged_ZHandler:AndroidX.Core.View.Accessibility.AccessibilityManagerCompat/ITouchExplorationStateChangeListenerInvoker, Xamarin.AndroidX.Core\n" +
 			"";
 		mono.android.Runtime.register ("AndroidX.Core.View.Accessibility.AccessibilityManagerCompat+ITouchExplorationStateChangeListenerImplementor, Xamarin.AndroidX.Core", AccessibilityManagerCompat_TouchExplorationStateChangeListenerImplementor.class, __md_methods);
->>>>>>> main
 	}
 
 
@@ -27,11 +21,7 @@ public class AccessibilityManagerCompat_TouchExplorationStateChangeListenerImple
 	{
 		super ();
 		if (getClass () == AccessibilityManagerCompat_TouchExplorationStateChangeListenerImplementor.class)
-<<<<<<< HEAD
-			mono.android.TypeManager.Activate ("AndroidX.Core.View.Accessibiity.AccessibilityManagerCompat+ITouchExplorationStateChangeListenerImplementor, Xamarin.AndroidX.Core", "", this, new java.lang.Object[] {  });
-=======
 			mono.android.TypeManager.Activate ("AndroidX.Core.View.Accessibility.AccessibilityManagerCompat+ITouchExplorationStateChangeListenerImplementor, Xamarin.AndroidX.Core", "", this, new java.lang.Object[] {  });
->>>>>>> main
 	}
 
 

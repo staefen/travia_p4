@@ -58,15 +58,9 @@ application_config:
 	/* system_property_count */
 	.long	0
 	/* number_of_assemblies_in_apk */
-<<<<<<< HEAD
-	.long	55
-	/* bundled_assembly_name_width */
-	.long	63
-=======
 	.long	123
 	/* bundled_assembly_name_width */
 	.long	67
->>>>>>> main
 	/* number_of_assembly_store_files */
 	.long	2
 	/* mono_components_mask */
@@ -111,11 +105,7 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",%progbits,1
 	.type	.L.env.str.8, %object
 .L.env.str.8:
-<<<<<<< HEAD
-	.asciz	"d36f0876-dc3f-4c7b-8fca-c15edb299a0c"
-=======
-	.asciz	"00582a5c-6418-49b7-98eb-99ab6f1ff53f"
->>>>>>> main
+	.asciz	"707cfa53-caec-42a3-8821-268b7d7b61cc"
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",%progbits,1
 	.type	.L.env.str.9, %object
@@ -172,120 +162,6 @@ app_environment_variables:
 app_system_properties:
 	.size	app_system_properties, 0
 
-<<<<<<< HEAD
-	/* Bundled assembly name buffers, all 63 bytes long */
-	.section	.bss.bundled_assembly_names,"aw",%nobits
-.L.env.buf.1:
-	.zero	63
-.L.env.buf.2:
-	.zero	63
-.L.env.buf.3:
-	.zero	63
-.L.env.buf.4:
-	.zero	63
-.L.env.buf.5:
-	.zero	63
-.L.env.buf.6:
-	.zero	63
-.L.env.buf.7:
-	.zero	63
-.L.env.buf.8:
-	.zero	63
-.L.env.buf.9:
-	.zero	63
-.L.env.buf.10:
-	.zero	63
-.L.env.buf.11:
-	.zero	63
-.L.env.buf.12:
-	.zero	63
-.L.env.buf.13:
-	.zero	63
-.L.env.buf.14:
-	.zero	63
-.L.env.buf.15:
-	.zero	63
-.L.env.buf.16:
-	.zero	63
-.L.env.buf.17:
-	.zero	63
-.L.env.buf.18:
-	.zero	63
-.L.env.buf.19:
-	.zero	63
-.L.env.buf.20:
-	.zero	63
-.L.env.buf.21:
-	.zero	63
-.L.env.buf.22:
-	.zero	63
-.L.env.buf.23:
-	.zero	63
-.L.env.buf.24:
-	.zero	63
-.L.env.buf.25:
-	.zero	63
-.L.env.buf.26:
-	.zero	63
-.L.env.buf.27:
-	.zero	63
-.L.env.buf.28:
-	.zero	63
-.L.env.buf.29:
-	.zero	63
-.L.env.buf.30:
-	.zero	63
-.L.env.buf.31:
-	.zero	63
-.L.env.buf.32:
-	.zero	63
-.L.env.buf.33:
-	.zero	63
-.L.env.buf.34:
-	.zero	63
-.L.env.buf.35:
-	.zero	63
-.L.env.buf.36:
-	.zero	63
-.L.env.buf.37:
-	.zero	63
-.L.env.buf.38:
-	.zero	63
-.L.env.buf.39:
-	.zero	63
-.L.env.buf.40:
-	.zero	63
-.L.env.buf.41:
-	.zero	63
-.L.env.buf.42:
-	.zero	63
-.L.env.buf.43:
-	.zero	63
-.L.env.buf.44:
-	.zero	63
-.L.env.buf.45:
-	.zero	63
-.L.env.buf.46:
-	.zero	63
-.L.env.buf.47:
-	.zero	63
-.L.env.buf.48:
-	.zero	63
-.L.env.buf.49:
-	.zero	63
-.L.env.buf.50:
-	.zero	63
-.L.env.buf.51:
-	.zero	63
-.L.env.buf.52:
-	.zero	63
-.L.env.buf.53:
-	.zero	63
-.L.env.buf.54:
-	.zero	63
-.L.env.buf.55:
-	.zero	63
-=======
 	/* Bundled assembly name buffers, all 67 bytes long */
 	.section	.bss.bundled_assembly_names,"aw",%nobits
 .L.env.buf.1:
@@ -534,7 +410,6 @@ app_system_properties:
 	.zero	67
 .L.env.buf.123:
 	.zero	67
->>>>>>> main
 
 	/* Bundled assemblies data */
 	.section	.data.bundled_assemblies,"aw",%progbits
@@ -1257,9 +1132,6 @@ bundled_assemblies:
 	/* name */
 	.long	.L.env.buf.55
 
-<<<<<<< HEAD
-	.size	bundled_assemblies, 1320
-=======
 	/* apk_fd */
 	.long	-1
 	/* data_offset */
@@ -2145,7 +2017,6 @@ bundled_assemblies:
 	.long	.L.env.buf.123
 
 	.size	bundled_assemblies, 2952
->>>>>>> main
 
 
 	/* Assembly store individual assembly data */

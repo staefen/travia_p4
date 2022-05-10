@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\olive\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj": {}
   },
   "projects": {
@@ -17,23 +16,6 @@
         "skipContentFileWrite": true,
         "configFilePaths": [
           "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj",
-        "projectName": "P4Travia",
-        "projectPath": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj",
-        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\obj\\",
-        "projectStyle": "PackageReference",
-        "skipContentFileWrite": true,
-        "configFilePaths": [
-          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> main
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
