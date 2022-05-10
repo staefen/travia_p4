@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
@@ -41,7 +41,7 @@
 		android:id="@+id/password" />
 
     <TextView
-		android:text="@string/birthdate"
+		android:text="@string/birthday"
 		android:textAppearance="?android:attr/textAppearanceLarge"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"

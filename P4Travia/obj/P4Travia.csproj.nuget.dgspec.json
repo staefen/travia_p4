@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\olive\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj": {}
   },
   "projects": {
@@ -16,6 +17,23 @@
         "skipContentFileWrite": true,
         "configFilePaths": [
           "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj",
+        "projectName": "P4Travia",
+        "projectPath": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj",
+        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> main
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,17 +52,49 @@
       "frameworks": {
         "monoandroid12.0": {
           "dependencies": {
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "Xamarin.AndroidX.AppCompat": {
               "target": "Package",
               "version": "[1.2.0.5, )"
+            },
+            "Xamarin.AndroidX.CardView": {
+              "target": "Package",
+              "version": "[1.0.0.15, )"
+            },
+            "Xamarin.AndroidX.ConstraintLayout": {
+              "target": "Package",
+              "version": "[2.1.3.1, )"
+            },
+            "Xamarin.AndroidX.DynamicAnimation": {
+              "target": "Package",
+              "version": "[1.0.0.13, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
             },
+            "Xamarin.Firebase.Auth": {
+              "target": "Package",
+              "version": "[121.0.1.4, )"
+            },
+            "Xamarin.Firebase.Firestore": {
+              "target": "Package",
+              "version": "[123.0.3.3, )"
+            },
+            "Xamarin.Firebase.Storage": {
+              "target": "Package",
+              "version": "[118.1.0, )"
+            },
             "Xamarin.Google.Android.Material": {
               "target": "Package",
               "version": "[1.0.0.1, )"
+            },
+            "Xamarin.Google.Guava": {
+              "target": "Package",
+              "version": "[31.1.0, )"
             }
           }
         }
