@@ -19,7 +19,7 @@ android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:gravity="center"
+        android:layout_marginLeft="30dp"
         android:text="@string/add_photo"
         android:textSize="35sp"
         android:textStyle="bold" />
@@ -28,7 +28,7 @@ android:orientation="vertical"
         android:id="@+id/enterLanguageDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center" 
+        android:layout_marginLeft="30dp" 
         android:text="@string/add_photo_desc"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
