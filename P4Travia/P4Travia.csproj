@@ -336,6 +336,8 @@
   <ItemGroup>
     <Compile Include="Activities\CreatePostActivity.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
+    <Compile Include="Adapter\ActivityPostAdapter.cs" />
+    <Compile Include="Datamodels\ActivityPost.cs" />
     <Compile Include="Fragments\BrowseActivitiesFragment.cs.cs" />
     <Compile Include="Fragments\ProgressDialogFragment.cs" />
     <Compile Include="Helpers\AppDataHelper.cs" />

@@ -437,6 +437,8 @@ C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\android\src\crc64a0
 C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\android\src\crc64a0e0a82d0db9a07d\TextToSpeechImplementation.java
 C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\android\src\crc64a0e0a82d0db9a07d\WebAuthenticatorCallbackActivity.java
 C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\android\src\crc64a0e0a82d0db9a07d\WebAuthenticatorIntermediateActivity.java
+C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\android\src\crc64f7889c72c4abfac1\ActivityPostAdapter.java
+C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\android\src\crc64f7889c72c4abfac1\ActivityPostAdapterViewHolder.java
 C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\android\src\mono\androidx\activity\contextaware\OnContextAvailableListenerImplementor.java
 C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\android\src\mono\androidx\appcompat\app\ActionBar_OnMenuVisibilityListenerImplementor.java
 C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\android\src\mono\androidx\appcompat\app\ActionBar_OnNavigationListenerImplementor.java
