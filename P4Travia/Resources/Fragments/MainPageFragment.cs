@@ -19,31 +19,40 @@ namespace P4Travia
     {
         ImageView allButton;
         ImageView foodButton;
-        TextView all;
+        ImageView musicButton;
         BrowseActivitiesFragment browseActivitiesFragment;
+       
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             View view = inflater.Inflate(Resource.Layout.mainpage, container, false);
+            ConnectViews(view);
             return view;
+        }
 
+        private void ConnectViews(View view)
+        {
             allButton = (ImageView)view.FindViewById(Resource.Id.allimage);
             foodButton = (ImageView)view.FindViewById(Resource.Id.foodrounded);
-            all = (TextView)view.FindViewById(Resource.Id.othertext);
+            musicButton = (ImageView)view.FindViewById(Resource.Id.musicrounded);
 
 
             allButton.Click += AllButton_Click;
             foodButton.Click += FoodButton_Click;
-            all.Click += All_Click;
-
-            
+            musicButton.Click += MusicButton_Click;
         }
 
-        private void All_Click(object sender, EventArgs e)
+        private void MusicButton_Click(object sender, EventArgs e)
         {
-            Toast.MakeText(this.Activity, "det virker", ToastLength.Long).Show();
+            Intent intent = new Intent(this.Activity, typeof(BrowseActivitiesFragment));
+            intent.PutExtra("category", "Music");
+            browseActivitiesFragment = new BrowseActivitiesFragment();
+            var transaction = FragmentManager.BeginTransaction()
+                .Replace(Resource.Id.fragmentcontainer, browseActivitiesFragment, "BrowseActivitiesFragment")
+                .Commit();
+
         }
 
         private void AllButton_Click(object sender, EventArgs e)
@@ -51,23 +60,21 @@ namespace P4Travia
             Intent intent = new Intent(this.Activity, typeof(BrowseActivitiesFragment));
             intent.PutExtra("category", "All");
             StartActivity(intent);
+
         }
 
         private void FoodButton_Click(object sender, EventArgs e)
         {
-            Toast.MakeText(this.Activity, "det virker", ToastLength.Long).Show();
-           
+            Intent intent = new Intent(this.Activity, typeof(BrowseActivitiesFragment));
+            intent.PutExtra("category", "Food");
+            browseActivitiesFragment = new BrowseActivitiesFragment();
+            var transaction = FragmentManager.BeginTransaction()
+                .Replace(Resource.Id.fragmentcontainer, browseActivitiesFragment, "BrowseActivitiesFragment")
+                .Commit();
+
         }
 
-        
-
-
-        /*Intent intent = new Intent(this.Activity, typeof(BrowseActivitiesFragment));
-        intent.PutExtra("category", "Food");
-            browseActivitiesFragment = new BrowseActivitiesFragment();
-        var transaction = FragmentManager.BeginTransaction()
-            .Add(Resource.Id.fragmentcontainer, browseActivitiesFragment, "BrowseActivitiesFragment")
-            .Commit();*/
+       
 
     }
 

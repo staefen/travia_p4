@@ -37,14 +37,18 @@ namespace P4Travia
             categoryTextView = (TextView)view.FindViewById(Resource.Id.category);
             activityRecyclerView = (RecyclerView)view.FindViewById(Resource.Id.activityRecyclerView);
 
+
             category = this.Activity.Intent.GetStringExtra("category");
             categoryTextView.Text = category;
+
+            
 
 
             FloatingActionButton floatingAddButton = (FloatingActionButton)view.FindViewById(Resource.Id.floatingAddButton);
 
         }
 
+        
     }
 
 }

@@ -15,11 +15,16 @@ namespace P4Travia
 {
     public class ProfileFragment : AndroidX.Fragment.App.Fragment
     {
+        Button reportButton;
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             View view = inflater.Inflate(Resource.Layout.profile, container, false);
             return view;
+
+            reportButton = (Button)view.FindViewById(Resource.Id.reportbutton);
+
         }
+
     }
 }
