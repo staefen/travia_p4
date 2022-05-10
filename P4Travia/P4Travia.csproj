@@ -338,6 +338,7 @@
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Adapter\ActivityPostAdapter.cs" />
     <Compile Include="Datamodels\ActivityPost.cs" />
+    <Compile Include="EventListener\PostEventListener.cs" />
     <Compile Include="Fragments\BrowseActivitiesFragment.cs.cs" />
     <Compile Include="Fragments\ProgressDialogFragment.cs" />
     <Compile Include="Helpers\AppDataHelper.cs" />
@@ -556,6 +557,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\TraviaLaunchIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\post.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

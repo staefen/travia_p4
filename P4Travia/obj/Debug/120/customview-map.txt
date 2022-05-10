@@ -2,6 +2,7 @@ adaptive-icon;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher.xml
 adaptive-icon;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher_round.xml
 androidx.cardview.widget.CardView;obj\Debug\120\res\layout\browse.xml
 androidx.cardview.widget.CardView;obj\Debug\120\res\layout\mainpage.xml
+androidx.cardview.widget.CardView;obj\Debug\120\res\layout\post.xml
 androidx.cardview.widget.CardView;obj\Debug\120\res\layout\viewactivity.xml
 androidx.coordinatorlayout.widget.CoordinatorLayout;obj\Debug\120\res\layout\browseactivities.xml
 androidx.recyclerview.widget.RecyclerView;obj\Debug\120\res\layout\browseactivities.xml
@@ -46,6 +47,7 @@ ImageView;obj\Debug\120\res\layout\activity_main.xml
 ImageView;obj\Debug\120\res\layout\browse.xml
 ImageView;obj\Debug\120\res\layout\create_post.xml
 ImageView;obj\Debug\120\res\layout\mainpage.xml
+ImageView;obj\Debug\120\res\layout\post.xml
 ImageView;obj\Debug\120\res\layout\profile.xml
 ImageView;obj\Debug\120\res\layout\signup_4.xml
 ImageView;obj\Debug\120\res\layout\viewactivity.xml
@@ -58,6 +60,7 @@ LinearLayout;obj\Debug\120\res\layout\browseactivities.xml
 LinearLayout;obj\Debug\120\res\layout\create_post.xml
 LinearLayout;obj\Debug\120\res\layout\login.xml
 LinearLayout;obj\Debug\120\res\layout\login_signup_start.xml
+LinearLayout;obj\Debug\120\res\layout\post.xml
 LinearLayout;obj\Debug\120\res\layout\profile.xml
 LinearLayout;obj\Debug\120\res\layout\progress_dialog.xml
 LinearLayout;obj\Debug\120\res\layout\settings.xml
@@ -86,6 +89,7 @@ RelativeLayout;obj\Debug\120\res\layout\bottom_nav_bar.xml
 RelativeLayout;obj\Debug\120\res\layout\create_post.xml
 RelativeLayout;obj\Debug\120\res\layout\mainpage.xml
 RelativeLayout;obj\Debug\120\res\layout\myactivities.xml
+RelativeLayout;obj\Debug\120\res\layout\post.xml
 RelativeLayout;obj\Debug\120\res\layout\profile.xml
 resources;obj\Debug\120\res\values\colors.xml
 resources;obj\Debug\120\res\values\dimens.xml
@@ -112,6 +116,7 @@ TextView;obj\Debug\120\res\layout\create_post.xml
 TextView;obj\Debug\120\res\layout\login.xml
 TextView;obj\Debug\120\res\layout\mainpage.xml
 TextView;obj\Debug\120\res\layout\myactivities.xml
+TextView;obj\Debug\120\res\layout\post.xml
 TextView;obj\Debug\120\res\layout\profile.xml
 TextView;obj\Debug\120\res\layout\progress_dialog.xml
 TextView;obj\Debug\120\res\layout\settings.xml
