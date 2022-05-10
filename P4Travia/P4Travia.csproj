@@ -355,6 +355,8 @@
     <Compile Include="EventListener\TaskCompletionListener.cs" />
     <Compile Include="Datamodels\UserDataModels.cs" />
     <Compile Include="Signup\Signup6.cs" />
+    <Compile Include="Activities\LocationActivity.cs" />
+    <Compile Include="Activities\NotificationActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="google-services %282%29.json" />
@@ -495,6 +497,14 @@
       <Generator></Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\toolbar.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\location_settings.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\notification_list.xml">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
