@@ -7,7 +7,7 @@ using Google.Android.Material.BottomNavigation;
 
 namespace P4Travia
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = false)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity, BottomNavigationView.IOnNavigationItemSelectedListener
     {
         //Liste af fragments
@@ -21,12 +21,12 @@ namespace P4Travia
 
             //Elementer i listen som refererer til de fragments vi har lavet
             fragments = new List<AndroidX.Fragment.App.Fragment>();
-            fragments.Add(new ProfileFragment());
+            fragments.Add(new ProfileViewFragment());
             fragments.Add(new MainPageFragment());
             fragments.Add(new CalendarFragment());
 
             SupportFragmentManager.BeginTransaction()
-                                    .Replace(Resource.Id.fragmentcontainer, fragments[1])
+                                    .Replace(Resource.Id.fragmentcontainer, fragments[0])
                                     .Commit();
 
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
