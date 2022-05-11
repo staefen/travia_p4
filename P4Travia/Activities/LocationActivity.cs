@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,38 +12,70 @@ using Android.Widget;
 
 namespace P4Travia.Activities
 {
-	[Activity (Label = "LocationActivity")]			
-	public class LocationActivity : Activity
-	{
-		protected override void OnCreate (Bundle savedInstanceState)
-		{
-			base.OnCreate (savedInstanceState);
-
-            SetButtons();
-            SetSeekbar();
-            SetLocationChange();
-            SetSWitchButtons();
-
-        }
-
-        //Switch buttons
-        private void SetSWitchButtons()
+    [Activity(Label = "LocationActivity")]
+    public class LocationActivity : Activity
+    {
+        protected override void OnCreate(Bundle savedInstanceState)
         {
+            base.OnCreate(savedInstanceState);
+
+            // SetButtons();
+            //  SetSeekbar();
+            // SetLocationChange();
+            
+            //SetSWitchButtons();
+
+
+            SetContentView(Resource.Layout.location_settings);
             Switch locationSwitch = FindViewById<Switch>(Resource.Id.switch_location);
-            Switch radiusSwitch = FindViewById<Switch>(Resource.Id.switch_radius);
+            locationSwitch.Checked = true;
 
-            //locationSwitch.Checked = true;
-            //radiusSwitch.Checked = true;
+            locationSwitch.CheckedChange += delegate (object sender, CompoundButton.CheckedChangeEventArgs e)
+            {
+                // var toast = Toast.MakeText(this, "I Love Xamarin !" +
+                // (e.IsChecked ? "Yes" : " No"), ToastLength.Short);
+                // toast.Show();
+                Toast.MakeText(this, "HEI", ToastLength.Short).Show();
+            };
 
-            //locationSwitch.CheckedChange += (s, b) =>
-            //{
-            //    bool isChecked = b.IsChecked;
-            //    if(isChecked)
-            //};
-        }
 
-        //Change location in toolbar
-        private void SetLocationChange()
+        TextView location_settings = (TextView)FindViewById(Resource.Id.location);
+        location_settings.Click += Location_Settings_Click;
+
+    }
+
+    //Switch buttons
+
+   /* private void SetSWitchButtons()
+    {
+        //Switch radiusSwitch = FindViewById<Switch>(Resource.Id.switch_radius);
+
+        //radiusSwitch.Checked = true;
+
+
+        //locationSwitch.CheckedChange += delegate(object sender, CompoundButton.CheckedChangeEventArgs e)
+        /*locationSwitch.CheckedChange += (s, e) =>
+        {
+            /*  bool isChecked = b.IsChecked;
+
+              LocationHandler lh = new LocationHandler();
+              Location usrloc = new Location(); */
+            /*
+              var toast = Toast.MakeText(this, "I Love Xamarin !" +
+              (e.IsChecked ? "Yes" : " No"), ToastLength.Short);
+              toast.Show(); */
+            /*
+            e.IsChecked ?  : ;
+            {    
+
+                lh.UserLocation(usrloc);
+            }
+        }; 
+
+    }*/
+
+            //Change location in toolbar
+            private void SetLocationChange()
         {
             EditText changeLocation = FindViewById<EditText>(Resource.Id.change_location);
             Button applyButton = FindViewById<Button>(Resource.Id.apply_button);
@@ -57,6 +88,8 @@ namespace P4Travia.Activities
             };
         }
 
+
+
         //Seekbar radius toogle 
         public void SetSeekbar()
         {
@@ -68,26 +101,6 @@ namespace P4Travia.Activities
                 textResult.Text = string.Format("{0}", e.Progress);
             };
 
-        }
-
-        //Toolbar buttons
-        private void SetButtons()
-        {
-            NotificationButton();
-            LocationSettings();
-        }
-
-        //Buttons
-        public void NotificationButton()
-        {
-            ImageView notification = (ImageView)FindViewById(Resource.Id.notification_bell);
-            notification.Click += Notification_Click;
-        }
-
-        public void LocationSettings()
-        {
-            TextView location_settings = (TextView)FindViewById(Resource.Id.location);
-            location_settings.Click += Location_Settings_Click;
         }
 
 
@@ -104,4 +117,3 @@ namespace P4Travia.Activities
 
     }
 }
-

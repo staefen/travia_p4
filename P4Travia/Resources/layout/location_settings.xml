@@ -65,7 +65,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="25dp"/>
                     <Switch
-                    android:id="@+id/switch_location"
+                        android:id="@+id/switch_location"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="30dp"
