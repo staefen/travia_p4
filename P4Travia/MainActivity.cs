@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Android.App;
 using Android.OS;
 using Android.Views;
+using Android.Widget;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.BottomNavigation;
 
@@ -17,6 +19,8 @@ namespace P4Travia
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            SetContentView(Resource.Layout.toolbar);
+            SetButtons();
             SetContentView(Resource.Layout.bottom_nav_bar);
 
             //Elementer i listen som refererer til de fragments vi har lavet
@@ -55,6 +59,39 @@ namespace P4Travia
                     return true;
             }
             return false;
+        }
+
+        //Toolbar
+
+        private void SetButtons()
+        {
+            NotificationButton();
+            LocationSettings();
+        }
+
+        //Buttons
+        public void NotificationButton()
+        {
+            ImageView notification = (ImageView)FindViewById(Resource.Id.notification_bell);
+            notification.Click += Notification_Click;
+        }
+
+        public void LocationSettings()
+        {
+            TextView location_settings = (TextView)FindViewById(Resource.Id.location);
+            location_settings.Click += Location_Settings_Click;
+        }
+
+
+        //Clicked buttons
+        private void Notification_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(NotificationActivity));
+        }
+
+        private void Location_Settings_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(LocationActivity));
         }
     }
 }
