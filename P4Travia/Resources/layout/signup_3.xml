@@ -30,6 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
         android:text="@string/enter_languages_desc"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -38,6 +39,7 @@
         android:id="@+id/danish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
         android:text="@string/danish"
         android:onClick="language_ItemSelected"
         />
@@ -45,13 +47,49 @@
         android:id="@+id/norwegian"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
         android:text="@string/norwegian"
+        android:onClick="language_ItemSelected"
         />
     <CheckBox
         android:id="@+id/swedish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
         android:text="@string/swedish"
+        android:onClick="language_ItemSelected"
+        />
+    <CheckBox
+        android:id="@+id/english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="@string/english"
+        android:onClick="language_ItemSelected"
+        />
+    <CheckBox
+        android:id="@+id/german"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="@string/german"
+        android:onClick="language_ItemSelected"
+        />
+    <CheckBox
+        android:id="@+id/french"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="@string/french"
+        android:onClick="language_ItemSelected"
+        />
+   <CheckBox
+        android:id="@+id/spanish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="@string/spanish"
+        android:onClick="language_ItemSelected"
         />
 
 
