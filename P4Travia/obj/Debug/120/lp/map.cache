@@ -79,6 +79,13 @@ Xamarin.Io.PerfMark.PerfMarkApi.dll
 Xamarin.Jetbrains.Annotations.dll
 Xamarin.Kotlin.StdLib.dll
 Xamarin.Protobuf.JavaLite.dll
+Plugin.Media.dll
+Xamarin.AndroidX.AsyncLayoutInflater.dll
+Xamarin.AndroidX.Legacy.Support.Core.UI.dll
+Xamarin.AndroidX.MultiDex.dll
+Xamarin.AndroidX.SlidingPaneLayout.dll
+Xamarin.AndroidX.SwipeRefreshLayout.dll
+Xamarin.Firebase.Storage.dll
 androidx.versionedparcelable.versionedparcelable.aar
 androidx.arch.core.core-runtime.aar
 androidx.lifecycle.lifecycle-runtime.aar
@@ -129,10 +136,3 @@ protolitewellknowntypes-18.0.0.aar
 firebasedatabasecollection-18.0.0.aar
 firebasefirestore-23.0.3.aar
 firebaseauth-21.0.1.aar
-Plugin.Media.dll
-Xamarin.AndroidX.AsyncLayoutInflater.dll
-Xamarin.AndroidX.Legacy.Support.Core.UI.dll
-Xamarin.AndroidX.MultiDex.dll
-Xamarin.AndroidX.SlidingPaneLayout.dll
-Xamarin.AndroidX.SwipeRefreshLayout.dll
-Xamarin.Firebase.Storage.dll
