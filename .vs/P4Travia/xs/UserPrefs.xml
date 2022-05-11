@@ -1,16 +1,45 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredDevice="pixel_3" AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredDevice="pixel_3" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Resources/layout/toolbar.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Signup/Signup5.cs">
     <Files>
-      <File FileName="P4Travia/MainActivity.cs" Line="27" Column="1" />
-      <File FileName="P4Travia/Resources/layout/toolbar.xml" Line="1" Column="1" />
+      <File FileName="P4Travia/EventListener/TaskCompletionListener.cs" Line="21" Column="10" />
+      <File FileName="P4Travia/Activities/ViewProfile.cs" Line="28" Column="1" />
+      <File FileName="P4Travia/Helpers/AppDataHelper.cs" Line="91" Column="6" />
+      <File FileName="P4Travia/EventListener/PostEventListener.cs" Line="20" Column="46" />
+      <File FileName="P4Travia/Activities/CreatePostActivity.cs" Line="75" Column="22" />
+      <File FileName="P4Travia/Activities/SplashActivity.cs" Line="19" Column="29" />
+      <File FileName="P4Travia/MainActivity.cs" Line="30" Column="51" />
+      <File FileName="P4Travia/Signup/Signup5.cs" Line="28" Column="44" />
+      <File FileName="P4Travia/Signup/Signup4.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="P4Travia" expanded="True">
+            <Node name="P4Travia" expanded="True">
+              <Node name="Activities" expanded="True" />
+              <Node name="Datamodels" expanded="True" />
+              <Node name="EventListener" expanded="True" />
+              <Node name="Helpers" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+              </Node>
+              <Node name="Signup" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_pie_9_0_-_api_28" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
 </Properties>
