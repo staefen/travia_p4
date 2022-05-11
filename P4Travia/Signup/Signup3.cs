@@ -25,9 +25,7 @@ namespace P4Travia.Signup
 
         [Export("language_ItemSelected")]
 
-
-
-        private void language_ItemSelected(View view)
+        public void language_ItemSelected(View view)
         {
             switch (view.Id)
             {
@@ -70,8 +68,6 @@ namespace P4Travia.Signup
             password = Intent.GetStringExtra("Password");
             birthday = Intent.GetIntExtra("Birthday", 000000);
             name = Intent.GetStringExtra("Name");
-
-            language_ItemSelected();
 
         }
 

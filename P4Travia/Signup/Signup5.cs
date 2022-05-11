@@ -70,7 +70,7 @@ namespace P4Travia.Signup
         private void Skip3_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(Signup6));
-            intent.PutExtra("Language", language);
+            intent.PutStringArrayListExtra("Language", language);
             intent.PutExtra("Nationality", nationality);
             intent.PutExtra("Gender", gender);
             intent.PutExtra("Birthday", birthday);

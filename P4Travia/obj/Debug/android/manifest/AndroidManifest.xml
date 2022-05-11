@@ -28,7 +28,7 @@
     <activity android:name="crc64707a1cf70e1e4d41.Signup3" android:label="Signup3" />
     <activity android:name="crc64707a1cf70e1e4d41.Signup4" android:label="Signup4" />
     <activity android:name="crc64707a1cf70e1e4d41.Signup5" android:label="Signup5" />
-    <activity android:name="crc64707a1cf70e1e4d41.MainActivity" android:exported="true" android:label="@string/app_name" android:theme="@style/AppTheme">
+    <activity android:name="crc64707a1cf70e1e4d41.SignupAndLogin" android:exported="true" android:label="@string/app_name" android:theme="@style/AppTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

@@ -95,7 +95,6 @@ shape;obj/Debug/res/drawable/curvededges_white.xml
 solid;obj/Debug/res/drawable/back.xml
 solid;obj/Debug/res/drawable/curvededges_white.xml
 Spinner;obj/Debug/res/layout/signup_2.xml
-Spinner;obj/Debug/res/layout/signup_3.xml
 string;obj/Debug/res/values/strings.xml
 string-array;obj/Debug/res/values/strings.xml
 stroke;obj/Debug/res/drawable/back.xml

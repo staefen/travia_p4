@@ -407,7 +407,6 @@
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc646957603ea1820544/MediaPickerActivity.java
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc646a795b0f4c3b2bdf/ProgressDialogFragment.java
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc64707a1cf70e1e4d41/Login.java
-/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc64707a1cf70e1e4d41/MainActivity.java
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc64707a1cf70e1e4d41/Signup1.java
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc64707a1cf70e1e4d41/Signup2.java
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc64707a1cf70e1e4d41/Signup3.java
@@ -544,3 +543,15 @@
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/app_shared_libraries/armeabi-v7a/libxamarin-app.so
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/app_shared_libraries/x86/libxamarin-app.so
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/app_shared_libraries/x86_64/libxamarin-app.so
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/assets/Mono.Android.Export.dll
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/assets/Mono.Android.Export.pdb
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc64707a1cf70e1e4d41/SignupAndLogin.java
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/bin/classes.dex
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/bin/classes2.dex
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_CleanIntermediateIfNeeded.stamp
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_CompileToDalvik.stamp
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_ConvertCustomView.stamp
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_ConvertResourcesCases.stamp
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_GenerateJavaStubs.stamp
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp

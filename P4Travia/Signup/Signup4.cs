@@ -58,7 +58,7 @@ namespace P4Travia.Signup
         {
 
             var intent = new Intent(this, typeof(Signup5));
-            intent.PutExtra("Language", language);
+            intent.PutStringArrayListExtra("Language", language);
             intent.PutExtra("Nationality", nationality);
             intent.PutExtra("Gender", gender);
             intent.PutExtra("Birthday", birthday);
