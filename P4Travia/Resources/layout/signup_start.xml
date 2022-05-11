@@ -103,5 +103,4 @@ android:orientation="vertical"
         android:textSize="25sp"
         android:padding="8dp"
         android:textAllCaps="false"/>
-
 </LinearLayout>

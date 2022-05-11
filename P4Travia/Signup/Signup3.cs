@@ -21,7 +21,7 @@ namespace P4Travia.Signup
         string email, password, name, gender, nationality;
         int birthday;
         IList<string> language = new List<string>();
-        CheckBox dan_OnClick, nor_OnClick, swe_OnClick;
+        CheckBox dan_OnClick, nor_OnClick, swe_OnClick, eng_OnClick, ger_OnClick, fre_OnClick, spa_OnClick;
 
         [Export("language_ItemSelected")]
 
@@ -40,6 +40,22 @@ namespace P4Travia.Signup
                 case Resource.Id.swedish:
                     Toast.MakeText(this, "Swedish selected", ToastLength.Short).Show();
                     language.Add("Swedish");
+                    break;
+                case Resource.Id.english:
+                    Toast.MakeText(this, "English selected", ToastLength.Short).Show();
+                    language.Add("English");
+                    break;
+                case Resource.Id.german:
+                    Toast.MakeText(this, "German selected", ToastLength.Short).Show();
+                    language.Add("German");
+                    break;
+                case Resource.Id.french:
+                    Toast.MakeText(this, "French selected", ToastLength.Short).Show();
+                    language.Add("French");
+                    break;
+                case Resource.Id.spanish:
+                    Toast.MakeText(this, "Spanish selected", ToastLength.Short).Show();
+                    language.Add("Spanish");
                     break;
             }
         }
