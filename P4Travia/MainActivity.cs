@@ -6,6 +6,7 @@ using Android.Views;
 using Android.Widget;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.BottomNavigation;
+using P4Travia.Activities;
 
 namespace P4Travia
 {

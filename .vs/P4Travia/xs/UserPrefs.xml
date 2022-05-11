@@ -1,16 +1,34 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredDevice="pixel_3" AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Resources/layout/toolbar.xml">
-    <Files>
-      <File FileName="P4Travia/MainActivity.cs" Line="27" Column="1" />
-      <File FileName="P4Travia/Resources/layout/toolbar.xml" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.P4Travia PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" AndroidDesignerPreferredDevice="pixel_3" AndroidDesignerPreferredTheme="AppTheme" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/MainActivity.cs">
+    <Files>
+      <File FileName="P4Travia/Resources/layout/toolbar.xml" Line="1" Column="1" IsPinned="True" />
+      <File FileName="P4Travia/MainActivity.cs" Line="91" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="P4Travia" expanded="True">
+            <Node name="P4Travia" expanded="True">
+              <Node name="Activities" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MultiItemStartupConfigurations />
 </Properties>
