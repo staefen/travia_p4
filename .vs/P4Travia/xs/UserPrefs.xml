@@ -12,13 +12,12 @@
         <State name="__root__">
           <Node name="P4Travia" expanded="True">
             <Node name="P4Travia" expanded="True">
+              <Node name="Activities" expanded="True">
+                <Node name="CreatePostActivity.cs" selected="True" />
+              </Node>
               <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True">
-                  <Node name="signup_1.xml" selected="True" />
-                </Node>
                 <Node name="values" expanded="True" />
               </Node>
-              <Node name="Signup" expanded="True" />
             </Node>
           </Node>
         </State>

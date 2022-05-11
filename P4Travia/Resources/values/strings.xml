@@ -100,7 +100,7 @@
 	<string name="french">French</string>
 	<string name="spanish">Spanish</string>
 	<string name="confirm">Confirm</string>
-
+	<string name="birthday_text">Birthday (DDMMYY)</string>
 
 
 	<!-- View activity -->

@@ -57,7 +57,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
         android:gravity="left"
-        android:text="@string/birthday"
+        android:text="@string/birthday_text"
         android:textAppearance="?android:attr/textAppearanceMedium"/>
 
     <EditText
