@@ -18,7 +18,7 @@ namespace P4Travia
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            View view = inflater.Inflate(Resource.Layout.profile, container, false);
+            View view = inflater.Inflate(Resource.Layout.edit_profile, container, false);
             return view;
         }
     }
