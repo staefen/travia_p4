@@ -92,14 +92,11 @@
 		<item>France</item>  
 		<item>England</item>
 	</string-array>
-	<string-array name="language_dropdown">
-		<item>Danish</item>
-		<item>Swedish</item>  
-		<item>Norwegian</item>  
-		<item>German</item>  
-		<item>French</item>  
-		<item>English</item>
-	</string-array>
+	<string name="danish">Danish</string>
+	<string name="norwegian">Norwegian</string>
+	<string name="swedish">Swedish</string>
+
+
 
 	<!-- View activity -->
 	<string name="location">location</string>

@@ -1,11 +1,15 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
-  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredDevice="pixel_3" PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredTheme="AppTheme" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Signup/SignupAndLogin.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Signup/Signup3.cs">
     <Files>
       <File FileName="P4Travia/Resources/layout/signup_4.xml" Line="35" Column="15" />
       <File FileName="P4Travia/Resources/layout/signup_6.xml" Line="28" Column="36" />
       <File FileName="P4Travia/Signup/SignupAndLogin.cs" Line="9" Column="2" />
       <File FileName="P4Travia/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="P4Travia/Signup/Signup3.cs" Line="35" Column="19" />
+      <File FileName="P4Travia/Signup/Signup5.cs" Line="59" Column="1" />
+      <File FileName="P4Travia/Signup/Signup6.cs" Line="77" Column="76" />
+      <File FileName="P4Travia/Signup/Signup4.cs" Line="47" Column="1" />
+      <File FileName="P4Travia/Resources/layout/signup_3.xml" Line="42" Column="48" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +20,7 @@
                 <Node name="layout" expanded="True" />
               </Node>
               <Node name="Signup" expanded="True">
-                <Node name="SignupAndLogin.cs" selected="True" />
+                <Node name="Signup3.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -27,11 +31,12 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredDevice="pixel_3" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
 </Properties>

@@ -20,6 +20,7 @@ Button;obj/Debug/res/layout/signup_6.xml
 Button;obj/Debug/res/layout/signup_start.xml
 Button;obj/Debug/res/layout/viewactivity.xml
 cache-path;/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/lp/56/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+CheckBox;obj/Debug/res/layout/signup_3.xml
 color;obj/Debug/res/values/colors.xml
 color;obj/Debug/res/values/ic_launcher_background.xml
 com.google.android.material.bottomnavigation.BottomNavigationView;obj/Debug/res/layout/bottom_nav_bar.xml

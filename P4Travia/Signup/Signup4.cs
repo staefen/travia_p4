@@ -4,6 +4,7 @@ using Android.Widget;
 using System;
 using Android.Runtime;
 using Android.Content;
+using System.Collections.Generic;
 
 namespace P4Travia.Signup
 {
@@ -12,8 +13,9 @@ namespace P4Travia.Signup
     {
         Button signup4;
         Button skip2;
-        string email, password, name, gender, nationality, language;
+        string email, password, name, gender, nationality;
         int birthday;
+        IList<string> language = new List<string>();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -27,20 +29,21 @@ namespace P4Travia.Signup
 
             skip2 = FindViewById<Button>(Resource.Id.btnSkip2);
             skip2.Click += Skip2_Click;
-        }
 
-        private void Signup4_Click(object sender, EventArgs e)
-        {
-            language = Intent.GetStringExtra("Language");
+            language = Intent.GetStringArrayListExtra("Language");
             nationality = Intent.GetStringExtra("Nationality");
             gender = Intent.GetStringExtra("Gender");
             email = Intent.GetStringExtra("Email");
             password = Intent.GetStringExtra("Password");
             birthday = Intent.GetIntExtra("Birthday", 000000);
             name = Intent.GetStringExtra("Name");
+        }
+
+        private void Signup4_Click(object sender, EventArgs e)
+        {
 
             var intent = new Intent(this, typeof(Signup5));
-            intent.PutExtra("Language", language);
+            intent.PutStringArrayListExtra("Language", language);
             intent.PutExtra("Nationality", nationality);
             intent.PutExtra("Gender", gender);
             intent.PutExtra("Birthday", birthday);
@@ -53,13 +56,6 @@ namespace P4Travia.Signup
 
         private void Skip2_Click(object sender, EventArgs e)
         {
-            language = Intent.GetStringExtra("Language");
-            nationality = Intent.GetStringExtra("Nationality");
-            gender = Intent.GetStringExtra("Gender");
-            email = Intent.GetStringExtra("Email");
-            password = Intent.GetStringExtra("Password");
-            birthday = Intent.GetIntExtra("Birthday", 000000);
-            name = Intent.GetStringExtra("Name");
 
             var intent = new Intent(this, typeof(Signup5));
             intent.PutExtra("Language", language);

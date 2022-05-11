@@ -12,7 +12,8 @@ using P4Travia.Helpers;
 using Android.Runtime;
 using Android.Content;
 using P4Travia.Fragments;
-
+using System.Collections.Generic;
+using Java.Lang;
 
 namespace P4Travia.Signup
 {
@@ -56,7 +57,7 @@ namespace P4Travia.Signup
             user.UserName = Intent.GetStringExtra("Name");
             user.Nationality = Intent.GetStringExtra("Nationality");
             user.Gender = Intent.GetStringExtra("Gender");
-            user.Language = Intent.GetStringExtra("Language");
+            user.Language = Intent.GetStringArrayListExtra("Language");
             user.Bio = Intent.GetStringExtra("Bio");
             user.Location = location;
 
@@ -73,7 +74,7 @@ namespace P4Travia.Signup
                   userMap.Put("username", user.UserName);
                   userMap.Put("nationality", user.Nationality);
                   userMap.Put("gender", user.Gender);
-                  userMap.Put("language", user.Language);
+                  userMap.Put("language", (Java.Lang.Object)user.Language);
                   userMap.Put("bio", user.Bio);
 
                   DocumentReference userReference = database.Collection("users").Document(mAuth.CurrentUser.Uid);

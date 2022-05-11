@@ -27,7 +27,7 @@ namespace P4Travia.Signup
             }
             else
             {
-                StartActivity(typeof(SignupStart));
+                StartActivity(typeof(SignupAndLogin));
             }
         }
 
