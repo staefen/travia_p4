@@ -1,3 +1,9 @@
+P4Travia.ProfileViewFragment, P4Travia;crc641bdd4867275d014e.ProfileViewFragment
+P4Travia.ProfileViewFragment;crc641bdd4867275d014e.ProfileViewFragment
+p4travia.ProfileViewFragment;crc641bdd4867275d014e.ProfileViewFragment
+P4Travia.SettingFragment, P4Travia;crc641bdd4867275d014e.SettingFragment
+P4Travia.SettingFragment;crc641bdd4867275d014e.SettingFragment
+p4travia.SettingFragment;crc641bdd4867275d014e.SettingFragment
 P4Travia.MainActivity, P4Travia;crc641bdd4867275d014e.MainActivity
 P4Travia.MainActivity;crc641bdd4867275d014e.MainActivity
 p4travia.MainActivity;crc641bdd4867275d014e.MainActivity
