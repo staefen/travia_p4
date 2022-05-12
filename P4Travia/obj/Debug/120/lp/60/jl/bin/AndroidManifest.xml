@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <!--
  Copyright (C) 2012 The Android Open Source Project
 
@@ -79,14 +78,6 @@
                 android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
-=======
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.firebase.auth.internal" >
-
-    <uses-sdk android:minSdkVersion="14" />
-
-    <application>
->>>>>>> main
     </application>
 
 </manifest>

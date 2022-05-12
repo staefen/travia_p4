@@ -1,10 +1,6 @@
 
 
-<<<<<<< HEAD
 AndroidX lifecycle common library:
-=======
-AndroidX lifecycle common library, AndroidX lifecycle livedatacore library, AndroidX lifecycle runtime library:
->>>>>>> main
 
 
    Copyright (c) 2005-2011, The Android Open Source Project
@@ -197,17 +193,10 @@ AndroidX lifecycle common library, AndroidX lifecycle livedatacore library, Andr
    END OF TERMS AND CONDITIONS
 
 
-<<<<<<< HEAD
 AndroidX lifecycle livedatacore library:
 
 
    Copyright (c) 2005-2011, The Android Open Source Project
-=======
-apksig:
-
-
-   Copyright (c) 2005-2008, The Android Open Source Project
->>>>>>> main
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -397,7 +386,6 @@ apksig:
    END OF TERMS AND CONDITIONS
 
 
-<<<<<<< HEAD
 AndroidX lifecycle runtime library:
 
 
@@ -590,8 +578,6 @@ AndroidX lifecycle runtime library:
 
    END OF TERMS AND CONDITIONS
 
-=======
->>>>>>> main
 
 Animal Sniffer:
 
@@ -862,11 +848,7 @@ Error Prone:
    limitations under the License.
 
 
-<<<<<<< HEAD
 Guava JDK5:
-=======
-Guava JDK5, J2ObjC, JSpecify, SafeParcelable library:
->>>>>>> main
 
 
                                  Apache License
@@ -1279,16 +1261,10 @@ Guava JDK7:
    
 
 
-<<<<<<< HEAD
 J2ObjC:
 
 
                                  Apache License
-=======
-JsInterop Annotations:
-
-Apache License
->>>>>>> main
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
@@ -1476,11 +1452,7 @@ Apache License
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-<<<<<<< HEAD
    Copyright [yyyy] [name of copyright owner]
-=======
-   Copyright 2017 Google Inc.
->>>>>>> main
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -1494,10 +1466,7 @@ Apache License
    See the License for the specific language governing permissions and
    limitations under the License.
 
-<<<<<<< HEAD
 
-=======
->>>>>>> main
 JSR 305:
 
 Copyright (c) 2007-2009, JSR305 expert group
@@ -1528,7 +1497,6 @@ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
 CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 POSSIBILITY OF SUCH DAMAGE.
-<<<<<<< HEAD
 
 
 JsInterop Annotations:
@@ -2339,5 +2307,3 @@ JSpecify:
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
-=======
->>>>>>> main

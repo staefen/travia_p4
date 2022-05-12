@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <!--
  Copyright (C) 2012 The Android Open Source Project
 
@@ -20,10 +19,5 @@
     <uses-sdk android:minSdkVersion="14" />
 
     <application />
-=======
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.google.android.gms.auth.api.phone">
-
-    <uses-sdk android:minSdkVersion="14" />
->>>>>>> main
 
 </manifest>

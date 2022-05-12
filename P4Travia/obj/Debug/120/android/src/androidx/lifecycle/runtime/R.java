@@ -8,10 +8,6 @@ package androidx.lifecycle.runtime;
 
 public final class R {
 	public static final class id {
-<<<<<<< HEAD
-		public static final int view_tree_lifecycle_owner = 0x7f0901e8;
-=======
-		public static final int view_tree_lifecycle_owner = 0x7f090200;
->>>>>>> main
+		public static final int view_tree_lifecycle_owner = 0x7f0901fe;
 	}
 }

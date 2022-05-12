@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <!-- Copyright 2018 Google LLC -->
 <!--  -->
 <!-- Licensed under the Apache License, Version 2.0 (the "License"); -->
@@ -36,13 +35,5 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
     </application>
-=======
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.gms.tasks" >
-
-    <uses-sdk android:minSdkVersion="14" />
-
-    <application />
->>>>>>> main
 
 </manifest>

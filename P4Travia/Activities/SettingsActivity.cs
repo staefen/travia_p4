@@ -14,7 +14,7 @@ using System.Text;
 
 namespace P4Travia.Activities
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = false)]
     public class SettingsActivity : AppCompatActivity
     {
 
