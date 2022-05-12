@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+<<<<<<<< HEAD:P4Travia/obj/Debug/120/lp/139/jl/AndroidManifest.xml
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
  Copyright (C) 2012 The Android Open Source Project
@@ -54,5 +56,27 @@
             <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
     </application>
+========
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="firebase.com.protolitewrapper"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="29" />
+>>>>>>>> main:P4Travia/obj/Debug/120/lp/58/jl/AndroidManifest.xml
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.hdodenhof.circleimageview" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="23" />
+
+    <application />
+>>>>>>> main
 
 </manifest>

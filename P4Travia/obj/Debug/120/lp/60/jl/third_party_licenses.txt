@@ -1,5 +1,6 @@
 
 
+<<<<<<< HEAD
 AndroidX annotation experimental library:
 
 
@@ -193,6 +194,9 @@ AndroidX annotation experimental library:
    END OF TERMS AND CONDITIONS
 
 AndroidX lifecycle common library, AndroidX lifecycle livedatacore library, AndroidX lifecycle runtime library, AndroidX tracing library:
+=======
+AndroidX lifecycle common library, AndroidX lifecycle livedatacore library, AndroidX lifecycle runtime library:
+>>>>>>> main
 
 
    Copyright (c) 2005-2011, The Android Open Source Project
@@ -1053,7 +1057,11 @@ Firebase:
    limitations under the License.
    
 
+<<<<<<< HEAD
 Google Auto, Gson, Guava JDK5, J2ObjC, JSR 250, JSpecify, SafeParcelable library, Tink, conscrypt:
+=======
+Google Auto, Guava JDK5, J2ObjC, JSR 250, JSpecify, SafeParcelable library:
+>>>>>>> main
 
 
                                  Apache License

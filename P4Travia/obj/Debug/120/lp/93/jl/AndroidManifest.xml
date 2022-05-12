@@ -15,10 +15,19 @@
   limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="androidx.annotation.experimental" >
+=======
+    package="androidx.core" >
+>>>>>>> main
 
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="31" />
+<<<<<<< HEAD
+=======
+
+    <application android:appComponentFactory="androidx.core.app.CoreComponentFactory" />
+>>>>>>> main
 
 </manifest>

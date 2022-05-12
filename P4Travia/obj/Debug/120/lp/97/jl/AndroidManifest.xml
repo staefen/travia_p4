@@ -15,7 +15,11 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="androidx.savedstate" >
+=======
+    package="androidx.lifecycle.viewmodel" >
+>>>>>>> main
 
     <uses-sdk
         android:minSdkVersion="14"

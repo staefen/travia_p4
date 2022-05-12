@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <!-- Copyright 2019 Google LLC -->
 <!--  -->
 <!-- Licensed under the Apache License, Version 2.0 (the "License"); -->
@@ -21,6 +22,13 @@
         <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:authorities="${applicationId}.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" />
 
         <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:directBootAware="true" android:exported="false" tools:targetApi="n" />
+=======
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.google.firebase.auth.internal">
+
+    <uses-sdk android:minSdkVersion="14" />
+
+    <application>
+>>>>>>> main
     </application>
 
 </manifest>

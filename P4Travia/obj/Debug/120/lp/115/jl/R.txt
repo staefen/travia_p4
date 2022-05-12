@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 int attr alpha 0x0
 int attr drawerLayoutStyle 0x0
 int attr elevation 0x0
@@ -174,3 +175,5 @@ int styleable GradientColor_android_type 11
 int[] styleable GradientColorItem { 0x10101a5, 0x1010514 }
 int styleable GradientColorItem_android_color 0
 int styleable GradientColorItem_android_offset 1
+=======
+>>>>>>> main

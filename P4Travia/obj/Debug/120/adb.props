@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 AdbTarget=-s 2b296da33c017ece
+=======
+AdbTarget=-s RF8N73DG4TB
+>>>>>>> main
 AdbOptions=
