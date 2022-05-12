@@ -41,9 +41,9 @@
 		android:padding="5dp"
 		android:layout_width="match_parent"
 		android:layout_height="200dp"
-		android:inputType="textMultiLine"
 		android:background="@drawable/curvededges_white"
-		android:layout_marginBottom="0.0dp" />
+		android:imeOptions="actionSend"
+        android:inputType="textImeMultiLine"/>
 
     <LinearLayout
         android:layout_width="wrap_content"

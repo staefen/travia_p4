@@ -83,6 +83,9 @@ RelativeLayout;obj/Debug/res/layout/create_post.xml
 RelativeLayout;obj/Debug/res/layout/mainpage.xml
 RelativeLayout;obj/Debug/res/layout/myactivities.xml
 RelativeLayout;obj/Debug/res/layout/profile.xml
+RelativeLayout;obj/Debug/res/layout/signup_1.xml
+RelativeLayout;obj/Debug/res/layout/signup_2.xml
+RelativeLayout;obj/Debug/res/layout/signup_3.xml
 RelativeLayout;obj/Debug/res/layout/signup_start.xml
 resources;obj/Debug/res/values/colors.xml
 resources;obj/Debug/res/values/dimens.xml

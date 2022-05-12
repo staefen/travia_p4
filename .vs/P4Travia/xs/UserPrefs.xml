@@ -1,23 +1,34 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Resources/layout/signup_1.xml">
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredDevice="pixel_3" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Resources/layout/signup_2.xml">
     <Files>
-      <File FileName="P4Travia/Resources/layout/signup_3.xml" Line="75" Column="28" />
       <File FileName="P4Travia/Signup/Signup3.cs" Line="35" Column="27" />
       <File FileName="P4Travia/Resources/values/strings.xml" Line="97" Column="32" />
-      <File FileName="P4Travia/Resources/layout/signup_start.xml" Line="94" Column="1" />
-      <File FileName="P4Travia/Resources/layout/signup_1.xml" Line="1" Column="1" />
+      <File FileName="P4Travia/Resources/layout/signup_start.xml" Line="95" Column="1" />
+      <File FileName="P4Travia/Resources/layout/signup_1.xml" Line="66" Column="29" />
+      <File FileName="P4Travia/Resources/layout/signup_2.xml" Line="74" Column="27" />
+      <File FileName="P4Travia/Resources/layout/login_signup_start.xml" Line="6" Column="31" />
+      <File FileName="P4Travia/Resources/layout/signup_5.xml" Line="59" Column="1" />
+      <File FileName="P4Travia/Signup/SignupStart.cs" Line="39" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="P4Travia" expanded="True">
             <Node name="P4Travia" expanded="True">
-              <Node name="Activities" expanded="True">
-                <Node name="CreatePostActivity.cs" selected="True" />
-              </Node>
+              <Node name="Activities" expanded="True" />
               <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True">
+                  <Node name="signup_2.xml" selected="True" />
+                </Node>
                 <Node name="values" expanded="True" />
               </Node>
+              <Node name="Signup" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -27,13 +38,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredDevice="pixel_3" />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

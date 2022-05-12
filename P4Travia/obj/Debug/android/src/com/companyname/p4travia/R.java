@@ -7774,135 +7774,136 @@ public final class R {
     public static final int appbar_scrolling_view_behavior=0x7f0f0024;
     public static final int bio=0x7f0f0025;
     public static final int birthday=0x7f0f0026;
-    public static final int bottom_sheet_behavior=0x7f0f0027;
-    public static final int cat_all=0x7f0f0028;
-    public static final int cat_creativity=0x7f0f0029;
-    public static final int cat_culture=0x7f0f002a;
-    public static final int cat_food=0x7f0f002b;
-    public static final int cat_music=0x7f0f002c;
-    public static final int cat_nature=0x7f0f002d;
-    public static final int cat_other=0x7f0f002e;
-    public static final int cat_sports=0x7f0f002f;
+    public static final int birthday_text=0x7f0f0027;
+    public static final int bottom_sheet_behavior=0x7f0f0028;
+    public static final int cat_all=0x7f0f0029;
+    public static final int cat_creativity=0x7f0f002a;
+    public static final int cat_culture=0x7f0f002b;
+    public static final int cat_food=0x7f0f002c;
+    public static final int cat_music=0x7f0f002d;
+    public static final int cat_nature=0x7f0f002e;
+    public static final int cat_other=0x7f0f002f;
+    public static final int cat_sports=0x7f0f0030;
     /**
      * Main Page
      */
-    public static final int categories_title=0x7f0f0030;
-    public static final int character_counter_content_description=0x7f0f0031;
-    public static final int character_counter_pattern=0x7f0f0032;
-    public static final int common_google_play_services_enable_button=0x7f0f0033;
-    public static final int common_google_play_services_enable_text=0x7f0f0034;
-    public static final int common_google_play_services_enable_title=0x7f0f0035;
-    public static final int common_google_play_services_install_button=0x7f0f0036;
-    public static final int common_google_play_services_install_text=0x7f0f0037;
-    public static final int common_google_play_services_install_title=0x7f0f0038;
-    public static final int common_google_play_services_notification_channel_name=0x7f0f0039;
-    public static final int common_google_play_services_notification_ticker=0x7f0f003a;
-    public static final int common_google_play_services_unknown_issue=0x7f0f003b;
-    public static final int common_google_play_services_unsupported_text=0x7f0f003c;
-    public static final int common_google_play_services_update_button=0x7f0f003d;
-    public static final int common_google_play_services_update_text=0x7f0f003e;
-    public static final int common_google_play_services_update_title=0x7f0f003f;
-    public static final int common_google_play_services_updating_text=0x7f0f0040;
-    public static final int common_google_play_services_wear_update_text=0x7f0f0041;
-    public static final int common_open_on_phone=0x7f0f0042;
-    public static final int common_signin_button_text=0x7f0f0043;
-    public static final int common_signin_button_text_long=0x7f0f0044;
-    public static final int confirm=0x7f0f0045;
-    public static final int confirmPassword=0x7f0f0046;
-    public static final int copy_toast_msg=0x7f0f0047;
-    public static final int danish=0x7f0f0048;
-    public static final int date=0x7f0f0049;
-    public static final int date_post=0x7f0f004a;
-    public static final int delete_account=0x7f0f004b;
-    public static final int description=0x7f0f004c;
-    public static final int description_post=0x7f0f004d;
-    public static final int description_text_post=0x7f0f004e;
-    public static final int edit_profile=0x7f0f004f;
-    public static final int email=0x7f0f0050;
-    public static final int english=0x7f0f0051;
-    public static final int enter_bio=0x7f0f0052;
-    public static final int enter_info=0x7f0f0053;
-    public static final int enter_languages=0x7f0f0054;
-    public static final int enter_languages_desc=0x7f0f0055;
-    public static final int enter_location=0x7f0f0056;
-    public static final int enter_location_desc=0x7f0f0057;
-    public static final int fab_transformation_scrim_behavior=0x7f0f0058;
-    public static final int fab_transformation_sheet_behavior=0x7f0f0059;
-    public static final int fallback_menu_item_copy_link=0x7f0f005a;
-    public static final int fallback_menu_item_open_in_browser=0x7f0f005b;
-    public static final int fallback_menu_item_share_link=0x7f0f005c;
-    public static final int forgot_password=0x7f0f005d;
-    public static final int french=0x7f0f005e;
-    public static final int gender=0x7f0f005f;
-    public static final int german=0x7f0f0060;
-    public static final int going=0x7f0f0061;
-    public static final int help=0x7f0f0062;
-    public static final int hide_bottom_view_on_scroll_behavior=0x7f0f0063;
-    public static final int languages=0x7f0f0064;
+    public static final int categories_title=0x7f0f0031;
+    public static final int character_counter_content_description=0x7f0f0032;
+    public static final int character_counter_pattern=0x7f0f0033;
+    public static final int common_google_play_services_enable_button=0x7f0f0034;
+    public static final int common_google_play_services_enable_text=0x7f0f0035;
+    public static final int common_google_play_services_enable_title=0x7f0f0036;
+    public static final int common_google_play_services_install_button=0x7f0f0037;
+    public static final int common_google_play_services_install_text=0x7f0f0038;
+    public static final int common_google_play_services_install_title=0x7f0f0039;
+    public static final int common_google_play_services_notification_channel_name=0x7f0f003a;
+    public static final int common_google_play_services_notification_ticker=0x7f0f003b;
+    public static final int common_google_play_services_unknown_issue=0x7f0f003c;
+    public static final int common_google_play_services_unsupported_text=0x7f0f003d;
+    public static final int common_google_play_services_update_button=0x7f0f003e;
+    public static final int common_google_play_services_update_text=0x7f0f003f;
+    public static final int common_google_play_services_update_title=0x7f0f0040;
+    public static final int common_google_play_services_updating_text=0x7f0f0041;
+    public static final int common_google_play_services_wear_update_text=0x7f0f0042;
+    public static final int common_open_on_phone=0x7f0f0043;
+    public static final int common_signin_button_text=0x7f0f0044;
+    public static final int common_signin_button_text_long=0x7f0f0045;
+    public static final int confirm=0x7f0f0046;
+    public static final int confirmPassword=0x7f0f0047;
+    public static final int copy_toast_msg=0x7f0f0048;
+    public static final int danish=0x7f0f0049;
+    public static final int date=0x7f0f004a;
+    public static final int date_post=0x7f0f004b;
+    public static final int delete_account=0x7f0f004c;
+    public static final int description=0x7f0f004d;
+    public static final int description_post=0x7f0f004e;
+    public static final int description_text_post=0x7f0f004f;
+    public static final int edit_profile=0x7f0f0050;
+    public static final int email=0x7f0f0051;
+    public static final int english=0x7f0f0052;
+    public static final int enter_bio=0x7f0f0053;
+    public static final int enter_info=0x7f0f0054;
+    public static final int enter_languages=0x7f0f0055;
+    public static final int enter_languages_desc=0x7f0f0056;
+    public static final int enter_location=0x7f0f0057;
+    public static final int enter_location_desc=0x7f0f0058;
+    public static final int fab_transformation_scrim_behavior=0x7f0f0059;
+    public static final int fab_transformation_sheet_behavior=0x7f0f005a;
+    public static final int fallback_menu_item_copy_link=0x7f0f005b;
+    public static final int fallback_menu_item_open_in_browser=0x7f0f005c;
+    public static final int fallback_menu_item_share_link=0x7f0f005d;
+    public static final int forgot_password=0x7f0f005e;
+    public static final int french=0x7f0f005f;
+    public static final int gender=0x7f0f0060;
+    public static final int german=0x7f0f0061;
+    public static final int going=0x7f0f0062;
+    public static final int help=0x7f0f0063;
+    public static final int hide_bottom_view_on_scroll_behavior=0x7f0f0064;
+    public static final int languages=0x7f0f0065;
     /**
      * Sign up
      */
-    public static final int letsstart=0x7f0f0065;
-    public static final int letsstart_desc=0x7f0f0066;
+    public static final int letsstart=0x7f0f0066;
+    public static final int letsstart_desc=0x7f0f0067;
     /**
      * View activity
      */
-    public static final int location=0x7f0f0067;
-    public static final int location_post=0x7f0f0068;
-    public static final int log_out=0x7f0f0069;
-    public static final int login=0x7f0f006a;
-    public static final int more_info=0x7f0f006b;
-    public static final int mtrl_chip_close_icon_content_description=0x7f0f006c;
+    public static final int location=0x7f0f0068;
+    public static final int location_post=0x7f0f0069;
+    public static final int log_out=0x7f0f006a;
+    public static final int login=0x7f0f006b;
+    public static final int more_info=0x7f0f006c;
+    public static final int mtrl_chip_close_icon_content_description=0x7f0f006d;
     /**
      * Bottom Navigation bar
      */
-    public static final int myactivities_title=0x7f0f006d;
-    public static final int name=0x7f0f006e;
-    public static final int name_birthday_desc=0x7f0f006f;
-    public static final int nationality=0x7f0f0070;
-    public static final int next=0x7f0f0071;
-    public static final int norwegian=0x7f0f0072;
-    public static final int notifications=0x7f0f0073;
+    public static final int myactivities_title=0x7f0f006e;
+    public static final int name=0x7f0f006f;
+    public static final int name_birthday_desc=0x7f0f0070;
+    public static final int nationality=0x7f0f0071;
+    public static final int next=0x7f0f0072;
+    public static final int norwegian=0x7f0f0073;
+    public static final int notifications=0x7f0f0074;
     /**
      * Dialog Fragment
      */
-    public static final int on_hold=0x7f0f0074;
-    public static final int organising_user=0x7f0f0075;
-    public static final int participants_post=0x7f0f0076;
-    public static final int password=0x7f0f0077;
-    public static final int password_toggle_content_description=0x7f0f0078;
-    public static final int path_password_eye=0x7f0f0079;
-    public static final int path_password_eye_mask_strike_through=0x7f0f007a;
-    public static final int path_password_eye_mask_visible=0x7f0f007b;
-    public static final int path_password_strike_through=0x7f0f007c;
-    public static final int photo_text=0x7f0f007d;
+    public static final int on_hold=0x7f0f0075;
+    public static final int organising_user=0x7f0f0076;
+    public static final int participants_post=0x7f0f0077;
+    public static final int password=0x7f0f0078;
+    public static final int password_toggle_content_description=0x7f0f0079;
+    public static final int path_password_eye=0x7f0f007a;
+    public static final int path_password_eye_mask_strike_through=0x7f0f007b;
+    public static final int path_password_eye_mask_visible=0x7f0f007c;
+    public static final int path_password_strike_through=0x7f0f007d;
+    public static final int photo_text=0x7f0f007e;
     /**
      * Create Post
      */
-    public static final int post=0x7f0f007e;
-    public static final int privacy=0x7f0f007f;
-    public static final int search_menu_title=0x7f0f0080;
+    public static final int post=0x7f0f007f;
+    public static final int privacy=0x7f0f0080;
+    public static final int search_menu_title=0x7f0f0081;
     /**
      * Settings
      */
-    public static final int settings=0x7f0f0081;
-    public static final int signup=0x7f0f0082;
-    public static final int skip=0x7f0f0083;
-    public static final int spanish=0x7f0f0084;
-    public static final int spot_left=0x7f0f0085;
-    public static final int status_bar_notification_info_overflow=0x7f0f0086;
-    public static final int swedish=0x7f0f0087;
-    public static final int time=0x7f0f0088;
-    public static final int time_post=0x7f0f0089;
-    public static final int title_calendar=0x7f0f008a;
-    public static final int title_main=0x7f0f008b;
-    public static final int title_post=0x7f0f008c;
+    public static final int settings=0x7f0f0082;
+    public static final int signup=0x7f0f0083;
+    public static final int skip=0x7f0f0084;
+    public static final int spanish=0x7f0f0085;
+    public static final int spot_left=0x7f0f0086;
+    public static final int status_bar_notification_info_overflow=0x7f0f0087;
+    public static final int swedish=0x7f0f0088;
+    public static final int time=0x7f0f0089;
+    public static final int time_post=0x7f0f008a;
+    public static final int title_calendar=0x7f0f008b;
+    public static final int title_main=0x7f0f008c;
+    public static final int title_post=0x7f0f008d;
     /**
      * Bottom Navigation bar
      */
-    public static final int title_profile=0x7f0f008d;
-    public static final int user=0x7f0f008e;
-    public static final int username=0x7f0f008f;
+    public static final int title_profile=0x7f0f008e;
+    public static final int user=0x7f0f008f;
+    public static final int username=0x7f0f0090;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f100000;
