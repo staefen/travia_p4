@@ -44,10 +44,10 @@ namespace P4Travia.Activities
             SetContentView(Resource.Layout.edit_profile);
 
             Button saveEditButton = (Button)FindViewById(Resource.Id.saveEditButton);
-            ImageView postImageView = (ImageView)FindViewById(Resource.Id.editProfilePic);
+            ImageView profileImageView = (ImageView)FindViewById(Resource.Id.editProfilePic);
             editBioText = (EditText)FindViewById(Resource.Id.editBioText);
             editBioText.Text = thisProfile.Bio;
-            GetImage(thisProfile.DownloadUrl, postImageView);
+            GetImage(thisProfile.DownloadUrl, profileImageView);
 
             profileImage = (ImageView)FindViewById(Resource.Id.editProfilePic);
             profileImage.Click += ProfileImage_Click;

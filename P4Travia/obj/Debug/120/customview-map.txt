@@ -35,6 +35,7 @@ EditText;obj\Debug\120\res\layout\signup_5.xml
 EditText;obj\Debug\120\res\layout\signup_6.xml
 EditText;obj\Debug\120\res\layout\signup_start.xml
 external-cache-path;C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\58\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-files-path;obj\Debug\120\res\xml\file_paths.xml
 external-path;C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\58\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher.xml
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher_round.xml
@@ -59,7 +60,6 @@ LinearLayout;obj\Debug\120\res\layout\login.xml
 LinearLayout;obj\Debug\120\res\layout\login_signup_start.xml
 LinearLayout;obj\Debug\120\res\layout\progress_dialog.xml
 LinearLayout;obj\Debug\120\res\layout\settings.xml
-LinearLayout;obj\Debug\120\res\layout\settings_account.xml
 LinearLayout;obj\Debug\120\res\layout\signup_1.xml
 LinearLayout;obj\Debug\120\res\layout\signup_2.xml
 LinearLayout;obj\Debug\120\res\layout\signup_3.xml
@@ -70,6 +70,7 @@ LinearLayout;obj\Debug\120\res\layout\signup_start.xml
 LinearLayout;obj\Debug\120\res\layout\viewactivity.xml
 menu;obj\Debug\120\res\menu\navigation.xml
 paths;C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\58\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+paths;obj\Debug\120\res\xml\file_paths.xml
 ProgressBar;obj\Debug\120\res\layout\progress_dialog.xml
 ProgressBar;obj\Debug\120\res\layout\signup_1.xml
 ProgressBar;obj\Debug\120\res\layout\signup_2.xml
@@ -113,7 +114,6 @@ TextView;obj\Debug\120\res\layout\mainpage.xml
 TextView;obj\Debug\120\res\layout\myactivities.xml
 TextView;obj\Debug\120\res\layout\progress_dialog.xml
 TextView;obj\Debug\120\res\layout\settings.xml
-TextView;obj\Debug\120\res\layout\settings_account.xml
 TextView;obj\Debug\120\res\layout\signup_1.xml
 TextView;obj\Debug\120\res\layout\signup_2.xml
 TextView;obj\Debug\120\res\layout\signup_3.xml

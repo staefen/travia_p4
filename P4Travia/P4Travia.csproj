@@ -336,6 +336,7 @@
   <ItemGroup>
     <Compile Include="Activities\EditProfileActivity.cs" />
     <Compile Include="Activities\CreatePostActivity.cs" />
+    <Compile Include="Activities\SettingsActivity.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Fragments\ProgressDialogFragment.cs" />
     <Compile Include="Helpers\AppDataHelper.cs" />
@@ -475,9 +476,6 @@
     <AndroidResource Include="Resources\layout\settings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\settings_account.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\layout\signup_2.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -567,6 +565,14 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\round_female_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\profile_pic_placeholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\xml\file_paths.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
