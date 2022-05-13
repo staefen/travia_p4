@@ -92,14 +92,16 @@
 		<item>France</item>  
 		<item>England</item>
 	</string-array>
-	<string-array name="language_dropdown">
-		<item>Danish</item>
-		<item>Swedish</item>  
-		<item>Norwegian</item>  
-		<item>German</item>  
-		<item>French</item>  
-		<item>English</item>
-	</string-array>
+	<string name="danish">Danish</string>
+	<string name="norwegian">Norwegian</string>
+	<string name="swedish">Swedish</string>
+	<string name="english">English</string>
+	<string name="german">German</string>
+	<string name="french">French</string>
+	<string name="spanish">Spanish</string>
+	<string name="confirm">Confirm</string>
+	<string name="birthday_text">Birthday (DDMMYY)</string>
+
 
 	<!-- View activity -->
 	<string name="location">location</string>
@@ -126,9 +128,6 @@
 	<!-- Dialog Fragment -->
 	<string name="on_hold">Please wait...</string>
 
-
 	<!-- Bottom Navigation bar -->
 	<string name="myactivities_title">My Activities</string>
-
-
 </resources>

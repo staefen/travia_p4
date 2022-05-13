@@ -6,7 +6,7 @@ using Firebase.Auth;
 
 namespace P4Travia.Signup
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/MyTheme.Splash", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/MyTheme.Splash", MainLauncher = false)]
     public class SplashActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -27,7 +27,7 @@ namespace P4Travia.Signup
             }
             else
             {
-                StartActivity(typeof(SignupStart));
+                StartActivity(typeof(SignupAndLogin));
             }
         }
 

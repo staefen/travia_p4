@@ -69,7 +69,6 @@
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
-
         <androidx.cardview.widget.CardView
             android:text="@string/cat_food"
             android:id="@+id/Food"
@@ -148,7 +147,6 @@
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
-
 
         <androidx.cardview.widget.CardView
             android:id="@+id/Nature"

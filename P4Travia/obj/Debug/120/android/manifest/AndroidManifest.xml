@@ -16,22 +16,25 @@
   <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
     <uses-library android:name="org.apache.http.legacy" android:required="false" />
     <activity android:name="crc641bdd4867275d014e.MainActivity" android:label="@string/app_name" android:theme="@style/AppTheme" />
-    <activity android:name="crc64707a1cf70e1e4d41.SplashActivity" android:exported="true" android:label="@string/app_name" android:theme="@style/MyTheme.Splash">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
+    <activity android:name="crc64707a1cf70e1e4d41.SplashActivity" android:label="@string/app_name" android:theme="@style/MyTheme.Splash" />
     <activity android:name="crc64707a1cf70e1e4d41.SignupStart" android:label="SignupStart" />
     <activity android:name="crc64707a1cf70e1e4d41.Signup1" android:label="Signup1" />
     <activity android:name="crc64707a1cf70e1e4d41.Signup2" android:label="Signup2" />
     <activity android:name="crc64707a1cf70e1e4d41.Signup3" android:label="Signup3" />
     <activity android:name="crc64707a1cf70e1e4d41.Signup4" android:label="Signup4" />
     <activity android:name="crc64707a1cf70e1e4d41.Signup5" android:label="Signup5" />
-    <activity android:name="crc64707a1cf70e1e4d41.MainActivity" android:label="@string/app_name" android:theme="@style/AppTheme" />
+    <activity android:name="crc64707a1cf70e1e4d41.SignupAndLogin" android:exported="true" android:label="@string/app_name" android:theme="@style/AppTheme">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
     <activity android:name="crc64707a1cf70e1e4d41.Login" android:label="Login" />
     <activity android:name="crc64707a1cf70e1e4d41.Signup6" android:label="@string/app_name" android:theme="@style/AppTheme" />
     <activity android:name="crc6425dd1d1a6701386b.CreatePostActivity" android:label="@string/app_name" android:theme="@style/AppTheme" />
+    <activity android:name="crc6425dd1d1a6701386b.LocationActivity" android:label="LocationActivity" />
+    <activity android:name="crc6425dd1d1a6701386b.NotificationActivity" android:label="NotificationActivity" />
+    <activity android:name="crc6425dd1d1a6701386b.ViewProfile" android:label="ViewProfile" />
     <activity android:name="crc646957603ea1820544.MediaPickerActivity" android:configChanges="orientation|screenSize|uiMode" />
     <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />
     <receiver android:name="crc64a0e0a82d0db9a07d.BatteryBroadcastReceiver" android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" />

@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "dp0yjTMopeRizbuuZv6IDD+CcUimx8EBEE2mP3Iwvr4R+hNRjUZM2zlLFRjSFZ6dogM3O/+pWSdJEYlkF6FcyQ==",
+=======
+  "dgSpecHash": "7eOjBL4xzR5fnCXytEfKzIsk2mr42OXRhJFp4FxSZL7JknYlqRvzIcaclE1FBQebFq8dSzdXZoCoZQgwKBllSw==",
+>>>>>>> main
   "success": true,
   "projectFilePath": "C:\\Users\\olive\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj",
   "expectedPackageFiles": [
@@ -30,7 +34,11 @@
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.coordinatorlayout\\1.1.0.1\\xamarin.androidx.coordinatorlayout.1.1.0.1.nupkg.sha512",
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.core\\1.7.0.2\\xamarin.androidx.core.1.7.0.2.nupkg.sha512",
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.cursoradapter\\1.0.0.5\\xamarin.androidx.cursoradapter.1.0.0.5.nupkg.sha512",
+<<<<<<< HEAD
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.customview\\1.1.0.12\\xamarin.androidx.customview.1.1.0.12.nupkg.sha512",
+=======
+    "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.customview\\1.1.0.6\\xamarin.androidx.customview.1.1.0.6.nupkg.sha512",
+>>>>>>> main
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.documentfile\\1.0.1.13\\xamarin.androidx.documentfile.1.0.1.13.nupkg.sha512",
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.drawerlayout\\1.1.1\\xamarin.androidx.drawerlayout.1.1.1.nupkg.sha512",
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.dynamicanimation\\1.0.0.13\\xamarin.androidx.dynamicanimation.1.0.0.13.nupkg.sha512",
@@ -48,7 +56,11 @@
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.migration\\1.0.8\\xamarin.androidx.migration.1.0.8.nupkg.sha512",
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.multidex\\2.0.1.5\\xamarin.androidx.multidex.2.0.1.5.nupkg.sha512",
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.print\\1.0.0.13\\xamarin.androidx.print.1.0.0.13.nupkg.sha512",
+<<<<<<< HEAD
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.recyclerview\\1.2.1.6\\xamarin.androidx.recyclerview.1.2.1.6.nupkg.sha512",
+=======
+    "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.recyclerview\\1.1.0.1\\xamarin.androidx.recyclerview.1.1.0.1.nupkg.sha512",
+>>>>>>> main
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.savedstate\\1.1.0.1\\xamarin.androidx.savedstate.1.1.0.1.nupkg.sha512",
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.slidingpanelayout\\1.0.0.1\\xamarin.androidx.slidingpanelayout.1.0.0.1.nupkg.sha512",
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.androidx.swiperefreshlayout\\1.0.0.1\\xamarin.androidx.swiperefreshlayout.1.0.0.1.nupkg.sha512",
@@ -61,7 +73,10 @@
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.checkerframework.checkercompatqual\\2.5.5\\xamarin.checkerframework.checkercompatqual.2.5.5.nupkg.sha512",
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.codehaus.mojo.animalsnifferannotations\\1.18.0.1\\xamarin.codehaus.mojo.animalsnifferannotations.1.18.0.1.nupkg.sha512",
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+<<<<<<< HEAD
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
+=======
+>>>>>>> main
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.firebase.annotations\\116.0.0.3\\xamarin.firebase.annotations.116.0.0.3.nupkg.sha512",
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.firebase.auth\\121.0.1.4\\xamarin.firebase.auth.121.0.1.4.nupkg.sha512",
     "C:\\Users\\olive\\.nuget\\packages\\xamarin.firebase.auth.interop\\120.0.0.3\\xamarin.firebase.auth.interop.120.0.0.3.nupkg.sha512",

@@ -1,0 +1,60 @@
+﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Resources/layout/signup_4.xml">
+    <Files>
+      <File FileName="P4Travia/Signup/Signup5.cs" Line="27" Column="58" />
+      <File FileName="P4Travia/Signup/Signup6.cs" Line="49" Column="10" />
+      <File FileName="P4Travia/Signup/SignupAndLogin.cs" Line="25" Column="41" />
+      <File FileName="P4Travia/Signup/SignupStart.cs" Line="78" Column="2" />
+      <File FileName="P4Travia/Resources/layout/signup_start.xml" Line="1" Column="1" />
+      <File FileName="P4Travia/Signup/Signup3.cs" Line="73" Column="63" />
+      <File FileName="P4Travia/Resources/values/strings.xml" Line="130" Column="1" />
+      <File FileName="P4Travia/Signup/Signup4.cs" Line="27" Column="56" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1440" Column="3" />
+      <File FileName="P4Travia/Fragments/ProfileViewFragment.cs" Line="32" Column="1" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.Debugging.targets" Line="399" Column="2" />
+      <File FileName="P4Travia/P4Travia.csproj" Line="402" Column="46" />
+      <File FileName="P4Travia/Resources/layout/signup_3.xml" Line="118" Column="16" />
+      <File FileName="P4Travia/Activities/SplashActivity.cs" Line="25" Column="53" />
+      <File FileName="P4Travia/MainActivity.cs" Line="30" Column="51" />
+      <File FileName="P4Travia/Fragments/MainPageFragment.cs" Line="1" Column="1" />
+      <File FileName="P4Travia/Fragments/CalendarFragment.cs" Line="1" Column="1" />
+      <File FileName="P4Travia/Fragments/ProfileFragment.cs" Line="1" Column="1" />
+      <File FileName="P4Travia/Fragments/ProgressDialogFragment.cs" Line="1" Column="1" />
+      <File FileName="P4Travia/Fragments/SettingFragment.cs" Line="1" Column="1" />
+      <File FileName="P4Travia/Activities/ViewProfile.cs" Line="1" Column="1" />
+      <File FileName="P4Travia/Signup/Signup1.cs" Line="29" Column="1" />
+      <File FileName="P4Travia/Resources/layout/signup_4.xml" Line="61" Column="32" />
+      <File FileName="P4Travia/Resources/layout/signup_5.xml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="P4Travia" expanded="True">
+            <Node name="P4Travia" expanded="True">
+              <Node name="Activities" expanded="True" />
+              <Node name="Fragments" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True">
+                  <Node name="signup_4.xml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Signup" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.RF8N73DG4TB" />
+  <MonoDevelop.Ide.ItemProperties.P4Travia PreferredExecutionTarget="Android.RF8N73DG4TB" AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_3" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
+</Properties>
