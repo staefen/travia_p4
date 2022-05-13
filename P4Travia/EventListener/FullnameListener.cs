@@ -3,7 +3,7 @@ using P4Travia.Helpers;
 using Firebase.Firestore;
 namespace P4Travia.EventListeners
 {
-    public class ProfileEventListener : Java.Lang.Object, IOnSuccessListener
+    public class FullnameListener : Java.Lang.Object, IOnSuccessListener
     {
         public void FetchUser()
         {

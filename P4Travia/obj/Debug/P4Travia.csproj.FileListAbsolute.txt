@@ -592,3 +592,7 @@
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc641bdd4867275d014e/PostAdapter.java
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc641bdd4867275d014e/PostAdapterViewHolder.java
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc649c6668b335947ec3/ProfileEventListener.java
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc649c6668b335947ec3/FullnameListener.java

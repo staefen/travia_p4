@@ -7,6 +7,7 @@ using Android.Widget;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.BottomNavigation;
 using P4Travia.Activities;
+using P4Travia.EventListeners;
 
 namespace P4Travia
 {
@@ -37,6 +38,10 @@ namespace P4Travia
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
             navigation.SetOnNavigationItemSelectedListener(this);
 
+
+            //Retrieves fullname on login
+            FullnameListener fullnameListener = new FullnameListener();
+            fullnameListener.FetchUser();
         }
 
         public bool OnNavigationItemSelected(IMenuItem item)
