@@ -10,16 +10,16 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using AndroidX.RecyclerView.Widget;
+using FFImageLoading;
 using P4Travia.Datamodels;
 
 namespace P4Travia.Adapter
 {
-    internal class ActivityPostAdapter : BaseAdapter
+    internal class ActivityPostAdapter : RecyclerView.Adapter
     {
 
         public event EventHandler<PostAdapterClickEventArgs> ItemClick;
         public event EventHandler<PostAdapterClickEventArgs> ItemLongClick;
-        public event EventHandler<PostAdapterClickEventArgs> LikeClick;
         List<ActivityPost> items;
 
         public ActivityPostAdapter(List<ActivityPost> data)
@@ -33,7 +33,7 @@ namespace P4Travia.Adapter
 
             View itemView = null;
             itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.post, parent, false);
-            var vh = new PostAdapterViewHolder(itemView, OnClick, OnLongClick, OnLike);
+            PostAdapterViewHolder vh = new PostAdapterViewHolder(itemView, OnClick, OnLongClick);
 
             return vh;
         }
@@ -67,30 +67,32 @@ namespace P4Travia.Adapter
 
         public override int ItemCount => items.Count;
 
-        public override int Count => throw new NotImplementedException();
+        //public override int Count => throw new NotImplementedException();
 
         void OnClick(PostAdapterClickEventArgs args) => ItemClick?.Invoke(this, args);
         void OnLongClick(PostAdapterClickEventArgs args) => ItemLongClick?.Invoke(this, args);
-        void OnLike(PostAdapterClickEventArgs args) => LikeClick?.Invoke(this, args);
 
-        public override Java.Lang.Object GetItem(int position)
-        {
-            throw new NotImplementedException();
-        }
+        //public override Java.Lang.Object GetItem(int position)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public override long GetItemId(int position)
-        {
-            throw new NotImplementedException();
-        }
+        //public override long GetItemId(int position)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public override View GetView(int position, View convertView, ViewGroup parent)
-        {
-            throw new NotImplementedException();
-        }
+        //public override View GetView(int position, View convertView, ViewGroup parent)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 
     public class PostAdapterViewHolder : RecyclerView.ViewHolder
     {
+        private Action<PostAdapterClickEventArgs> onClick;
+        private Action<PostAdapterClickEventArgs> onLongClick;
+
         //public TextView TextView { get; set; }
 
         public TextView usernameTextView { get; set; }
@@ -109,7 +111,12 @@ namespace P4Travia.Adapter
 
             itemView.Click += (sender, e) => clickListener(new PostAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
             itemView.LongClick += (sender, e) => longClickListener(new PostAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
-            likeImageView.Click += (sender, e) => likeClickListener(new PostAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
+        }
+
+        public PostAdapterViewHolder(View itemView, Action<PostAdapterClickEventArgs> onClick, Action<PostAdapterClickEventArgs> onLongClick) : base(itemView)
+        {
+            this.onClick = onClick;
+            this.onLongClick = onLongClick;
         }
     }
 

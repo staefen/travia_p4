@@ -338,6 +338,7 @@
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Adapter\ActivityPostAdapter.cs" />
     <Compile Include="Datamodels\ActivityPost.cs" />
+    <Compile Include="EventListener\InfoListener.cs" />
     <Compile Include="EventListener\PostEventListener.cs" />
     <Compile Include="Fragments\BrowseActivitiesFragment.cs.cs" />
     <Compile Include="Fragments\ProgressDialogFragment.cs" />
@@ -416,6 +417,12 @@
     </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.DynamicAnimation">
       <Version>1.0.0.13</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.RecyclerView">
+      <Version>1.2.1.6</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading">
+      <Version>2.4.11.982</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Firebase.Auth">
       <Version>121.0.1.4</Version>

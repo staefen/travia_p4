@@ -54,9 +54,17 @@
               "target": "Package",
               "version": "[1.0.0.13, )"
             },
+            "Xamarin.AndroidX.RecyclerView": {
+              "target": "Package",
+              "version": "[1.2.1.6, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
+            },
+            "Xamarin.FFImageLoading": {
+              "target": "Package",
+              "version": "[2.4.11.982, )"
             },
             "Xamarin.Firebase.Auth": {
               "target": "Package",

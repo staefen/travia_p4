@@ -22,7 +22,7 @@ Button;obj\Debug\120\res\layout\signup_5.xml
 Button;obj\Debug\120\res\layout\signup_6.xml
 Button;obj\Debug\120\res\layout\signup_start.xml
 Button;obj\Debug\120\res\layout\viewactivity.xml
-cache-path;C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\56\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+cache-path;C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\57\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 color;obj\Debug\120\res\values\colors.xml
 color;obj\Debug\120\res\values\ic_launcher_background.xml
 com.google.android.material.bottomnavigation.BottomNavigationView;obj\Debug\120\res\layout\bottom_nav_bar.xml
@@ -36,8 +36,8 @@ EditText;obj\Debug\120\res\layout\signup_1.xml
 EditText;obj\Debug\120\res\layout\signup_5.xml
 EditText;obj\Debug\120\res\layout\signup_6.xml
 EditText;obj\Debug\120\res\layout\signup_start.xml
-external-cache-path;C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\56\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
-external-path;C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\56\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-cache-path;C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\57\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-path;C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\57\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher.xml
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher_round.xml
 FrameLayout;obj\Debug\120\res\layout\bottom_nav_bar.xml
@@ -75,7 +75,7 @@ LinearLayout;obj\Debug\120\res\layout\signup_start.xml
 LinearLayout;obj\Debug\120\res\layout\viewactivity.xml
 menu;obj\Debug\120\res\menu\navigation.xml
 path;obj\Debug\120\res\drawable\add_icon.xml
-paths;C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\56\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+paths;C:\Users\olive\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\57\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 ProgressBar;obj\Debug\120\res\layout\progress_dialog.xml
 ProgressBar;obj\Debug\120\res\layout\signup_1.xml
 ProgressBar;obj\Debug\120\res\layout\signup_2.xml
