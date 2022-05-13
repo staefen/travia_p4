@@ -40,7 +40,7 @@ android:orientation="vertical"
         android:contentDescription="@string/add_photo"
         android:src="@android:drawable/ic_menu_add"/>
 
-        <LinearLayout
+     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"

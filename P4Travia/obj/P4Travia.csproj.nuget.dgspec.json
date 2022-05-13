@@ -34,10 +34,6 @@
       "frameworks": {
         "monoandroid12.0": {
           "dependencies": {
-            "Refractored.Controls.CircleImageView": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
             "Xam.Plugin.Media": {
               "target": "Package",
               "version": "[5.0.1, )"
@@ -61,10 +57,6 @@
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
-            },
-            "Xamarin.FFImageLoading": {
-              "target": "Package",
-              "version": "[2.4.11.982, )"
             },
             "Xamarin.Firebase.Auth": {
               "target": "Package",
