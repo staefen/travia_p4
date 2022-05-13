@@ -74,19 +74,19 @@ namespace P4Travia.Helpers
 
 
         //Method for saving the users name when opening the app (Other parameters can be added)
-        public static void SaveFullName(string fullname)
+        public static void SaveName(string name)
         {
             editor = preferences.Edit();
-            editor.PutString("fullname", fullname);
+            editor.PutString("name", name);
             editor.Apply();
         }
 
         //Retrieves the users name when opening the app (Other parameters can be added)
-        public static string GetFullName()
+        public static string GetName()
         {
-            string fullname = "";
-            fullname = preferences.GetString("fullname", "");
-            return fullname;
+
+            string name = preferences.GetString("name", "");
+            return name;
         }
     }
 }

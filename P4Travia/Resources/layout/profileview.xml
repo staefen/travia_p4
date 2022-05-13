@@ -23,8 +23,7 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/circleImageView2"/>
 
-    <TextView
-        android:text="Oliver Kahr"
+    <EditText
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@android:color/black"
