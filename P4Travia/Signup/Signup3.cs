@@ -4,11 +4,9 @@ using Android.Widget;
 using System;
 using Android.Runtime;
 using Android.Content;
-using System.Collections.Generic;
 
 using System.Globalization;
-using Android.Views;
-using Java.Interop;
+
 
 namespace P4Travia.Signup
 {
@@ -18,47 +16,8 @@ namespace P4Travia.Signup
         Button signup3;
         Button skip1;
         /*CultureInfo[] cultures = CultureInfo.GetCultures(CultureTypes.AllCultures);*/
-        string email, password, name, gender, nationality;
+        string language, email, password, name, gender, nationality;
         int birthday;
-        IList<string> language = new List<string>();
-        CheckBox dan_OnClick, nor_OnClick, swe_OnClick, eng_OnClick, ger_OnClick, fre_OnClick, spa_OnClick;
-
-        [Export("language_ItemSelected")]
-
-        public void language_ItemSelected(View view)
-        {
-            switch (view.Id)
-            {
-                case Resource.Id.danish:
-                    Toast.MakeText(this, "Danish selected", ToastLength.Short).Show();
-                    language.Add("Danish");
-                    break;
-                case Resource.Id.norwegian:
-                    Toast.MakeText(this, "Norwegian selected", ToastLength.Short).Show();
-                    language.Add("Norwegian");
-                    break;
-                case Resource.Id.swedish:
-                    Toast.MakeText(this, "Swedish selected", ToastLength.Short).Show();
-                    language.Add("Swedish");
-                    break;
-                case Resource.Id.english:
-                    Toast.MakeText(this, "English selected", ToastLength.Short).Show();
-                    language.Add("English");
-                    break;
-                case Resource.Id.german:
-                    Toast.MakeText(this, "German selected", ToastLength.Short).Show();
-                    language.Add("German");
-                    break;
-                case Resource.Id.french:
-                    Toast.MakeText(this, "French selected", ToastLength.Short).Show();
-                    language.Add("French");
-                    break;
-                case Resource.Id.spanish:
-                    Toast.MakeText(this, "Spanish selected", ToastLength.Short).Show();
-                    language.Add("Spanish");
-                    break;
-            }
-        }
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -67,16 +26,35 @@ namespace P4Travia.Signup
 
             SetContentView(Resource.Layout.signup_3);
 
+            //language spinner
+            //https://stackoverflow.com/questions/42100972/how-to-get-item-selected-in-spinner-to-use-it-as-string
+            var language_spinner = FindViewById<Spinner>(Resource.Id.signupLanguage);
+            language_spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(language_ItemSelected);
+            var language_adapter = ArrayAdapter.CreateFromResource(
+                    this, Resource.Array.language_dropdown, Android.Resource.Layout.SimpleSpinnerItem);
+
+            language_adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            language_spinner.Adapter = language_adapter;
+
+            /*foreach (CultureInfo culture in cultures)
+             {
+                 languages += culture.EnglishName;
+             }
+
+             var spinner = FindViewById<Spinner>(Resource.Id.signupLanguage);
+             spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+             var adapter = ArrayAdapter.CreateFromResource(
+                     this, Resource.String.languages, Android.Resource.Layout.SimpleSpinnerItem);
+
+             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+             spinner.Adapter = adapter;     
+             */
+
             signup3 = FindViewById<Button>(Resource.Id.btnNext3);
             signup3.Click += Signup3_Click;
 
             skip1 = FindViewById<Button>(Resource.Id.btnSkip1);
             skip1.Click += Skip1_Click;
-
-            dan_OnClick = FindViewById<CheckBox>(Resource.Id.danish);
-            nor_OnClick = FindViewById<CheckBox>(Resource.Id.norwegian);
-            swe_OnClick = FindViewById<CheckBox>(Resource.Id.swedish);
-
 
             nationality = Intent.GetStringExtra("Nationality");
             gender = Intent.GetStringExtra("Gender");
@@ -87,17 +65,24 @@ namespace P4Travia.Signup
 
         }
 
+        //language spinner
+        private void language_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        {
+            Spinner spinner = (Spinner)sender;
+            language = string.Format("{0}", spinner.GetItemAtPosition(e.Position));
+        }
+
         private void Signup3_Click(object sender, EventArgs e) //skal ha betingelser som gjør at man skal fylle ut feltene først
         {
-            /*if (string.IsNullOrEmpty(language))
+            if (string.IsNullOrEmpty(language))
             {
                 Toast.MakeText(this, "Please select a language or press the Skip button", ToastLength.Short).Show();
                 return;
             }
             else
-            {*/
+            {
                 var intent = new Intent(this, typeof(Signup4));
-                intent.PutStringArrayListExtra("Language", language);
+                intent.PutExtra("Language", language);
                 intent.PutExtra("Nationality", nationality);
                 intent.PutExtra("Gender", gender);
                 intent.PutExtra("Birthday", birthday);
@@ -106,7 +91,7 @@ namespace P4Travia.Signup
                 intent.PutExtra("Password", password);
 
                 StartActivity(intent);
-            
+            }
         }
 
         private void Skip1_Click(object sender, EventArgs e)

@@ -2,10 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
        xmlns:app="http://schemas.android.com/apk/res-auto"
      xmlns:tools="http://schemas.android.com/tools"
-	android:orientation="vertical"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:padding="40dp">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 	<ProgressBar
         android:id="@+id/progressBar4"
@@ -13,13 +12,14 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="70dp" />
 
     <TextView
         android:id="@+id/enterLanguage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:gravity="center"
         android:text="@string/enter_languages"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="35sp"
@@ -29,96 +29,57 @@
         android:id="@+id/enterLanguageDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
+        android:gravity="center" 
         android:text="@string/enter_languages_desc"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
+    <TextView
+        android:id="@+id/signupLanguagesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:gravity="left"
+        android:text="@string/languages"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
 
-    <CheckBox
-        android:id="@+id/danish"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/danish"
-        android:onClick="language_ItemSelected"
-        />
-    <CheckBox
-        android:id="@+id/norwegian"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/norwegian"
-        android:onClick="language_ItemSelected"
-        />
-    <CheckBox
-        android:id="@+id/swedish"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/swedish"
-        android:onClick="language_ItemSelected"
-        />
-    <CheckBox
-        android:id="@+id/english"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/english"
-        android:onClick="language_ItemSelected"
-        />
-    <CheckBox
-        android:id="@+id/german"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/german"
-        android:onClick="language_ItemSelected"
-        />
-    <CheckBox
-        android:id="@+id/french"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/french"
-        android:onClick="language_ItemSelected"
-        />
-   <CheckBox
-        android:id="@+id/spanish"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/spanish"
-        android:onClick="language_ItemSelected"
-        />
+    <Spinner
+		android:id="@+id/signupLanguage"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+        android:text="@Signup3/cultures"
+		android:padding="20dp"
+        android:entries="@array/language_dropdown"/>
 
-    <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"> 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horisontal">
-
-        <Button
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp">
+    <Button
         android:id="@+id/btnSkip1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="140dp"
         android:text="@string/skip"
         android:textSize="25sp"
         android:textAllCaps="false"
         android:textColor="@android:color/black"
         android:backgroundTint="@android:color/white"
         android:padding="8dp"/>
-
     <Button
         android:id="@+id/btnNext3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/btnSkip1"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="40dp"
-        android:layout_marginLeft="120dp"
+        android:layout_gravity="center"
         android:text="@string/next"
         android:textSize="25sp"
-        android:padding="8dp"
-        android:textAllCaps="false"/>
-
-        </LinearLayout>
-
-    </RelativeLayout>
+        android:textAllCaps="false"
+        android:padding="8dp"/>
+    </LinearLayout>
 
 </LinearLayout>

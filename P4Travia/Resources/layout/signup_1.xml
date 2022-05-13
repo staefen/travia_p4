@@ -2,8 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="40dp">
+    android:layout_height="match_parent">
 
     <ProgressBar
         android:id="@+id/progressBar2"
@@ -11,13 +10,14 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="70dp" />
 
     <TextView
         android:id="@+id/letsstart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
         android:text="@string/enter_info"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="35sp"
@@ -27,6 +27,8 @@
         android:id="@+id/nameBirthdayDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:text="@string/name_birthday_desc"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -34,6 +36,7 @@
         android:id="@+id/signupNameText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="60dp"
         android:text="@string/name"
         android:textAppearance="?android:attr/textAppearanceMedium"/>
@@ -43,15 +46,18 @@
         android:inputType="textPersonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:background="@android:drawable/editbox_background" />
 
     <TextView
         android:id="@+id/signupBirthdayText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
         android:gravity="left"
-        android:text="@string/birthday_text"
+        android:text="@string/birthday"
         android:textAppearance="?android:attr/textAppearanceMedium"/>
 
     <EditText
@@ -59,22 +65,20 @@
         android:inputType="date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:background="@android:drawable/editbox_background" />
-
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
     <Button
         android:id="@+id/btnNext1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="128dp"
         android:text="@string/next"
         android:textSize="25sp"
         android:padding="8dp"
         android:textAllCaps="false"/>
-    
-    </RelativeLayout>
+
 </LinearLayout>

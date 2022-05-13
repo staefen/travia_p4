@@ -1,3 +1,12 @@
+FacePost.EventListeners.FullnameListener, P4Travia;crc64f2981aa9eea766d3.FullnameListener
+FacePost.EventListeners.FullnameListener;crc64f2981aa9eea766d3.FullnameListener
+facepost.eventlisteners.FullnameListener;crc64f2981aa9eea766d3.FullnameListener
+P4Travia.ProfileViewFragment, P4Travia;crc641bdd4867275d014e.ProfileViewFragment
+P4Travia.ProfileViewFragment;crc641bdd4867275d014e.ProfileViewFragment
+p4travia.ProfileViewFragment;crc641bdd4867275d014e.ProfileViewFragment
+P4Travia.SettingFragment, P4Travia;crc641bdd4867275d014e.SettingFragment
+P4Travia.SettingFragment;crc641bdd4867275d014e.SettingFragment
+p4travia.SettingFragment;crc641bdd4867275d014e.SettingFragment
 P4Travia.MainActivity, P4Travia;crc641bdd4867275d014e.MainActivity
 P4Travia.MainActivity;crc641bdd4867275d014e.MainActivity
 p4travia.MainActivity;crc641bdd4867275d014e.MainActivity
@@ -37,9 +46,9 @@ p4travia.signup.Signup4;crc64707a1cf70e1e4d41.Signup4
 P4Travia.Signup.Signup5, P4Travia;crc64707a1cf70e1e4d41.Signup5
 P4Travia.Signup.Signup5;crc64707a1cf70e1e4d41.Signup5
 p4travia.signup.Signup5;crc64707a1cf70e1e4d41.Signup5
-P4Travia.Signup.SignupAndLogin, P4Travia;crc64707a1cf70e1e4d41.SignupAndLogin
-P4Travia.Signup.SignupAndLogin;crc64707a1cf70e1e4d41.SignupAndLogin
-p4travia.signup.SignupAndLogin;crc64707a1cf70e1e4d41.SignupAndLogin
+P4Travia.Signup.MainActivity, P4Travia;crc64707a1cf70e1e4d41.MainActivity
+P4Travia.Signup.MainActivity;crc64707a1cf70e1e4d41.MainActivity
+p4travia.signup.MainActivity;crc64707a1cf70e1e4d41.MainActivity
 P4Travia.Signup.Login, P4Travia;crc64707a1cf70e1e4d41.Login
 P4Travia.Signup.Login;crc64707a1cf70e1e4d41.Login
 p4travia.signup.Login;crc64707a1cf70e1e4d41.Login
@@ -49,6 +58,15 @@ p4travia.signup.Signup6;crc64707a1cf70e1e4d41.Signup6
 P4Travia.Activities.CreatePostActivity, P4Travia;crc6425dd1d1a6701386b.CreatePostActivity
 P4Travia.Activities.CreatePostActivity;crc6425dd1d1a6701386b.CreatePostActivity
 p4travia.activities.CreatePostActivity;crc6425dd1d1a6701386b.CreatePostActivity
+P4Travia.Activities.LocationActivity, P4Travia;crc6425dd1d1a6701386b.LocationActivity
+P4Travia.Activities.LocationActivity;crc6425dd1d1a6701386b.LocationActivity
+p4travia.activities.LocationActivity;crc6425dd1d1a6701386b.LocationActivity
+P4Travia.Activities.NotificationActivity, P4Travia;crc6425dd1d1a6701386b.NotificationActivity
+P4Travia.Activities.NotificationActivity;crc6425dd1d1a6701386b.NotificationActivity
+p4travia.activities.NotificationActivity;crc6425dd1d1a6701386b.NotificationActivity
+P4Travia.Activities.ViewProfile, P4Travia;crc6425dd1d1a6701386b.ViewProfile
+P4Travia.Activities.ViewProfile;crc6425dd1d1a6701386b.ViewProfile
+p4travia.activities.ViewProfile;crc6425dd1d1a6701386b.ViewProfile
 Javax.Annotation.ICheckForNull, Jsr305Binding;javax.annotation.CheckForNull
 Javax.Annotation.ICheckForNull;javax.annotation.CheckForNull
 javax.annotation.CheckForNull;javax.annotation.CheckForNull

@@ -4,7 +4,6 @@ using Android.Widget;
 using System;
 using Android.Runtime;
 using Android.Content;
-using System.Collections.Generic;
 
 
 namespace P4Travia.Signup
@@ -14,9 +13,8 @@ namespace P4Travia.Signup
     {
         Button signup5, skip3;
         EditText bioText;
-        string bio, email, password, name, gender, nationality;
+        string bio, email, password, name, gender, nationality, language;
         int birthday;
-        IList<string> language = new List<string>();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -32,7 +30,7 @@ namespace P4Travia.Signup
             skip3 = FindViewById<Button>(Resource.Id.btnSkip3);
             skip3.Click += Skip3_Click;
 
-            language = Intent.GetStringArrayListExtra("Language");
+            language = Intent.GetStringExtra("Language");
             nationality = Intent.GetStringExtra("Nationality");
             gender = Intent.GetStringExtra("Gender");
             email = Intent.GetStringExtra("Email");
@@ -55,7 +53,7 @@ namespace P4Travia.Signup
             {
                 var intent = new Intent(this, typeof(Signup6));
                 intent.PutExtra("Bio", bio);
-                intent.PutStringArrayListExtra("Language", language);
+                intent.PutExtra("Language", language);
                 intent.PutExtra("Nationality", nationality);
                 intent.PutExtra("Gender", gender);
                 intent.PutExtra("Birthday", birthday);
@@ -70,7 +68,7 @@ namespace P4Travia.Signup
         private void Skip3_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(Signup6));
-            intent.PutStringArrayListExtra("Language", language);
+            intent.PutExtra("Language", language);
             intent.PutExtra("Nationality", nationality);
             intent.PutExtra("Gender", gender);
             intent.PutExtra("Birthday", birthday);
