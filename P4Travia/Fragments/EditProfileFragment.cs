@@ -201,7 +201,7 @@ namespace P4Travia
         void ShowProgressDialogue(string status)
         {
             progressDialogue = new ProgressDialogFragment(status);
-            var trans = SupportFragmentManager.BeginTransaction();
+            var trans = FragmentManager.BeginTransaction();
             progressDialogue.Cancelable = false;
             progressDialogue.Show(trans, "Saving");
         }
