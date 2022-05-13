@@ -362,6 +362,8 @@
     <Compile Include="Activities\NotificationActivity.cs" />
     <Compile Include="EventListener\PostEventListener.cs" />
     <Compile Include="Activities\ViewProfile.cs" />
+    <Compile Include="EventListener\ProfileEventListener.cs" />
+    <Compile Include="ProfileAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="google-services %282%29.json" />
