@@ -99,6 +99,12 @@
   ],
   "logs": [
     {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
+    {
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,

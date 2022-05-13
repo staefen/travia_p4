@@ -332,6 +332,7 @@
     <Reference Include="Xamarin.Google.Android.Material">
       <HintPath>..\packages\Xamarin.Google.Android.Material.1.5.0.1\lib\monoandroid12.0\Xamarin.Google.Android.Material.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Android.Export" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\CreatePostActivity.cs" />
@@ -358,6 +359,8 @@
     <Compile Include="Signup\Signup6.cs" />
     <Compile Include="Activities\LocationActivity.cs" />
     <Compile Include="Activities\NotificationActivity.cs" />
+    <Compile Include="EventListener\PostEventListener.cs" />
+    <Compile Include="Activities\ViewProfile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="google-services %282%29.json" />

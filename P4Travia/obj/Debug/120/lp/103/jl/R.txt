@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 int anim fragment_fast_out_extra_slow_in 0x0
 int animator fragment_close_enter 0x0
 int animator fragment_close_exit 0x0
@@ -189,3 +190,5 @@ int styleable GradientColor_android_type 11
 int[] styleable GradientColorItem { 0x10101a5, 0x1010514 }
 int styleable GradientColorItem_android_color 0
 int styleable GradientColorItem_android_offset 1
+=======
+>>>>>>> main

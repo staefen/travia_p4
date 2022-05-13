@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 int anim abc_fade_in 0x0
 int anim abc_fade_out 0x0
 int anim abc_grow_fade_in_from_bottom 0x0
@@ -147,6 +148,10 @@ int attr expandActivityOverflowButtonDrawable 0x0
 int attr firstBaselineToTopHeight 0x0
 int attr font 0x0
 int attr fontFamily 0x0
+=======
+int attr alpha 0x0
+int attr font 0x0
+>>>>>>> main
 int attr fontProviderAuthority 0x0
 int attr fontProviderCerts 0x0
 int attr fontProviderFetchStrategy 0x0
@@ -156,6 +161,7 @@ int attr fontProviderQuery 0x0
 int attr fontStyle 0x0
 int attr fontVariationSettings 0x0
 int attr fontWeight 0x0
+<<<<<<< HEAD
 int attr gapBetweenBars 0x0
 int attr goIcon 0x0
 int attr height 0x0
@@ -468,6 +474,19 @@ int dimen abc_text_size_subhead_material 0x0
 int dimen abc_text_size_subtitle_material_toolbar 0x0
 int dimen abc_text_size_title_material 0x0
 int dimen abc_text_size_title_material_toolbar 0x0
+=======
+int attr ttcIndex 0x0
+int color browser_actions_bg_grey 0x0
+int color browser_actions_divider_color 0x0
+int color browser_actions_text_color 0x0
+int color browser_actions_title_color 0x0
+int color notification_action_color_filter 0x0
+int color notification_icon_bg_color 0x0
+int color ripple_material_light 0x0
+int color secondary_text_default_material_light 0x0
+int dimen browser_actions_context_menu_max_width 0x0
+int dimen browser_actions_context_menu_min_padding 0x0
+>>>>>>> main
 int dimen compat_button_inset_horizontal_material 0x0
 int dimen compat_button_inset_vertical_material 0x0
 int dimen compat_button_padding_horizontal_material 0x0
@@ -475,6 +494,7 @@ int dimen compat_button_padding_vertical_material 0x0
 int dimen compat_control_corner_material 0x0
 int dimen compat_notification_large_icon_max_height 0x0
 int dimen compat_notification_large_icon_max_width 0x0
+<<<<<<< HEAD
 int dimen disabled_alpha_material_dark 0x0
 int dimen disabled_alpha_material_light 0x0
 int dimen highlight_alpha_material_colored 0x0
@@ -484,6 +504,8 @@ int dimen hint_alpha_material_dark 0x0
 int dimen hint_alpha_material_light 0x0
 int dimen hint_pressed_alpha_material_dark 0x0
 int dimen hint_pressed_alpha_material_light 0x0
+=======
+>>>>>>> main
 int dimen notification_action_icon_size 0x0
 int dimen notification_action_text_size 0x0
 int dimen notification_big_circle_margin 0x0
@@ -499,6 +521,7 @@ int dimen notification_small_icon_size_as_large 0x0
 int dimen notification_subtext_size 0x0
 int dimen notification_top_pad 0x0
 int dimen notification_top_pad_large_text 0x0
+<<<<<<< HEAD
 int dimen tooltip_corner_radius 0x0
 int dimen tooltip_horizontal_padding 0x0
 int dimen tooltip_margin 0x0
@@ -601,6 +624,8 @@ int drawable btn_radio_off_mtrl 0x0
 int drawable btn_radio_off_to_on_mtrl_animation 0x0
 int drawable btn_radio_on_mtrl 0x0
 int drawable btn_radio_on_to_off_mtrl_animation 0x0
+=======
+>>>>>>> main
 int drawable notification_action_background 0x0
 int drawable notification_bg 0x0
 int drawable notification_bg_low 0x0
@@ -613,8 +638,11 @@ int drawable notification_template_icon_bg 0x0
 int drawable notification_template_icon_low_bg 0x0
 int drawable notification_tile_bg 0x0
 int drawable notify_panel_notification_icon_bg 0x0
+<<<<<<< HEAD
 int drawable tooltip_frame_dark 0x0
 int drawable tooltip_frame_light 0x0
+=======
+>>>>>>> main
 int id accessibility_action_clickable_span 0x0
 int id accessibility_custom_action_0 0x0
 int id accessibility_custom_action_1 0x0
@@ -648,6 +676,7 @@ int id accessibility_custom_action_6 0x0
 int id accessibility_custom_action_7 0x0
 int id accessibility_custom_action_8 0x0
 int id accessibility_custom_action_9 0x0
+<<<<<<< HEAD
 int id action_bar 0x0
 int id action_bar_activity_content 0x0
 int id action_bar_container 0x0
@@ -691,19 +720,42 @@ int id home 0x0
 int id icon 0x0
 int id icon_group 0x0
 int id image 0x0
+=======
+int id action_container 0x0
+int id action_divider 0x0
+int id action_image 0x0
+int id action_text 0x0
+int id actions 0x0
+int id async 0x0
+int id blocking 0x0
+int id browser_actions_header_text 0x0
+int id browser_actions_menu_item_icon 0x0
+int id browser_actions_menu_item_text 0x0
+int id browser_actions_menu_items 0x0
+int id browser_actions_menu_view 0x0
+int id chronometer 0x0
+int id dialog_button 0x0
+int id forever 0x0
+int id icon 0x0
+int id icon_group 0x0
+>>>>>>> main
 int id info 0x0
 int id italic 0x0
 int id line1 0x0
 int id line3 0x0
+<<<<<<< HEAD
 int id listMode 0x0
 int id list_item 0x0
 int id message 0x0
 int id multiply 0x0
 int id none 0x0
+=======
+>>>>>>> main
 int id normal 0x0
 int id notification_background 0x0
 int id notification_main_column 0x0
 int id notification_main_column_container 0x0
+<<<<<<< HEAD
 int id off 0x0
 int id on 0x0
 int id parentPanel 0x0
@@ -736,6 +788,10 @@ int id src_over 0x0
 int id submenuarrow 0x0
 int id submit_area 0x0
 int id tabMode 0x0
+=======
+int id right_icon 0x0
+int id right_side 0x0
+>>>>>>> main
 int id tag_accessibility_actions 0x0
 int id tag_accessibility_clickable_spans 0x0
 int id tag_accessibility_heading 0x0
@@ -746,6 +802,7 @@ int id tag_unhandled_key_event_manager 0x0
 int id tag_unhandled_key_listeners 0x0
 int id text 0x0
 int id text2 0x0
+<<<<<<< HEAD
 int id textSpacerNoButtons 0x0
 int id textSpacerNoTitle 0x0
 int id time 0x0
@@ -797,6 +854,13 @@ int layout abc_search_dropdown_item_icons_2line 0x0
 int layout abc_search_view 0x0
 int layout abc_select_dialog_material 0x0
 int layout abc_tooltip 0x0
+=======
+int id time 0x0
+int id title 0x0
+int integer status_bar_notification_info_maxnum 0x0
+int layout browser_actions_context_menu_page 0x0
+int layout browser_actions_context_menu_row 0x0
+>>>>>>> main
 int layout custom_dialog 0x0
 int layout notification_action 0x0
 int layout notification_action_tombstone 0x0
@@ -804,6 +868,7 @@ int layout notification_template_custom_big 0x0
 int layout notification_template_icon_group 0x0
 int layout notification_template_part_chronometer 0x0
 int layout notification_template_part_time 0x0
+<<<<<<< HEAD
 int layout select_dialog_item_material 0x0
 int layout select_dialog_multichoice_material 0x0
 int layout select_dialog_singlechoice_material 0x0
@@ -1073,11 +1138,19 @@ int style TextAppearance_AppCompat_Widget_PopupMenu_Large 0x0
 int style TextAppearance_AppCompat_Widget_PopupMenu_Small 0x0
 int style TextAppearance_AppCompat_Widget_Switch 0x0
 int style TextAppearance_AppCompat_Widget_TextView_SpinnerItem 0x0
+=======
+int string copy_toast_msg 0x0
+int string fallback_menu_item_copy_link 0x0
+int string fallback_menu_item_open_in_browser 0x0
+int string fallback_menu_item_share_link 0x0
+int string status_bar_notification_info_overflow 0x0
+>>>>>>> main
 int style TextAppearance_Compat_Notification 0x0
 int style TextAppearance_Compat_Notification_Info 0x0
 int style TextAppearance_Compat_Notification_Line2 0x0
 int style TextAppearance_Compat_Notification_Time 0x0
 int style TextAppearance_Compat_Notification_Title 0x0
+<<<<<<< HEAD
 int style TextAppearance_Widget_AppCompat_ExpandedMenu_Item 0x0
 int style TextAppearance_Widget_AppCompat_Toolbar_Subtitle 0x0
 int style TextAppearance_Widget_AppCompat_Toolbar_Title 0x0
@@ -1424,10 +1497,15 @@ int styleable AppCompatTheme_windowMinWidthMinor 123
 int styleable AppCompatTheme_windowNoTitle 124
 int[] styleable ButtonBarLayout { 0x0 }
 int styleable ButtonBarLayout_allowStacking 0
+=======
+int style Widget_Compat_NotificationActionContainer 0x0
+int style Widget_Compat_NotificationActionText 0x0
+>>>>>>> main
 int[] styleable ColorStateListItem { 0x0, 0x101031f, 0x10101a5 }
 int styleable ColorStateListItem_alpha 0
 int styleable ColorStateListItem_android_alpha 1
 int styleable ColorStateListItem_android_color 2
+<<<<<<< HEAD
 int[] styleable CompoundButton { 0x1010107, 0x0, 0x0, 0x0 }
 int styleable CompoundButton_android_button 0
 int styleable CompoundButton_buttonCompat 1
@@ -1442,6 +1520,8 @@ int styleable DrawerArrowToggle_drawableSize 4
 int styleable DrawerArrowToggle_gapBetweenBars 5
 int styleable DrawerArrowToggle_spinBars 6
 int styleable DrawerArrowToggle_thickness 7
+=======
+>>>>>>> main
 int[] styleable FontFamily { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable FontFamily_fontProviderAuthority 0
 int styleable FontFamily_fontProviderCerts 1
@@ -1476,6 +1556,7 @@ int styleable GradientColor_android_type 11
 int[] styleable GradientColorItem { 0x10101a5, 0x1010514 }
 int styleable GradientColorItem_android_color 0
 int styleable GradientColorItem_android_offset 1
+<<<<<<< HEAD
 int[] styleable LinearLayoutCompat { 0x1010126, 0x1010127, 0x10100af, 0x10100c4, 0x1010128, 0x0, 0x0, 0x0, 0x0 }
 int styleable LinearLayoutCompat_android_baselineAligned 0
 int styleable LinearLayoutCompat_android_baselineAlignedChildIndex 1
@@ -1654,3 +1735,6 @@ int[] styleable ViewStubCompat { 0x10100d0, 0x10100f3, 0x10100f2 }
 int styleable ViewStubCompat_android_id 0
 int styleable ViewStubCompat_android_inflatedId 1
 int styleable ViewStubCompat_android_layout 2
+=======
+int xml image_share_filepaths 0x0
+>>>>>>> main

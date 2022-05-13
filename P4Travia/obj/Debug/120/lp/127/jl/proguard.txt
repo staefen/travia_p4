@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Proguard flags for consumers of the Google Play services SDK
 # https://developers.google.com/android/guides/setup#add_google_play_services_to_your_project
 
@@ -65,3 +66,9 @@
 # non-required dependencies.
 -dontwarn javax.annotation.**
 -dontwarn org.checkerframework.**
+=======
+# b/35135904 Ensure that proguard will not strip the mResultGuardian.
+-keepclassmembers class com.google.android.gms.common.api.internal.BasePendingResult {
+  com.google.android.gms.common.api.internal.BasePendingResult$ReleasableResultGuardian mResultGuardian;
+}
+>>>>>>> main
