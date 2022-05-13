@@ -12,7 +12,7 @@ namespace P4Travia.Datamodels
         public string UserName { get; set; }
         public string Gender { get; set; }
         public string Nationality { get; set; }
-        public string Language { get; set; }
+        public IList<string> Language { get; set; }
         //public string ImageId { get; set; }
         //public string ImageUrl { get; set; }
         public string Bio { get; set; }

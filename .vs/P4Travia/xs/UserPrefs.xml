@@ -1,29 +1,36 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
-  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredDevice="pixel_3" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.d78e9cf4" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Signup/Signup5.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.d78e9cf4" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Resources/layout/signup_3.xml">
     <Files>
-      <File FileName="P4Travia/EventListener/TaskCompletionListener.cs" Line="21" Column="10" />
-      <File FileName="P4Travia/Activities/ViewProfile.cs" Line="28" Column="1" />
-      <File FileName="P4Travia/Helpers/AppDataHelper.cs" Line="91" Column="6" />
-      <File FileName="P4Travia/EventListener/PostEventListener.cs" Line="20" Column="46" />
-      <File FileName="P4Travia/Activities/CreatePostActivity.cs" Line="75" Column="22" />
-      <File FileName="P4Travia/Activities/SplashActivity.cs" Line="19" Column="29" />
-      <File FileName="P4Travia/MainActivity.cs" Line="30" Column="51" />
-      <File FileName="P4Travia/Signup/Signup5.cs" Line="28" Column="44" />
-      <File FileName="P4Travia/Signup/Signup4.cs" Line="1" Column="1" />
+      <File FileName="P4Travia/Signup/Signup5.cs" Line="27" Column="58" />
+      <File FileName="P4Travia/Signup/Signup6.cs" Line="49" Column="10" />
+      <File FileName="P4Travia/Signup/SignupAndLogin.cs" Line="16" Column="54" />
+      <File FileName="P4Travia/Signup/SignupStart.cs" Line="78" Column="2" />
+      <File FileName="P4Travia/Resources/layout/signup_start.xml" Line="1" Column="1" />
+      <File FileName="P4Travia/Signup/Signup3.cs" Line="73" Column="63" />
+      <File FileName="P4Travia/Resources/values/strings.xml" Line="130" Column="1" />
+      <File FileName="P4Travia/Signup/Signup4.cs" Line="27" Column="56" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1440" Column="3" />
+      <File FileName="P4Travia/Fragments/ProfileViewFragment.cs" Line="32" Column="1" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.Debugging.targets" Line="399" Column="2" />
+      <File FileName="P4Travia/P4Travia.csproj" Line="402" Column="46" />
+      <File FileName="P4Travia/Resources/layout/signup_3.xml" Line="118" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="P4Travia" expanded="True">
             <Node name="P4Travia" expanded="True">
-              <Node name="Activities" expanded="True" />
-              <Node name="Datamodels" expanded="True" />
-              <Node name="EventListener" expanded="True" />
-              <Node name="Helpers" expanded="True" />
               <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True" />
+                <Node name="layout" expanded="True">
+                  <Node name="signup_3.xml" selected="True" />
+                </Node>
               </Node>
               <Node name="Signup" expanded="True" />
             </Node>
@@ -35,11 +42,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
   <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

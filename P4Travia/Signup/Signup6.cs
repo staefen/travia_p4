@@ -12,7 +12,8 @@ using P4Travia.Helpers;
 using Android.Runtime;
 using Android.Content;
 using P4Travia.Fragments;
-
+using System.Collections.Generic;
+using Java.Lang;
 
 namespace P4Travia.Signup
 {
@@ -56,7 +57,7 @@ namespace P4Travia.Signup
             user.UserName = Intent.GetStringExtra("Name");
             user.Nationality = Intent.GetStringExtra("Nationality");
             user.Gender = Intent.GetStringExtra("Gender");
-            user.Language = Intent.GetStringExtra("Language");
+            user.Language = Intent.GetStringArrayListExtra("Language");
             user.Bio = Intent.GetStringExtra("Bio");
             user.Location = location;
 
@@ -66,32 +67,32 @@ namespace P4Travia.Signup
                 .AddOnFailureListener(this, taskCompletionListeners);
 
             taskCompletionListeners.Success += (success, args) =>
-              {
-                  HashMap userMap = new HashMap();
-                  userMap.Put("mail", user.Email);
-                  userMap.Put("birthday", user.Birthday);
-                  userMap.Put("username", user.UserName);
-                  userMap.Put("nationality", user.Nationality);
-                  userMap.Put("gender", user.Gender);
-                  userMap.Put("language", user.Language);
-                  userMap.Put("bio", user.Bio);
+            {
+                HashMap userMap = new HashMap();
+                userMap.Put("mail", user.Email);
+                userMap.Put("birthday", user.Birthday);
+                userMap.Put("username", user.UserName);
+                userMap.Put("nationality", user.Nationality);
+                userMap.Put("gender", user.Gender);
+                userMap.Put("language", (Java.Lang.Object)user.Language);
+                userMap.Put("bio", user.Bio);
 
-                  DocumentReference userReference = database.Collection("users").Document(mAuth.CurrentUser.Uid);
-                  userReference.Set(userMap);
-                  CloseProgressDialogue();
-                  StartActivity(typeof(Activities.ViewProfile));
-                  Finish();
-              };
+                DocumentReference userReference = database.Collection("users").Document(mAuth.CurrentUser.Uid);
+                userReference.Set(userMap);
+                CloseProgressDialogue();
+                StartActivity(typeof(MainActivity));
+                Finish();
+            };
 
 
-              // Registration Failure Callback
-              taskCompletionListeners.Failure += (failure, args) =>
-              {
-                  CloseProgressDialogue();
-                  Toast.MakeText(this, "Registration Failed : " + args.Cause, ToastLength.Short).Show();
-              };
-            
-          }
+            // Registration Failure Callback
+            taskCompletionListeners.Failure += (failure, args) =>
+            {
+                CloseProgressDialogue();
+                Toast.MakeText(this, "Registration Failed : " + args.Cause, ToastLength.Short).Show();
+            };
+
+        }
 
 
         void ShowProgressDialogue(string status)

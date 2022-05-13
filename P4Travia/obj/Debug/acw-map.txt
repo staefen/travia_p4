@@ -46,9 +46,9 @@ p4travia.signup.Signup4;crc64707a1cf70e1e4d41.Signup4
 P4Travia.Signup.Signup5, P4Travia;crc64707a1cf70e1e4d41.Signup5
 P4Travia.Signup.Signup5;crc64707a1cf70e1e4d41.Signup5
 p4travia.signup.Signup5;crc64707a1cf70e1e4d41.Signup5
-P4Travia.Signup.MainActivity, P4Travia;crc64707a1cf70e1e4d41.MainActivity
-P4Travia.Signup.MainActivity;crc64707a1cf70e1e4d41.MainActivity
-p4travia.signup.MainActivity;crc64707a1cf70e1e4d41.MainActivity
+P4Travia.Signup.SignupAndLogin, P4Travia;crc64707a1cf70e1e4d41.SignupAndLogin
+P4Travia.Signup.SignupAndLogin;crc64707a1cf70e1e4d41.SignupAndLogin
+p4travia.signup.SignupAndLogin;crc64707a1cf70e1e4d41.SignupAndLogin
 P4Travia.Signup.Login, P4Travia;crc64707a1cf70e1e4d41.Login
 P4Travia.Signup.Login;crc64707a1cf70e1e4d41.Login
 p4travia.signup.Login;crc64707a1cf70e1e4d41.Login

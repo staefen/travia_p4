@@ -27,6 +27,7 @@ Button;obj/Debug/res/layout/signup_6.xml
 Button;obj/Debug/res/layout/signup_start.xml
 Button;obj/Debug/res/layout/viewactivity.xml
 cache-path;/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/lp/56/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+CheckBox;obj/Debug/res/layout/signup_3.xml
 color;obj/Debug/res/values/colors.xml
 color;obj/Debug/res/values/ic_launcher_background.xml
 com.google.android.material.bottomnavigation.BottomNavigationView;obj/Debug/res/layout/bottom_nav_bar.xml
@@ -104,6 +105,9 @@ RelativeLayout;obj/Debug/res/layout/myactivities.xml
 RelativeLayout;obj/Debug/res/layout/notification_list.xml
 RelativeLayout;obj/Debug/res/layout/profile.xml
 RelativeLayout;obj/Debug/res/layout/profileview.xml
+RelativeLayout;obj/Debug/res/layout/signup_1.xml
+RelativeLayout;obj/Debug/res/layout/signup_2.xml
+RelativeLayout;obj/Debug/res/layout/signup_start.xml
 RelativeLayout;obj/Debug/res/layout/toolbar.xml
 resources;obj/Debug/res/values/colors.xml
 resources;obj/Debug/res/values/dimens.xml
@@ -120,7 +124,6 @@ shape;obj/Debug/res/drawable/curvededges_white.xml
 solid;obj/Debug/res/drawable/back.xml
 solid;obj/Debug/res/drawable/curvededges_white.xml
 Spinner;obj/Debug/res/layout/signup_2.xml
-Spinner;obj/Debug/res/layout/signup_3.xml
 string;obj/Debug/res/values/strings.xml
 string-array;obj/Debug/res/values/strings.xml
 stroke;obj/Debug/res/drawable/back.xml
