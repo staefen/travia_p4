@@ -7761,6 +7761,11 @@ public final class R {
     public static final int round_notifications_none_white_24=0x7f0e0005;
     public static final int round_notifications_none_white_36=0x7f0e0006;
     public static final int round_notifications_none_white_48=0x7f0e0007;
+    public static final int round_room_white_18=0x7f0e0008;
+    public static final int round_room_white_20=0x7f0e0009;
+    public static final int round_room_white_24=0x7f0e000a;
+    public static final int round_room_white_36=0x7f0e000b;
+    public static final int round_room_white_48=0x7f0e000c;
   }
   public static final class string {
     public static final int abc_action_bar_home_description=0x7f0f0000;
