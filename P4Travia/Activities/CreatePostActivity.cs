@@ -79,7 +79,7 @@ namespace P4Travia.Activities
         private void SubmitButton_Click(object sender, EventArgs e)
         {
             HashMap postMap = new HashMap();
-            postMap.Put("author", AppDataHelper.GetFullName());
+            postMap.Put("author", AppDataHelper.GetName());
             postMap.Put("owner_id", AppDataHelper.GetFirebaseAuth().CurrentUser.Uid);
             postMap.Put("post_date_created", DateTime.Now.ToString());
             postMap.Put("post_title", titleEditText.Text);

@@ -6,6 +6,7 @@ using Android.Views;
 using Android.Widget;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.BottomNavigation;
+using P4Travia.Activities;
 
 namespace P4Travia
 {
@@ -25,12 +26,12 @@ namespace P4Travia
 
             //Elementer i listen som refererer til de fragments vi har lavet
             fragments = new List<AndroidX.Fragment.App.Fragment>();
-            fragments.Add(new ProfileFragment());
+            fragments.Add(new ProfileViewFragment());
             fragments.Add(new MainPageFragment());
             fragments.Add(new CalendarFragment());
 
             SupportFragmentManager.BeginTransaction()
-                                    .Replace(Resource.Id.fragmentcontainer, fragments[1])
+                                    .Replace(Resource.Id.fragmentcontainer, fragments[0])
                                     .Commit();
 
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);

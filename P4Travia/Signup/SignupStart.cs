@@ -30,7 +30,7 @@ namespace P4Travia.Signup
             passwordText = (EditText)FindViewById(Resource.Id.signupPassword);
             confirmPasswordText = (EditText)FindViewById(Resource.Id.signupPasswordConf);
 
-            signupstart = FindViewById<Button>(Resource.Id.btnNext1);
+            signupstart = FindViewById<Button>(Resource.Id.btnNextStart);
             signupstart.Click += SignupStart_Click;
         }
 
