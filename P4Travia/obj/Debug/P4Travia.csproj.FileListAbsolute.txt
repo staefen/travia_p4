@@ -1211,3 +1211,4 @@
 /Users/stephenhuynh/Library/CloudStorage/OneDrive-Personligt/Interaktionsdesign/4. Semester/P4/travia_p4/P4Travia/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/stephenhuynh/Library/CloudStorage/OneDrive-Personligt/Interaktionsdesign/4. Semester/P4/travia_p4/P4Travia/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/stephenhuynh/Library/CloudStorage/OneDrive-Personligt/Interaktionsdesign/4. Semester/P4/travia_p4/P4Travia/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/stephenhuynh/Library/CloudStorage/OneDrive-Personligt/Interaktionsdesign/4. Semester/P4/travia_p4/P4Travia/obj/Debug/android/src/crc6425dd1d1a6701386b/ViewActivity.java
