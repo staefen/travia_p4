@@ -1,5 +1,7 @@
+FFImageLoading.Platform.dll
 Jsr305Binding.dll
 Plugin.Media.dll
+Refractored.Controls.CircleImageView.dll
 Square.OkHttp.dll
 Square.OkIO.dll
 Xamarin.AndroidX.Activity.dll

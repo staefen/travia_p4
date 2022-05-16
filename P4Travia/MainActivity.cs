@@ -20,17 +20,22 @@ namespace P4Travia
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+<<<<<<< HEAD
 
+=======
+            SetContentView(Resource.Layout.toolbar);
+            SetButtons();
+>>>>>>> main
             SetContentView(Resource.Layout.bottom_nav_bar);
 
             //Elementer i listen som refererer til de fragments vi har lavet
             fragments = new List<AndroidX.Fragment.App.Fragment>();
-            fragments.Add(new ProfileFragment());
+            fragments.Add(new ProfileViewFragment());
             fragments.Add(new MainPageFragment());
             fragments.Add(new CalendarFragment());
 
             SupportFragmentManager.BeginTransaction()
-                                    .Replace(Resource.Id.fragmentcontainer, fragments[1])
+                                    .Replace(Resource.Id.fragmentcontainer, fragments[0])
                                     .Commit();
 
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
@@ -67,6 +72,30 @@ namespace P4Travia
                     return true;
             }
             return false;
+<<<<<<< HEAD
+=======
+        }
+
+        //Toolbar
+
+        private void SetButtons()
+        {
+            NotificationButton();
+            LocationSettings();
+        }
+
+        //Buttons
+        public void NotificationButton()
+        {
+            ImageView notification = (ImageView)FindViewById(Resource.Id.notification_bell);
+            notification.Click += Notification_Click;
+        }
+
+        public void LocationSettings()
+        {
+            TextView location_settings = (TextView)FindViewById(Resource.Id.location);
+            location_settings.Click += Location_Settings_Click;
+>>>>>>> main
         }
 
 

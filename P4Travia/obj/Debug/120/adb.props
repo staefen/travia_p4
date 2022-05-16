@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 AdbTarget=-s BH900KJ78Z
+=======
+AdbTarget=
+>>>>>>> main
 AdbOptions=

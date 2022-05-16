@@ -1,6 +1,10 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
     "C:\\Users\\louis\\Source\\Repos\\travia_p4\\P4Travia\\P4Travia.csproj": {}
   },
   "projects": {
@@ -16,6 +20,26 @@
         "skipContentFileWrite": true,
         "configFilePaths": [
           "C:\\Users\\louis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+<<<<<<< HEAD
+=======
+=======
+    "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj",
+        "projectName": "P4Travia",
+        "projectPath": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj",
+        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> ee1f993c064020a5c5e33d2b6e7a936867f3ec35
+>>>>>>> main
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +58,10 @@
       "frameworks": {
         "monoandroid12.0": {
           "dependencies": {
+            "Refractored.Controls.CircleImageView": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
             "Xam.Plugin.Media": {
               "target": "Package",
               "version": "[5.0.1, )"
@@ -57,6 +85,10 @@
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
+            },
+            "Xamarin.FFImageLoading": {
+              "target": "Package",
+              "version": "[2.4.11.982, )"
             },
             "Xamarin.Firebase.Auth": {
               "target": "Package",
