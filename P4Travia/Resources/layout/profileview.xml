@@ -67,7 +67,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="Country"
+                    android:id="@+id/nationalityTextView"
                     android:textSize="16sp"/>
 
                 <ImageView
@@ -84,7 +84,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:layout_gravity="center_vertical"
-                    android:text="Gender"
+                    android:id="@+id/genderTextView"
                     android:textSize="16sp"/>
 
                 <ImageView
@@ -98,7 +98,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:layout_gravity="center_vertical"
-                    android:text="Language"
+                    android:id="@+id/languageTextView"
                     android:textSize="16sp"/>
 
             </LinearLayout>

@@ -360,7 +360,7 @@
     <Compile Include="Signup\Signup6.cs" />
     <Compile Include="Activities\LocationActivity.cs" />
     <Compile Include="Activities\NotificationActivity.cs" />
-    <Compile Include="EventListener\FullnameListener.cs" />
+    <Compile Include="EventListener\UserListener.cs" />
     <Compile Include="Activities\ViewProfile.cs" />
     <Compile Include="ProfileAdapter.cs" />
   </ItemGroup>

@@ -8,14 +8,11 @@ using Android;
 
 namespace P4Travia
 {
-    class PostAdapter : RecyclerView.Adapter
+    class ProfileAdapter : RecyclerView.Adapter
     {
-        public event EventHandler<PostAdapterClickEventArgs> ItemClick;
-        public event EventHandler<PostAdapterClickEventArgs> ItemLongClick;
-        public event EventHandler<PostAdapterClickEventArgs> LikeClick;
         List<UserDataStorage> items;
 
-        public PostAdapter(List<UserDataStorage> data)
+        public ProfileAdapter(List<UserDataStorage> data)
         {
             items = data;
         }
@@ -26,7 +23,7 @@ namespace P4Travia
 
             View itemView = null;
             itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.profileview, parent, false);
-            var vh = new PostAdapterViewHolder(itemView, OnClick, OnLongClick);
+            var vh = new ProfileAdapterViewHolder(itemView);
 
             return vh;
         }
@@ -37,41 +34,36 @@ namespace P4Travia
             var item = items[position];
 
             // Replace the contents of the view with that element
-            var holder = viewHolder as PostAdapterViewHolder;
+            var holder = viewHolder as ProfileAdapterViewHolder;
 
             //holder.TextView.Text = items[position];
 
             holder.usernameTextView.Text = item.UserName;
+            holder.nationalityTextView.Text = item.Nationality;
+            holder.languageTextView.Text = item.Language; //list i stedet for string i .Text hmm
+            holder.genderTextView.Text = item.Gender;
         }
 
         public override int ItemCount => items.Count;
 
-        void OnClick(PostAdapterClickEventArgs args) => ItemClick?.Invoke(this, args);
-        void OnLongClick(PostAdapterClickEventArgs args) => ItemLongClick?.Invoke(this, args);
-
     }
 
-    public class PostAdapterViewHolder : RecyclerView.ViewHolder
+    public class ProfileAdapterViewHolder : RecyclerView.ViewHolder
     {
         //public TextView TextView { get; set; }
 
         public TextView usernameTextView { get; set; }
+        public TextView nationalityTextView { get; set; }
+        public TextView languageTextView { get; set; }
+        public TextView genderTextView { get; set; }
 
 
-        public PostAdapterViewHolder(View itemView, Action<PostAdapterClickEventArgs> clickListener,
-                            Action<PostAdapterClickEventArgs> longClickListener) : base(itemView)
+        public ProfileAdapterViewHolder(View itemView) : base(itemView)
         {
             usernameTextView = (TextView)itemView.FindViewById(Resource.Id.usernameTextView);
-
-
-            itemView.Click += (sender, e) => clickListener(new PostAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
-            itemView.LongClick += (sender, e) => longClickListener(new PostAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
+            nationalityTextView = (TextView)itemView.FindViewById(Resource.Id.nationalityTextView);
+            languageTextView = (TextView)itemView.FindViewById(Resource.Id.languageTextView);
+            genderTextView = (TextView)itemView.FindViewById(Resource.Id.genderTextView);
         }
-    }
-
-    public class PostAdapterClickEventArgs : EventArgs
-    {
-        public View View { get; set; }
-        public int Position { get; set; }
     }
 }

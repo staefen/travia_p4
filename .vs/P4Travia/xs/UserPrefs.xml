@@ -1,21 +1,21 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredDevice="pixel_3" AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredDevice="pixel_3" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/ProfileAdapter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Signup/Signup6.cs">
     <Files>
-      <File FileName="P4Travia/MainActivity.cs" Line="44" Column="42" />
-      <File FileName="P4Travia/EventListener/TaskCompletionListener.cs" Line="18" Column="49" />
-      <File FileName="P4Travia/Fragments/ProfileViewFragment.cs" Line="1" Column="1" />
-      <File FileName="P4Travia/Fragments/ProfileFragment.cs" Line="1" Column="1" />
-      <File FileName="P4Travia/EventListener/FullnameListener.cs" Line="19" Column="43" />
-      <File FileName="P4Travia/Resources/layout/profileview.xml" Line="42" Column="36" />
-      <File FileName="P4Travia/ProfileAdapter.cs" Line="70" Column="6" />
+      <File FileName="P4Travia/MainActivity.cs" Line="50" Column="21" />
+      <File FileName="P4Travia/ProfileAdapter.cs" Line="13" Column="14" />
+      <File FileName="P4Travia/Datamodels/UserDataModels.cs" Line="15" Column="23" />
+      <File FileName="P4Travia/Resources/layout/signup_1.xml" Line="1" Column="1" />
+      <File FileName="P4Travia/Signup/Signup6.cs" Line="66" Column="77" />
+      <File FileName="P4Travia/Signup/Signup5.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,9 +28,10 @@
               <Node name="Helpers" expanded="True" />
               <Node name="Resources" expanded="True">
                 <Node name="layout" expanded="True" />
-                <Node name="values" expanded="True" />
               </Node>
-              <Node name="ProfileAdapter.cs" selected="True" />
+              <Node name="Signup" expanded="True">
+                <Node name="Signup6.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -40,5 +41,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
