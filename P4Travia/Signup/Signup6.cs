@@ -71,59 +71,56 @@ namespace P4Travia.Signup
         {
 
             HashMap userMap = new HashMap();
+            userMap.Put("username", AppDataHelper.GetName());
+            userMap.Put("owner_id", AppDataHelper.GetFirebaseAuth().CurrentUser.Uid);
+            userMap.Put("upload_date", DateTime.Now.ToString());
 
-            // user inn i databasen
-            ShowProgressDialogue("Registering...");
+            DocumentReference newProfileRef = AppDataHelper.GetFirestore().Collection("profile_images_id").Document();
+            string postKey = newProfileRef.Id;
 
+            userMap.Put("profile_image_id", postKey);
+
+
+            ShowProgressDialogue("Creating Account ...");
+
+            // Save Post Image to Firebase Storaage
             StorageReference storageReference = null;
- //           if (fileBytes != null)
- //           {
- //               storageReference = FirebaseStorage.Instance.GetReference("profileImages/" + postKey);
- //               storageReference.PutBytes(fileBytes)
- //                   .AddOnSuccessListener(taskCompletionListeners)
- //                   .AddOnFailureListener(taskCompletionListeners);
- //           }
-
-            //mAuth.CreateUserWithEmailAndPassword(user.Email, user.Password).AddOnSuccessListener(this, taskCompletionListeners)
-            //    .AddOnFailureListener(this, taskCompletionListeners);
-
-
-            taskCompletionListeners.Success += (success, args) =>
+            if (fileBytes != null)
             {
+                storageReference = FirebaseStorage.Instance.GetReference("profileImages/" + postKey);
+                storageReference.PutBytes(fileBytes)
+                    .AddOnSuccessListener(taskCompletionListeners)
+                    .AddOnFailureListener(taskCompletionListeners);
+            }
 
-                DocumentReference userReference = database.Collection("users").Document(mAuth.CurrentUser.Uid);
-                string postKey = userReference.Id;
-                userMap.Put("image_id", postKey);
-
+            // Image Upload Success Callback
+            taskCompletionListeners.Success += (obj, args) =>
+            {
                 if (storageReference != null)
                 {
                     storageReference.GetDownloadUrl().AddOnSuccessListener(downloadUrlListener);
                 }
-
-                userReference.Set(userMap);
-
             };
 
             // Image Download URL Callback
             downloadUrlListener.Success += (obj, args) =>
             {
                 string downloadUrl = args.Result.ToString();
-                userMap.Put("download_url", downloadUrl);
+                userMap.Put("profile_download_url", downloadUrl);
 
                 // Save post to Firebase Firestore
+                newProfileRef.Set(userMap);
                 CloseProgressDialogue();
                 StartActivity(typeof(MainActivity));
                 Finish();
-
             };
 
-            // Registration Failure Callback
-            taskCompletionListeners.Failure += (failure, args) =>
+
+            // Image Upload Failure Callback
+            taskCompletionListeners.Failure += (obj, args) =>
             {
-                CloseProgressDialogue();
-                Toast.MakeText(this, "Registration Failed : " + args.Cause, ToastLength.Short).Show();
+                Toast.MakeText(this, "Upload was not completed", ToastLength.Short).Show();
             };
-
         }
 
         private void ProfileImage_Click(object sender, EventArgs e)
@@ -200,7 +197,6 @@ namespace P4Travia.Signup
 
         }
 
-
         void ShowProgressDialogue(string status)
         {
             progressDialogue = new ProgressDialogFragment(status);
@@ -217,6 +213,7 @@ namespace P4Travia.Signup
                 progressDialogue = null;
             }
         }
+
 
         string GenerateRandomString(int lenght)
         {

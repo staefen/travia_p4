@@ -61,7 +61,7 @@ namespace P4Travia.Signup
             user.Location = location;
 
             // user inn i databasen
-            ShowProgressDialogue("Registering...");
+            ShowProgressDialogue("Saving Information...");
             mAuth.CreateUserWithEmailAndPassword(user.Email, user.Password).AddOnSuccessListener(this, taskCompletionListeners)
                 .AddOnFailureListener(this, taskCompletionListeners);
 
