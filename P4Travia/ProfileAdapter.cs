@@ -40,7 +40,7 @@ namespace P4Travia
 
             holder.usernameTextView.Text = item.UserName;
             holder.nationalityTextView.Text = item.Nationality;
-            holder.languageTextView.Text = item.Language; //list i stedet for string i .Text hmm
+           // holder.languageTextView.Text = item.Language; //list i stedet for string i .Text hmm
             holder.genderTextView.Text = item.Gender;
         }
 

@@ -7,8 +7,10 @@ using Android.Widget;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.BottomNavigation;
 using P4Travia.Activities;
+using P4Travia.Datamodels;
 using P4Travia.EventListeners;
 using P4Travia.Datamodels;
+using AndroidX.RecyclerView.Widget;
 
 namespace P4Travia
 {
@@ -19,6 +21,9 @@ namespace P4Travia
         List<AndroidX.Fragment.App.Fragment> fragments;
         UserListener userListener;
         ProfileAdapter profileAdapter;
+        RecyclerView postRecyclerView;
+        List<UserDataStorage> Items;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -27,6 +32,8 @@ namespace P4Travia
             SetContentView(Resource.Layout.toolbar);
             SetButtons();
             SetContentView(Resource.Layout.bottom_nav_bar);
+
+            postRecyclerView = (RecyclerView)FindViewById(Resource.Id.postRecycleView);
 
             //Elementer i listen som refererer til de fragments vi har lavet
             fragments = new List<AndroidX.Fragment.App.Fragment>();
@@ -54,9 +61,11 @@ namespace P4Travia
 
         void SetupRecyclerView()
         {
-            postRecyclerView.SetLayoutManager(new AndroidX.RecyclerView.Widget.LinearLayoutManager(postRecyclerView.Context));
-            profileAdapter = new ProfileAdapter(userListener);
-            profileRecyclerView.SetAdapter(ProfileAdapter);
+            postRecyclerView.SetLayoutManager(new LinearLayoutManager(postRecyclerView.Context));
+            Items = new List<UserDataStorage>();
+            Items.Add(new UserDataStorage { UserName = "HELLO", Email = "MARIA@MAIL"});
+            profileAdapter = new ProfileAdapter(Items);
+            postRecyclerView.SetAdapter(profileAdapter);
         }
 
         // Footer
@@ -117,31 +126,3 @@ namespace P4Travia
         }
     }
 }
-
-
-
-
-
-
-
-
-
-//Dummy data
-void CreateData()
-{
-    ListOfPost = new List<Post>();
-    ListOfPost.Add(new Post { PostBody = "Is this working? Hallo?", Author = "Christian Holfelt", LikeCount = 12 });
-    ListOfPost.Add(new Post { PostBody = "jlngj wEJFHJ wgljgkl wKJLEGF FGJKWGJ EGJJ GFEF", Author = "Johnny Kirkegaard", LikeCount = 503 });
-    ListOfPost.Add(new Post { PostBody = "Yes my boi", Author = "Mufasa Uganda", LikeCount = 7 });
-    ListOfPost.Add(new Post { PostBody = "Test. Test! Test? Test...", Author = "Testo Testorino", LikeCount = 23 });
-}
-
-void SetupRecyclerView()
-{
-    postRecyclerView.SetLayoutManager(new AndroidX.RecyclerView.Widget.LinearLayoutManager(postRecyclerView.Context));
-    postAdapter = new PostAdapter(ListOfPost);
-    postRecyclerView.SetAdapter(postAdapter);
-    postAdapter.ItemLongClick += PostAdapter_ItemLongClick;
-    postAdapter.LikeClick += PostAdapter_LikeClick;
-}
-

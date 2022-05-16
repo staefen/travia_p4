@@ -1,21 +1,16 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredDevice="pixel_3" AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
   <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Signup/Signup6.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/MainActivity.cs">
     <Files>
-      <File FileName="P4Travia/MainActivity.cs" Line="50" Column="21" />
-      <File FileName="P4Travia/ProfileAdapter.cs" Line="13" Column="14" />
-      <File FileName="P4Travia/Datamodels/UserDataModels.cs" Line="15" Column="23" />
-      <File FileName="P4Travia/Resources/layout/signup_1.xml" Line="1" Column="1" />
-      <File FileName="P4Travia/Signup/Signup6.cs" Line="66" Column="77" />
-      <File FileName="P4Travia/Signup/Signup5.cs" Line="1" Column="1" />
+      <File FileName="P4Travia/Signup/Signup4.cs" Line="1" Column="1" />
+      <File FileName="P4Travia/ProfileAdapter.cs" Line="16" Column="10" />
+      <File FileName="P4Travia/MainActivity.cs" Line="65" Column="49" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -29,9 +24,7 @@
               <Node name="Resources" expanded="True">
                 <Node name="layout" expanded="True" />
               </Node>
-              <Node name="Signup" expanded="True">
-                <Node name="Signup6.cs" selected="True" />
-              </Node>
+              <Node name="Signup" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -41,4 +34,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.P4Travia PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_3" />
+  <MultiItemStartupConfigurations />
 </Properties>

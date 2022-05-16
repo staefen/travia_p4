@@ -1,12 +1,14 @@
 adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_round.xml
 androidx.appcompat.widget.Toolbar;obj/Debug/res/layout/bottom_nav_bar.xml
+androidx.appcompat.widget.Toolbar;obj/Debug/res/layout/post.xml
 androidx.appcompat.widget.Toolbar;obj/Debug/res/layout/toolbar.xml
 androidx.cardview.widget.CardView;obj/Debug/res/layout/browse.xml
 androidx.cardview.widget.CardView;obj/Debug/res/layout/location_settings.xml
 androidx.cardview.widget.CardView;obj/Debug/res/layout/mainpage.xml
 androidx.cardview.widget.CardView;obj/Debug/res/layout/viewactivity.xml
 androidx.recyclerview.widget.RecyclerView;obj/Debug/res/layout/myactivities.xml
+androidx.recyclerview.widget.RecyclerView;obj/Debug/res/layout/post.xml
 androidx.recyclerview.widget.RecyclerView;obj/Debug/res/layout/toolbar.xml
 background;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 background;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_round.xml
@@ -54,6 +56,7 @@ ImageView;obj/Debug/res/layout/bottom_nav_bar.xml
 ImageView;obj/Debug/res/layout/browse.xml
 ImageView;obj/Debug/res/layout/create_post.xml
 ImageView;obj/Debug/res/layout/mainpage.xml
+ImageView;obj/Debug/res/layout/post.xml
 ImageView;obj/Debug/res/layout/profile.xml
 ImageView;obj/Debug/res/layout/profileview.xml
 ImageView;obj/Debug/res/layout/signup_4.xml
@@ -71,6 +74,7 @@ LinearLayout;obj/Debug/res/layout/location_settings.xml
 LinearLayout;obj/Debug/res/layout/login.xml
 LinearLayout;obj/Debug/res/layout/login_signup_start.xml
 LinearLayout;obj/Debug/res/layout/notification_list.xml
+LinearLayout;obj/Debug/res/layout/post.xml
 LinearLayout;obj/Debug/res/layout/profile.xml
 LinearLayout;obj/Debug/res/layout/profileview.xml
 LinearLayout;obj/Debug/res/layout/progress_dialog.xml
@@ -102,6 +106,7 @@ RelativeLayout;obj/Debug/res/layout/location_settings.xml
 RelativeLayout;obj/Debug/res/layout/mainpage.xml
 RelativeLayout;obj/Debug/res/layout/myactivities.xml
 RelativeLayout;obj/Debug/res/layout/notification_list.xml
+RelativeLayout;obj/Debug/res/layout/post.xml
 RelativeLayout;obj/Debug/res/layout/profile.xml
 RelativeLayout;obj/Debug/res/layout/profileview.xml
 RelativeLayout;obj/Debug/res/layout/signup_1.xml
@@ -138,6 +143,7 @@ TextView;obj/Debug/res/layout/login.xml
 TextView;obj/Debug/res/layout/mainpage.xml
 TextView;obj/Debug/res/layout/myactivities.xml
 TextView;obj/Debug/res/layout/notification_list.xml
+TextView;obj/Debug/res/layout/post.xml
 TextView;obj/Debug/res/layout/profile.xml
 TextView;obj/Debug/res/layout/profileview.xml
 TextView;obj/Debug/res/layout/progress_dialog.xml
