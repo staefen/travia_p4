@@ -148,7 +148,7 @@
         android:id="@+id/settingsbutton"
         android:layout_below="@+id/editprofilebutton"/>
 
-            <androidx.recyclerview.widget.RecyclerView
+     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/profileRecyclerView"
         android:scrollbars="vertical"
         android:paddingLeft="16dp"
@@ -156,6 +156,5 @@
         android:paddingBottom="16dp"
         android:layout_width="match_parent"
         android:layout_height="200dp"/>
-
 </RelativeLayout>
 </ScrollView>

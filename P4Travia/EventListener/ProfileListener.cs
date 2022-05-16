@@ -23,11 +23,6 @@ namespace P4Travia.EventListeners
 
         public void FetchProfile()
         {
-            //Retrieve Only Once
-
-            //AppDataHelper.GetFirestore().Collection("posts").Get()
-            //    .AddOnSuccessListener(this);
-
            AppDataHelper.GetFirestore().Collection("users").AddSnapshotListener(this);
         }
 
@@ -51,10 +46,6 @@ namespace P4Travia.EventListeners
         {
             var snapshot = (QuerySnapshot)Value;
 
-            //Dette tjekker hele listen af posts igennem i databasen
-            if (!snapshot.IsEmpty)
-            {
-
                 foreach (DocumentSnapshot item in snapshot.Documents)
                 {
                     UserDataStorage userCopy = new UserDataStorage();
@@ -77,4 +68,3 @@ namespace P4Travia.EventListeners
 
         }
     }
-}

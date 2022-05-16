@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -39,12 +38,29 @@ namespace P4Travia
         {
             View view = inflater.Inflate(Resource.Layout.profileview, container, false);
             ConnectView(view);
+            return view;
+        }
 
+        private void ConnectView(View view)
+        {
+            editProfilebutton = (Button)view.FindViewById(Resource.Id.editprofilebutton);
+            editProfilebutton.Click += EditProfileButton_Click;
+
+            settingsButton = (Button)view.FindViewById(Resource.Id.settingsbutton);
+            settingsButton.Click += SettingsButton_Click;
+
+            UserListener userListner = new UserListener();
+            userListner.FetchUser();
+
+            FetchMyPost();
+
+        }
+
+        void FetchMyPost()
+        {
             profileListener = new ProfileListener();
             profileListener.FetchProfile();
             profileListener.OnProfileRetrieved += PostEventListener_OnPostRetrieved;
-
-            return view;
         }
 
         //Her henter vi en list af de post som er i Databasen (Listen laves i PostEventListener.cs) og smider dem ind i et recyclerview
@@ -58,28 +74,9 @@ namespace P4Travia
 
         void SetupRecyclerView()
         {
-            profileRecyclerView.SetLayoutManager(new LinearLayoutManager(profileRecyclerView.Context));
+            profileRecyclerView.SetLayoutManager(new AndroidX.RecyclerView.Widget.LinearLayoutManager(profileRecyclerView.Context));
             profileAdapter = new ProfileAdapter(ListOfProfiles);
             profileRecyclerView.SetAdapter(profileAdapter);
-        }
-
-        /*
-        // Replace the contents of a view (invoked by the layout manager)
-        private void SeView(View view)
-        {
-            UserDataStorage user = new UserDataStorage();
-            usernameTV.Text = user.UserName;
-
-            usernameTV = (TextView)view.FindViewById(Resource.Id.usernameTextView);
-        }
-        */
-        private void ConnectView(View view)
-        {
-            editProfilebutton = (Button)view.FindViewById(Resource.Id.editprofilebutton);
-            editProfilebutton.Click += EditProfileButton_Click;
-
-            settingsButton = (Button)view.FindViewById(Resource.Id.settingsbutton);
-            settingsButton.Click += SettingsButton_Click;
         }
 
         private void EditProfileButton_Click(object sender, EventArgs e)
