@@ -4005,23 +4005,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\louis\\.nuget\\packages\\": {}
-=======
-<<<<<<< HEAD
-    "C:\\Users\\louis\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\chris\\.nuget\\packages\\": {}
->>>>>>> ee1f993c064020a5c5e33d2b6e7a936867f3ec35
->>>>>>> main
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> main
       "projectUniqueName": "C:\\Users\\louis\\Source\\Repos\\travia_p4\\P4Travia\\P4Travia.csproj",
       "projectName": "P4Travia",
       "projectPath": "C:\\Users\\louis\\Source\\Repos\\travia_p4\\P4Travia\\P4Travia.csproj",
@@ -4031,20 +4019,6 @@
       "skipContentFileWrite": true,
       "configFilePaths": [
         "C:\\Users\\louis\\AppData\\Roaming\\NuGet\\NuGet.Config",
-<<<<<<< HEAD
-=======
-=======
-      "projectUniqueName": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj",
-      "projectName": "P4Travia",
-      "projectPath": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj",
-      "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\obj\\",
-      "projectStyle": "PackageReference",
-      "skipContentFileWrite": true,
-      "configFilePaths": [
-        "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> ee1f993c064020a5c5e33d2b6e7a936867f3ec35
->>>>>>> main
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

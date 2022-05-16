@@ -10,11 +10,7 @@
     android:minWidth="25px"
     android:minHeight="25px">
 
-<<<<<<< HEAD
-   <androidx.appcompat.widget.Toolbar
-=======
         <androidx.appcompat.widget.Toolbar
->>>>>>> main
         android:id="@+id/toolbar"
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
@@ -34,10 +30,8 @@
 
             <TextView
                 android:id="@+id/location"
-<<<<<<< HEAD
-=======
+
                 android:drawableLeft="@mipmap/round_room_white_18"
->>>>>>> main
                 android:text="Aalborg"
                 android:textSize="20sp"
                 android:textColor="#ffff"
@@ -57,10 +51,7 @@
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
-<<<<<<< HEAD
 
-=======
->>>>>>> main
     <FrameLayout
         android:id="@+id/fragmentcontainer"
         android:layout_width="match_parent"

@@ -8,16 +8,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.p4travia" android:installLocation="auto">
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="31" />
   <uses-permission android:name="android.permission.INTERNET" />
-<<<<<<< HEAD
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-feature android:name="android.hardware.location" android:required="false" />
   <uses-feature android:name="android.hardware.location.gps" android:required="false" />
   <uses-feature android:name="android.hardware.location.network" android:required="false" />
-=======
->>>>>>> main
   <uses-feature android:name="android.hardware.camera" android:required="false" />
   <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -48,8 +43,6 @@
     <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="crc6425dd1d1a6701386b.CreatePostActivity" />
     <activity android:label="LocationActivity" android:name="crc6425dd1d1a6701386b.LocationActivity" />
     <activity android:label="NotificationActivity" android:name="crc6425dd1d1a6701386b.NotificationActivity" />
-<<<<<<< HEAD
-=======
     <activity android:label="ViewProfile" android:name="crc6425dd1d1a6701386b.ViewProfile" />
     <activity android:label="ViewActivity" android:name="crc6425dd1d1a6701386b.ViewActivity" android:exported="true">
       <intent-filter>
@@ -57,7 +50,6 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
->>>>>>> main
     <activity android:configChanges="orientation|screenSize|uiMode" android:name="crc646957603ea1820544.MediaPickerActivity" />
     <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.BatteryBroadcastReceiver" />

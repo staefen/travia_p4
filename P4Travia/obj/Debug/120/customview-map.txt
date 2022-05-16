@@ -8,27 +8,17 @@ androidx.cardview.widget.CardView;obj\Debug\120\res\layout\mainpage.xml
 androidx.cardview.widget.CardView;obj\Debug\120\res\layout\viewactivity.xml
 androidx.recyclerview.widget.RecyclerView;obj\Debug\120\res\layout\myactivities.xml
 androidx.recyclerview.widget.RecyclerView;obj\Debug\120\res\layout\toolbar.xml
-<<<<<<< HEAD
-=======
-attr;C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\3\jl\res\values\values.xml
->>>>>>> main
+attr;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\83\jl\res\values\values.xml
 background;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher.xml
 background;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher_round.xml
 Button;obj\Debug\120\res\layout\activity_main.xml
 Button;obj\Debug\120\res\layout\create_post.xml
-<<<<<<< HEAD
-=======
 Button;obj\Debug\120\res\layout\edit_profile.xml
->>>>>>> main
 Button;obj\Debug\120\res\layout\location_settings.xml
 Button;obj\Debug\120\res\layout\login.xml
 Button;obj\Debug\120\res\layout\login_signup_start.xml
 Button;obj\Debug\120\res\layout\notification_list.xml
-<<<<<<< HEAD
-Button;obj\Debug\120\res\layout\profile.xml
-=======
 Button;obj\Debug\120\res\layout\profileview.xml
->>>>>>> main
 Button;obj\Debug\120\res\layout\signup_1.xml
 Button;obj\Debug\120\res\layout\signup_2.xml
 Button;obj\Debug\120\res\layout\signup_3.xml
@@ -37,26 +27,16 @@ Button;obj\Debug\120\res\layout\signup_5.xml
 Button;obj\Debug\120\res\layout\signup_6.xml
 Button;obj\Debug\120\res\layout\signup_start.xml
 Button;obj\Debug\120\res\layout\viewactivity.xml
-<<<<<<< HEAD
-cache-path;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\56\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
-=======
-cache-path;C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\58\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+cache-path;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\50\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 CheckBox;obj\Debug\120\res\layout\signup_3.xml
->>>>>>> main
 color;obj\Debug\120\res\values\colors.xml
 color;obj\Debug\120\res\values\ic_launcher_background.xml
 com.google.android.material.bottomnavigation.BottomNavigationView;obj\Debug\120\res\layout\bottom_nav_bar.xml
 corners;obj\Debug\120\res\drawable\curvededges_white.xml
-crc64b227089827305775.CircleImageView;obj\Debug\120\res\layout\edit_profile.xml
-crc64b227089827305775.CircleImageView;obj\Debug\120\res\layout\profileview.xml
-crc64b227089827305775.CircleImageView;obj\Debug\120\res\layout\signup_6.xml
-declare-styleable;C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\3\jl\res\values\values.xml
+declare-styleable;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\83\jl\res\values\values.xml
 dimen;obj\Debug\120\res\values\dimens.xml
 EditText;obj\Debug\120\res\layout\create_post.xml
-<<<<<<< HEAD
-=======
 EditText;obj\Debug\120\res\layout\edit_profile.xml
->>>>>>> main
 EditText;obj\Debug\120\res\layout\location_settings.xml
 EditText;obj\Debug\120\res\layout\login.xml
 EditText;obj\Debug\120\res\layout\profileview.xml
@@ -64,14 +44,9 @@ EditText;obj\Debug\120\res\layout\signup_1.xml
 EditText;obj\Debug\120\res\layout\signup_4.xml
 EditText;obj\Debug\120\res\layout\signup_5.xml
 EditText;obj\Debug\120\res\layout\signup_start.xml
-<<<<<<< HEAD
-external-cache-path;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\56\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
-external-path;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\56\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
-=======
-external-cache-path;C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\58\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-cache-path;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\50\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-files-path;obj\Debug\120\res\xml\file_paths.xml
-external-path;C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\58\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
->>>>>>> main
+external-path;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\50\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher.xml
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher_round.xml
 FrameLayout;obj\Debug\120\res\layout\bottom_nav_bar.xml
@@ -85,12 +60,7 @@ ImageView;obj\Debug\120\res\layout\create_post.xml
 ImageView;obj\Debug\120\res\layout\edit_profile.xml
 ImageView;obj\Debug\120\res\layout\login_signup_start.xml
 ImageView;obj\Debug\120\res\layout\mainpage.xml
-<<<<<<< HEAD
-ImageView;obj\Debug\120\res\layout\profile.xml
-ImageView;obj\Debug\120\res\layout\signup_4.xml
-=======
 ImageView;obj\Debug\120\res\layout\profileview.xml
->>>>>>> main
 ImageView;obj\Debug\120\res\layout\toolbar.xml
 ImageView;obj\Debug\120\res\layout\viewactivity.xml
 include;obj\Debug\120\res\layout\location_settings.xml
@@ -101,19 +71,12 @@ item;obj\Debug\120\res\values\styles.xml
 LinearLayout;obj\Debug\120\res\layout\activity_main.xml
 LinearLayout;obj\Debug\120\res\layout\browse.xml
 LinearLayout;obj\Debug\120\res\layout\create_post.xml
-<<<<<<< HEAD
-=======
 LinearLayout;obj\Debug\120\res\layout\edit_profile.xml
->>>>>>> main
 LinearLayout;obj\Debug\120\res\layout\location_settings.xml
 LinearLayout;obj\Debug\120\res\layout\login.xml
 LinearLayout;obj\Debug\120\res\layout\login_signup_start.xml
 LinearLayout;obj\Debug\120\res\layout\notification_list.xml
-<<<<<<< HEAD
-LinearLayout;obj\Debug\120\res\layout\profile.xml
-=======
 LinearLayout;obj\Debug\120\res\layout\profileview.xml
->>>>>>> main
 LinearLayout;obj\Debug\120\res\layout\progress_dialog.xml
 LinearLayout;obj\Debug\120\res\layout\settings.xml
 LinearLayout;obj\Debug\120\res\layout\signup_1.xml
@@ -126,12 +89,8 @@ LinearLayout;obj\Debug\120\res\layout\signup_start.xml
 LinearLayout;obj\Debug\120\res\layout\toolbar.xml
 LinearLayout;obj\Debug\120\res\layout\viewactivity.xml
 menu;obj\Debug\120\res\menu\navigation.xml
-<<<<<<< HEAD
-paths;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\56\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
-=======
-paths;C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\58\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+paths;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\50\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 paths;obj\Debug\120\res\xml\file_paths.xml
->>>>>>> main
 ProgressBar;obj\Debug\120\res\layout\progress_dialog.xml
 ProgressBar;obj\Debug\120\res\layout\signup_1.xml
 ProgressBar;obj\Debug\120\res\layout\signup_2.xml
@@ -146,14 +105,6 @@ refractored.controls.CircleImageView;obj\Debug\120\res\layout\signup_6.xml
 RelativeLayout;obj\Debug\120\res\layout\activity_main.xml
 RelativeLayout;obj\Debug\120\res\layout\bottom_nav_bar.xml
 RelativeLayout;obj\Debug\120\res\layout\create_post.xml
-<<<<<<< HEAD
-RelativeLayout;obj\Debug\120\res\layout\location_settings.xml
-RelativeLayout;obj\Debug\120\res\layout\mainpage.xml
-RelativeLayout;obj\Debug\120\res\layout\myactivities.xml
-RelativeLayout;obj\Debug\120\res\layout\notification_list.xml
-RelativeLayout;obj\Debug\120\res\layout\profile.xml
-RelativeLayout;obj\Debug\120\res\layout\toolbar.xml
-=======
 RelativeLayout;obj\Debug\120\res\layout\edit_profile.xml
 RelativeLayout;obj\Debug\120\res\layout\location_settings.xml
 RelativeLayout;obj\Debug\120\res\layout\login_signup_start.xml
@@ -169,21 +120,15 @@ RelativeLayout;obj\Debug\120\res\layout\signup_5.xml
 RelativeLayout;obj\Debug\120\res\layout\signup_6.xml
 RelativeLayout;obj\Debug\120\res\layout\signup_start.xml
 RelativeLayout;obj\Debug\120\res\layout\toolbar.xml
-resources;C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\3\jl\res\values\values.xml
->>>>>>> main
+resources;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\83\jl\res\values\values.xml
 resources;obj\Debug\120\res\values\colors.xml
 resources;obj\Debug\120\res\values\dimens.xml
 resources;obj\Debug\120\res\values\ic_launcher_background.xml
 resources;obj\Debug\120\res\values\strings.xml
 resources;obj\Debug\120\res\values\styles.xml
-<<<<<<< HEAD
-ScrollView;obj\Debug\120\res\layout\location_settings.xml
-ScrollView;obj\Debug\120\res\layout\profile.xml
-=======
 ScrollView;obj\Debug\120\res\layout\edit_profile.xml
 ScrollView;obj\Debug\120\res\layout\location_settings.xml
 ScrollView;obj\Debug\120\res\layout\profileview.xml
->>>>>>> main
 ScrollView;obj\Debug\120\res\layout\viewactivity.xml
 SeekBar;obj\Debug\120\res\layout\location_settings.xml
 shape;obj\Debug\120\res\drawable\back.xml
@@ -201,20 +146,13 @@ TextView;obj\Debug\120\res\layout\activity_main.xml
 TextView;obj\Debug\120\res\layout\bottom_nav_bar.xml
 TextView;obj\Debug\120\res\layout\browse.xml
 TextView;obj\Debug\120\res\layout\create_post.xml
-<<<<<<< HEAD
-=======
 TextView;obj\Debug\120\res\layout\edit_profile.xml
->>>>>>> main
 TextView;obj\Debug\120\res\layout\location_settings.xml
 TextView;obj\Debug\120\res\layout\login.xml
 TextView;obj\Debug\120\res\layout\mainpage.xml
 TextView;obj\Debug\120\res\layout\myactivities.xml
 TextView;obj\Debug\120\res\layout\notification_list.xml
-<<<<<<< HEAD
-TextView;obj\Debug\120\res\layout\profile.xml
-=======
 TextView;obj\Debug\120\res\layout\profileview.xml
->>>>>>> main
 TextView;obj\Debug\120\res\layout\progress_dialog.xml
 TextView;obj\Debug\120\res\layout\settings.xml
 TextView;obj\Debug\120\res\layout\signup_1.xml

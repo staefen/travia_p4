@@ -337,12 +337,9 @@
   <ItemGroup>
     <Compile Include="Activities\CreatePostActivity.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
-<<<<<<< HEAD
     <Compile Include="LocationHandler.cs" />
-=======
     <Compile Include="Fragments\EditProfileFragment.cs" />
     <Compile Include="Fragments\ProfileViewFragment.cs" />
->>>>>>> main
     <Compile Include="Fragments\ProgressDialogFragment.cs" />
     <Compile Include="Fragments\SettingFragment.cs" />
     <Compile Include="Helpers\AppDataHelper.cs" />
@@ -427,7 +424,6 @@
       </SubType>
       <Generator>
       </Generator>
-<<<<<<< HEAD
     </AndroidResource>
     <AndroidResource Include="Resources\mipmap-hdpi\round_notifications_none_white_36.png">
       <SubType>
@@ -572,7 +568,6 @@
       </SubType>
       <Generator>
       </Generator>
-=======
     </AndroidResource>
     <AndroidResource Include="Resources\mipmap-hdpi\round_notifications_none_white_36.png">
       <SubType>
@@ -817,7 +812,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\round_room_white_48.png">
       <SubType></SubType>
       <Generator></Generator>
->>>>>>> main
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>

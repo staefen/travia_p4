@@ -20,12 +20,10 @@ namespace P4Travia
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-<<<<<<< HEAD
 
-=======
             SetContentView(Resource.Layout.toolbar);
             SetButtons();
->>>>>>> main
+
             SetContentView(Resource.Layout.bottom_nav_bar);
 
             //Elementer i listen som refererer til de fragments vi har lavet
@@ -72,8 +70,6 @@ namespace P4Travia
                     return true;
             }
             return false;
-<<<<<<< HEAD
-=======
         }
 
         //Toolbar
@@ -95,7 +91,6 @@ namespace P4Travia
         {
             TextView location_settings = (TextView)FindViewById(Resource.Id.location);
             location_settings.Click += Location_Settings_Click;
->>>>>>> main
         }
 
 

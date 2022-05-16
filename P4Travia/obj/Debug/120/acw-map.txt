@@ -64,8 +64,6 @@ p4travia.activities.LocationActivity;crc6425dd1d1a6701386b.LocationActivity
 P4Travia.Activities.NotificationActivity, P4Travia;crc6425dd1d1a6701386b.NotificationActivity
 P4Travia.Activities.NotificationActivity;crc6425dd1d1a6701386b.NotificationActivity
 p4travia.activities.NotificationActivity;crc6425dd1d1a6701386b.NotificationActivity
-<<<<<<< HEAD
-=======
 P4Travia.Activities.ViewProfile, P4Travia;crc6425dd1d1a6701386b.ViewProfile
 P4Travia.Activities.ViewProfile;crc6425dd1d1a6701386b.ViewProfile
 p4travia.activities.ViewProfile;crc6425dd1d1a6701386b.ViewProfile
@@ -90,7 +88,6 @@ ffimageloading.cross.MvxCachedImageView;ffimageloading.cross.MvxCachedImageView
 FFImageLoading.Cache.LRUCache, FFImageLoading.Platform;crc64b75d9ddab39d6c30.LRUCache
 FFImageLoading.Cache.LRUCache;crc64b75d9ddab39d6c30.LRUCache
 ffimageloading.cache.LRUCache;crc64b75d9ddab39d6c30.LRUCache
->>>>>>> main
 Javax.Annotation.ICheckForNull, Jsr305Binding;javax.annotation.CheckForNull
 Javax.Annotation.ICheckForNull;javax.annotation.CheckForNull
 javax.annotation.CheckForNull;javax.annotation.CheckForNull
