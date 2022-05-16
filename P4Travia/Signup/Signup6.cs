@@ -70,41 +70,19 @@ namespace P4Travia.Signup
         private void Signup6_Click(object sender, EventArgs e)
         {
 
-            //// info inn i klassen
-            Datamodels.UserDataStorage user = new Datamodels.UserDataStorage();
-            user.Email = Intent.GetStringExtra("Email");
-            user.Password = Intent.GetStringExtra("Password");
-            user.Birthday = Intent.GetIntExtra("Birthday", 1000);
-            user.UserName = Intent.GetStringExtra("Name");
-            user.Nationality = Intent.GetStringExtra("Nationality");
-            user.Gender = Intent.GetStringExtra("Gender");
-            user.Language = Intent.GetStringArrayListExtra("Language");
-            user.Bio = Intent.GetStringExtra("Bio");
-            user.Location = Intent.GetStringExtra("Location");
-
             HashMap userMap = new HashMap();
-
-            userMap.Put("mail", user.Email);
-            userMap.Put("birthday", user.Birthday);
-            userMap.Put("username", user.UserName);
-            userMap.Put("nationality", user.Nationality);
-            userMap.Put("gender", user.Gender);
-            userMap.Put("language", (Java.Lang.Object)user.Language);
-            userMap.Put("bio", user.Bio);
-            userMap.Put("location", user.Location);
-
 
             // user inn i databasen
             ShowProgressDialogue("Registering...");
 
             StorageReference storageReference = null;
-            if (fileBytes != null)
-            {
-                storageReference = FirebaseStorage.Instance.GetReference("profileImages/" + postKey);
-                storageReference.PutBytes(fileBytes)
-                    .AddOnSuccessListener(taskCompletionListeners)
-                    .AddOnFailureListener(taskCompletionListeners);
-            }
+ //           if (fileBytes != null)
+ //           {
+ //               storageReference = FirebaseStorage.Instance.GetReference("profileImages/" + postKey);
+ //               storageReference.PutBytes(fileBytes)
+ //                   .AddOnSuccessListener(taskCompletionListeners)
+ //                   .AddOnFailureListener(taskCompletionListeners);
+ //           }
 
             //mAuth.CreateUserWithEmailAndPassword(user.Email, user.Password).AddOnSuccessListener(this, taskCompletionListeners)
             //    .AddOnFailureListener(this, taskCompletionListeners);

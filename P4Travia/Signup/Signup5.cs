@@ -53,7 +53,7 @@ namespace P4Travia.Signup
             }
             else
             {
-                var intent = new Intent(this, typeof(Signup6));
+                var intent = new Intent(this, typeof(Signup4));
                 intent.PutExtra("Bio", bio);
                 intent.PutStringArrayListExtra("Language", language);
                 intent.PutExtra("Nationality", nationality);
@@ -69,7 +69,7 @@ namespace P4Travia.Signup
 
         private void Skip3_Click(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(Signup6));
+            var intent = new Intent(this, typeof(Signup4));
             intent.PutStringArrayListExtra("Language", language);
             intent.PutExtra("Nationality", nationality);
             intent.PutExtra("Gender", gender);
