@@ -8,7 +8,7 @@ androidx.cardview.widget.CardView;obj\Debug\120\res\layout\mainpage.xml
 androidx.cardview.widget.CardView;obj\Debug\120\res\layout\viewactivity.xml
 androidx.recyclerview.widget.RecyclerView;obj\Debug\120\res\layout\myactivities.xml
 androidx.recyclerview.widget.RecyclerView;obj\Debug\120\res\layout\toolbar.xml
-attr;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\83\jl\res\values\values.xml
+attr;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\3\jl\res\values\values.xml
 background;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher.xml
 background;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher_round.xml
 Button;obj\Debug\120\res\layout\activity_main.xml
@@ -27,13 +27,13 @@ Button;obj\Debug\120\res\layout\signup_5.xml
 Button;obj\Debug\120\res\layout\signup_6.xml
 Button;obj\Debug\120\res\layout\signup_start.xml
 Button;obj\Debug\120\res\layout\viewactivity.xml
-cache-path;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\50\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+cache-path;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\58\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 CheckBox;obj\Debug\120\res\layout\signup_3.xml
 color;obj\Debug\120\res\values\colors.xml
 color;obj\Debug\120\res\values\ic_launcher_background.xml
 com.google.android.material.bottomnavigation.BottomNavigationView;obj\Debug\120\res\layout\bottom_nav_bar.xml
 corners;obj\Debug\120\res\drawable\curvededges_white.xml
-declare-styleable;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\83\jl\res\values\values.xml
+declare-styleable;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\3\jl\res\values\values.xml
 dimen;obj\Debug\120\res\values\dimens.xml
 EditText;obj\Debug\120\res\layout\create_post.xml
 EditText;obj\Debug\120\res\layout\edit_profile.xml
@@ -44,9 +44,9 @@ EditText;obj\Debug\120\res\layout\signup_1.xml
 EditText;obj\Debug\120\res\layout\signup_4.xml
 EditText;obj\Debug\120\res\layout\signup_5.xml
 EditText;obj\Debug\120\res\layout\signup_start.xml
-external-cache-path;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\50\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-cache-path;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\58\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-files-path;obj\Debug\120\res\xml\file_paths.xml
-external-path;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\50\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-path;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\58\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher.xml
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\ic_launcher_round.xml
 FrameLayout;obj\Debug\120\res\layout\bottom_nav_bar.xml
@@ -89,7 +89,7 @@ LinearLayout;obj\Debug\120\res\layout\signup_start.xml
 LinearLayout;obj\Debug\120\res\layout\toolbar.xml
 LinearLayout;obj\Debug\120\res\layout\viewactivity.xml
 menu;obj\Debug\120\res\menu\navigation.xml
-paths;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\50\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+paths;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\58\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 paths;obj\Debug\120\res\xml\file_paths.xml
 ProgressBar;obj\Debug\120\res\layout\progress_dialog.xml
 ProgressBar;obj\Debug\120\res\layout\signup_1.xml
@@ -120,7 +120,7 @@ RelativeLayout;obj\Debug\120\res\layout\signup_5.xml
 RelativeLayout;obj\Debug\120\res\layout\signup_6.xml
 RelativeLayout;obj\Debug\120\res\layout\signup_start.xml
 RelativeLayout;obj\Debug\120\res\layout\toolbar.xml
-resources;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\83\jl\res\values\values.xml
+resources;C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\3\jl\res\values\values.xml
 resources;obj\Debug\120\res\values\colors.xml
 resources;obj\Debug\120\res\values\dimens.xml
 resources;obj\Debug\120\res\values\ic_launcher_background.xml
