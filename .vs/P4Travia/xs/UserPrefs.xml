@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_3" PreferredExecutionTarget="Android.RF8N73DG4TB" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.P4Travia PreferredExecutionTarget="Android.RF8N73DG4TB" AndroidDesignerPreferredDevice="pixel_3" AndroidDesignerPreferredTheme="AppTheme" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Fragments/EditProfileFragment.cs">
     <Files>
       <File FileName="P4Travia/Signup/Signup5.cs" Line="54" Column="17" />
@@ -21,9 +23,7 @@
           <Node name="P4Travia" expanded="True">
             <Node name="P4Travia" expanded="True">
               <Node name="Activities" expanded="True" />
-              <Node name="Fragments" expanded="True">
-                <Node name="EditProfileFragment.cs" selected="True" />
-              </Node>
+              <Node name="Fragments" expanded="True" />
               <Node name="Resources" expanded="True">
                 <Node name="drawable" expanded="True" />
                 <Node name="layout" expanded="True" />
@@ -38,8 +38,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.RF8N73DG4TB" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
