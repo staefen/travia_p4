@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -10,6 +11,8 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using P4Travia.Datamodels;
+using P4Travia.Helpers;
+
 
 namespace P4Travia
 {
@@ -17,17 +20,24 @@ namespace P4Travia
     {
         Button editProfilebutton;
         Button settingsButton;
+        //TextView usernameTV;
+
+        public TextView usernameTV { get; set; }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-
-
-            UserDataStorage user = new UserDataStorage;
-            user.UserName = (TextView)itemView.FindViewById(Resource.Id.usernameTextView);
-
             View view = inflater.Inflate(Resource.Layout.profileview, container, false);
             ConnectView(view);
+            SeView(view);
             return view;
+        }
+
+        // Replace the contents of a view (invoked by the layout manager)
+        private void SeView(View view)
+        {
+            usernameTV = (TextView)view.FindViewById(Resource.Id.usernameTextView);
+
+            usernameTV.Text = AppDataHelper.GetName();
         }
 
         private void ConnectView(View view)
@@ -41,9 +51,9 @@ namespace P4Travia
 
         private void EditProfileButton_Click(object sender, EventArgs e)
         {
-            AndroidX.Fragment.App.Fragment ProfileFragment = new EditProfileFragment();
+            AndroidX.Fragment.App.Fragment ProfileViewFragment = new ProfileViewFragment();
             var transaction = FragmentManager.BeginTransaction()
-                .Replace(Resource.Id.fragmentcontainer, ProfileFragment)
+                .Replace(Resource.Id.fragmentcontainer, ProfileViewFragment)
                 .Commit();
         }
 

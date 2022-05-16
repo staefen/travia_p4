@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:id="@+id/username"
+        android:id="@+id/usernameTextView"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/viewProfilePic"/>
 
@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:layout_height="50dp"
-        android:layout_below="@+id/username"
+        android:layout_below="@id/usernameTextView"
         android:id="@+id/profileicons">
 
         <HorizontalScrollView

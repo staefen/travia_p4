@@ -1129,9 +1129,9 @@ public final class R {
 		public static final int uniform = 0x7f0901fb;
 		public static final int unlabeled = 0x7f0901fc;
 		public static final int up = 0x7f0901fd;
-		public static final int view_offset_helper = 0x7f090202;
-		public static final int visible = 0x7f090207;
-		public static final int wrap_content = 0x7f09020d;
+		public static final int view_offset_helper = 0x7f090203;
+		public static final int visible = 0x7f090208;
+		public static final int wrap_content = 0x7f09020e;
 	}
 	public static final class integer {
 		public static final int abc_config_activityDefaultDur = 0x7f0a0000;

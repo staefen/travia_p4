@@ -621,3 +621,5 @@
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/P4Travia.csproj.AssemblyReference.cache
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc649c6668b335947ec3/UserListener.java

@@ -46,13 +46,13 @@ namespace P4Travia
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
             navigation.SetOnNavigationItemSelectedListener(this);
 
-            // FetchUser();
+            FetchUser();
         }
-        /*
+        
         // Henter user profile data
         void FetchUser()
         {
-            userListener = new UserListener();
+            UserListener userListener = new UserListener();
             userListener.FetchUser();
             SetupRecyclerView();
         }
