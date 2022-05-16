@@ -27,7 +27,11 @@ Button;obj/Debug/res/layout/signup_5.xml
 Button;obj/Debug/res/layout/signup_6.xml
 Button;obj/Debug/res/layout/signup_start.xml
 Button;obj/Debug/res/layout/viewactivity.xml
+<<<<<<< HEAD
 cache-path;/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/lp/58/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+=======
+cache-path;/Users/stephenhuynh/Library/CloudStorage/OneDrive-Personligt/Interaktionsdesign/4. Semester/P4/travia_p4/P4Travia/obj/Debug/lp/56/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+>>>>>>> main
 CheckBox;obj/Debug/res/layout/signup_3.xml
 color;obj/Debug/res/values/colors.xml
 color;obj/Debug/res/values/ic_launcher_background.xml
@@ -44,9 +48,14 @@ EditText;obj/Debug/res/layout/signup_1.xml
 EditText;obj/Debug/res/layout/signup_4.xml
 EditText;obj/Debug/res/layout/signup_5.xml
 EditText;obj/Debug/res/layout/signup_start.xml
+<<<<<<< HEAD
 external-cache-path;/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/lp/58/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 external-files-path;obj/Debug/res/xml/file_paths.xml
 external-path;/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/lp/58/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+=======
+external-cache-path;/Users/stephenhuynh/Library/CloudStorage/OneDrive-Personligt/Interaktionsdesign/4. Semester/P4/travia_p4/P4Travia/obj/Debug/lp/56/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+external-path;/Users/stephenhuynh/Library/CloudStorage/OneDrive-Personligt/Interaktionsdesign/4. Semester/P4/travia_p4/P4Travia/obj/Debug/lp/56/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+>>>>>>> main
 foreground;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 foreground;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_round.xml
 FrameLayout;obj/Debug/res/layout/bottom_nav_bar.xml
@@ -89,8 +98,12 @@ LinearLayout;obj/Debug/res/layout/signup_start.xml
 LinearLayout;obj/Debug/res/layout/toolbar.xml
 LinearLayout;obj/Debug/res/layout/viewactivity.xml
 menu;obj/Debug/res/menu/navigation.xml
+<<<<<<< HEAD
 paths;/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/lp/58/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 paths;obj/Debug/res/xml/file_paths.xml
+=======
+paths;/Users/stephenhuynh/Library/CloudStorage/OneDrive-Personligt/Interaktionsdesign/4. Semester/P4/travia_p4/P4Travia/obj/Debug/lp/56/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+>>>>>>> main
 ProgressBar;obj/Debug/res/layout/progress_dialog.xml
 ProgressBar;obj/Debug/res/layout/signup_1.xml
 ProgressBar;obj/Debug/res/layout/signup_2.xml

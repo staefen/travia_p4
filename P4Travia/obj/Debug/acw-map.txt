@@ -67,6 +67,7 @@ p4travia.activities.NotificationActivity;crc6425dd1d1a6701386b.NotificationActiv
 P4Travia.Activities.ViewProfile, P4Travia;crc6425dd1d1a6701386b.ViewProfile
 P4Travia.Activities.ViewProfile;crc6425dd1d1a6701386b.ViewProfile
 p4travia.activities.ViewProfile;crc6425dd1d1a6701386b.ViewProfile
+<<<<<<< HEAD
 FFImageLoading.Drawables.SelfDisposingBitmapDrawable, FFImageLoading.Platform;crc644bcdcf6d99873ace.SelfDisposingBitmapDrawable
 FFImageLoading.Drawables.SelfDisposingBitmapDrawable;crc644bcdcf6d99873ace.SelfDisposingBitmapDrawable
 ffimageloading.drawables.SelfDisposingBitmapDrawable;crc644bcdcf6d99873ace.SelfDisposingBitmapDrawable
@@ -85,6 +86,11 @@ ffimageloading.cross.MvxCachedImageView;ffimageloading.cross.MvxCachedImageView
 FFImageLoading.Cache.LRUCache, FFImageLoading.Platform;crc64b75d9ddab39d6c30.LRUCache
 FFImageLoading.Cache.LRUCache;crc64b75d9ddab39d6c30.LRUCache
 ffimageloading.cache.LRUCache;crc64b75d9ddab39d6c30.LRUCache
+=======
+P4Travia.Activities.ViewActivity, P4Travia;crc6425dd1d1a6701386b.ViewActivity
+P4Travia.Activities.ViewActivity;crc6425dd1d1a6701386b.ViewActivity
+p4travia.activities.ViewActivity;crc6425dd1d1a6701386b.ViewActivity
+>>>>>>> main
 Javax.Annotation.ICheckForNull, Jsr305Binding;javax.annotation.CheckForNull
 Javax.Annotation.ICheckForNull;javax.annotation.CheckForNull
 javax.annotation.CheckForNull;javax.annotation.CheckForNull
