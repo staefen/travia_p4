@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
   <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Fragments/ProfileViewFragment.cs">
     <Files>
-      <File FileName="P4Travia/Fragments/ProfileViewFragment.cs" Line="12" Column="22" />
-      <File FileName="P4Travia/Signup/Signup4.cs" Line="58" Column="10" />
-      <File FileName="P4Travia/MainActivity.cs" Line="33" Column="26" />
+      <File FileName="P4Travia/Fragments/ProfileViewFragment.cs" Line="52" Column="10" />
+      <File FileName="P4Travia/MainActivity.cs" Line="60" Column="1" />
+      <File FileName="P4Travia/ProfileAdapter.cs" Line="57" Column="24" />
+      <File FileName="P4Travia/EventListener/UserListener.cs" Line="12" Column="10" />
+      <File FileName="P4Travia/EventListener/ProfileListener.cs" Line="42" Column="27" />
+      <File FileName="P4Travia/Datamodels/UserDataModels.cs" Line="16" Column="46" />
+      <File FileName="P4Travia/Signup/Login.cs" Line="59" Column="66" />
+      <File FileName="P4Travia/Helpers/AppDataHelper.cs" Line="1" Column="1" />
+      <File FileName="P4Travia/Resources/layout/profileview.xml" Line="148" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,9 +18,12 @@
           <Node name="P4Travia" expanded="True">
             <Node name="P4Travia" expanded="True">
               <Node name="Activities" expanded="True" />
+              <Node name="Datamodels" expanded="True" />
+              <Node name="EventListener" expanded="True" />
               <Node name="Fragments" expanded="True">
                 <Node name="ProfileViewFragment.cs" selected="True" />
               </Node>
+              <Node name="Helpers" expanded="True" />
               <Node name="Resources" expanded="True">
                 <Node name="layout" expanded="True" />
               </Node>
@@ -33,6 +37,12 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.RF8N73DG4TB" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.RF8N73DG4TB" />
+  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.RF8N73DG4TB" AndroidDesignerPreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

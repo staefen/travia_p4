@@ -9,6 +9,7 @@ androidx.cardview.widget.CardView;obj/Debug/res/layout/mainpage.xml
 androidx.cardview.widget.CardView;obj/Debug/res/layout/viewactivity.xml
 androidx.recyclerview.widget.RecyclerView;obj/Debug/res/layout/myactivities.xml
 androidx.recyclerview.widget.RecyclerView;obj/Debug/res/layout/post.xml
+androidx.recyclerview.widget.RecyclerView;obj/Debug/res/layout/profileview.xml
 androidx.recyclerview.widget.RecyclerView;obj/Debug/res/layout/toolbar.xml
 background;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 background;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_round.xml

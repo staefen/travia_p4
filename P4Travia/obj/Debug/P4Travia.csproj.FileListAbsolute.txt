@@ -595,3 +595,4 @@
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc641bdd4867275d014e/ProfileAdapter.java
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc641bdd4867275d014e/ProfileAdapterViewHolder.java
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc649c6668b335947ec3/UserListener.java
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/android/src/crc649c6668b335947ec3/ProfileListener.java

@@ -19,10 +19,15 @@ namespace P4Travia
     {
         //Liste af fragments
         List<AndroidX.Fragment.App.Fragment> fragments;
-        UserListener userListener;
+
+        RecyclerView profileRecyclerView;
         ProfileAdapter profileAdapter;
-        RecyclerView postRecyclerView;
-        List<UserDataStorage> Items;
+
+        List<UserDataStorage> ListOfProfiles;
+
+        ProfileListener profileListener;
+
+        public TextView usernameTV { get; set; }
 
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -33,7 +38,8 @@ namespace P4Travia
             SetButtons();
             SetContentView(Resource.Layout.bottom_nav_bar);
 
-            postRecyclerView = (RecyclerView)FindViewById(Resource.Id.postRecycleView);
+            profileRecyclerView = (RecyclerView)FindViewById(Resource.Id.profileRecyclerView);
+
 
             //Elementer i listen som refererer til de fragments vi har lavet
             fragments = new List<AndroidX.Fragment.App.Fragment>();
@@ -48,7 +54,10 @@ namespace P4Travia
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
             navigation.SetOnNavigationItemSelectedListener(this);
 
-           // FetchUser();
+            //Retrieves fullname on login
+            UserListener userListener = new UserListener();
+            userListener.FetchUser();
+
         }
         /*
         // Henter user profile data

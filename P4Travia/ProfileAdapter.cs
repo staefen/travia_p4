@@ -54,7 +54,7 @@ namespace P4Travia
 
         public TextView usernameTextView { get; set; }
         public TextView nationalityTextView { get; set; }
-        public TextView languageTextView { get; set; }
+     //   public TextView languageTextView { get; set; }
         public TextView genderTextView { get; set; }
 
 
@@ -62,7 +62,7 @@ namespace P4Travia
         {
             usernameTextView = (TextView)itemView.FindViewById(Resource.Id.usernameTextView);
             nationalityTextView = (TextView)itemView.FindViewById(Resource.Id.nationalityTextView);
-            languageTextView = (TextView)itemView.FindViewById(Resource.Id.languageTextView);
+            // languageTextView = (TextView)itemView.FindViewById(Resource.Id.languageTextView);
             genderTextView = (TextView)itemView.FindViewById(Resource.Id.genderTextView);
         }
     }

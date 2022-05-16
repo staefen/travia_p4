@@ -363,6 +363,7 @@
     <Compile Include="EventListener\UserListener.cs" />
     <Compile Include="Activities\ViewProfile.cs" />
     <Compile Include="ProfileAdapter.cs" />
+    <Compile Include="EventListener\ProfileListener.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="google-services %282%29.json" />

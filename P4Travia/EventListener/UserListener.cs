@@ -16,7 +16,7 @@ namespace P4Travia.EventListeners
             DocumentSnapshot snapshot = (DocumentSnapshot)result;
             if (snapshot.Exists())
             {
-                string name = snapshot.Get("name").ToString();
+                string name = snapshot.Get("username").ToString();
                 AppDataHelper.SaveName(name);
             }
         }

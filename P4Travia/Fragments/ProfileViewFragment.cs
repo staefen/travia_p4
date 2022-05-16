@@ -10,13 +10,14 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
-using Android.Views;
-using Android.Widget;
 using AndroidX.RecyclerView.Widget;
-using P4Travia.Datamodels;
-using System;
-using System.Collections.Generic;
 using Android;
+using AndroidX.AppCompat.App;
+using P4Travia.Helpers;
+using P4Travia.Activities;
+using P4Travia.Datamodels;
+using P4Travia.EventListeners;
+using Firebase.Storage;
 
 namespace P4Travia
 {
@@ -25,6 +26,12 @@ namespace P4Travia
         Button editProfilebutton;
         Button settingsButton;
         //TextView usernameTV;
+        RecyclerView profileRecyclerView;
+        ProfileAdapter profileAdapter;
+        
+        List<UserDataStorage> ListOfProfiles;
+
+        ProfileListener profileListener;
 
         public TextView usernameTV { get; set; }
 
@@ -32,10 +39,31 @@ namespace P4Travia
         {
             View view = inflater.Inflate(Resource.Layout.profileview, container, false);
             ConnectView(view);
-            SeView(view);
+
+            profileListener = new ProfileListener();
+            profileListener.FetchProfile();
+            profileListener.OnProfileRetrieved += PostEventListener_OnPostRetrieved;
+
             return view;
         }
 
+        //Her henter vi en list af de post som er i Databasen (Listen laves i PostEventListener.cs) og smider dem ind i et recyclerview
+        private void PostEventListener_OnPostRetrieved(object sender, ProfileListener.ProfileEventArgs e)
+        {
+            ListOfProfiles = new List<UserDataStorage>();
+            ListOfProfiles = e.userList;
+
+            SetupRecyclerView();
+        }
+
+        void SetupRecyclerView()
+        {
+            profileRecyclerView.SetLayoutManager(new LinearLayoutManager(profileRecyclerView.Context));
+            profileAdapter = new ProfileAdapter(ListOfProfiles);
+            profileRecyclerView.SetAdapter(profileAdapter);
+        }
+
+        /*
         // Replace the contents of a view (invoked by the layout manager)
         private void SeView(View view)
         {
@@ -44,7 +72,7 @@ namespace P4Travia
 
             usernameTV = (TextView)view.FindViewById(Resource.Id.usernameTextView);
         }
-
+        */
         private void ConnectView(View view)
         {
             editProfilebutton = (Button)view.FindViewById(Resource.Id.editprofilebutton);
