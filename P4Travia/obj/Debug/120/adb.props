@@ -1,2 +1,2 @@
-AdbTarget=
+AdbTarget=-s 2b296da33c017ece
 AdbOptions=
