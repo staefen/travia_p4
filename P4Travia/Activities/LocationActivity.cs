@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,34 +12,70 @@ using Android.Widget;
 
 namespace P4Travia.Activities
 {
-	[Activity (Label = "LocationActivity")]			
-	public class LocationActivity : Activity
-	{
-		protected override void OnCreate (Bundle savedInstanceState)
-		{
-			base.OnCreate (savedInstanceState);
+    [Activity(Label = "LocationActivity")]
+    public class LocationActivity : Activity
+    {
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
 
-            SetButtons();
+            SetContentView(Resource.Layout.location_settings);
+            //SetButtons();
             SetSeekbar();
-            SetLocationChange();
             SetSWitchButtons();
+            SetLocationChange();
 
         }
+    
 
-        //Switch buttons
+        //Switch buttons + haandtering af device location
         private void SetSWitchButtons()
         {
             Switch locationSwitch = FindViewById<Switch>(Resource.Id.switch_location);
+            locationSwitch.Checked = false;
             Switch radiusSwitch = FindViewById<Switch>(Resource.Id.switch_radius);
+            radiusSwitch.Checked = true;
 
-            //locationSwitch.Checked = true;
-            //radiusSwitch.Checked = true;
 
-            //locationSwitch.CheckedChange += (s, b) =>
-            //{
-            //    bool isChecked = b.IsChecked;
-            //    if(isChecked)
-            //};
+            LocationHandler lh = new LocationHandler();
+            Location usrloc = new Location();
+
+            lh.UserLocation(usrloc);
+
+            lh.ConvertCoordinate(usrloc);
+
+            locationSwitch.CheckedChange += (s, e) =>
+            {
+                bool isChecked = e.IsChecked;
+
+                if (isChecked == true)
+                {
+                    try
+                    {
+
+                        TextView changedLocation = FindViewById<TextView>(Resource.Id.location);
+                        changedLocation.Text = usrloc.City;
+                    }
+
+                    catch { }
+                }
+                else
+                {
+
+                }
+            };
+
+            //Haandtering af radius GOER IKKE NOGET
+            radiusSwitch.CheckedChange += (s, e) => 
+            {
+                bool isValid = e.IsChecked;
+
+                if (isValid == true)
+                {
+                    
+                }
+            };
+
         }
 
         //Change location in toolbar
@@ -50,11 +85,21 @@ namespace P4Travia.Activities
             Button applyButton = FindViewById<Button>(Resource.Id.apply_button);
             TextView changedLocation = FindViewById<TextView>(Resource.Id.location);
 
+            string address = null;
+
             applyButton.Click += (e, o) =>
             {
                 string location = changeLocation.Text;
                 changedLocation.Text = location;
+
+               address = location;
             };
+
+            LocationHandler lh = new LocationHandler();
+            Location usrloc = new Location();
+
+            lh.ConvertAddress(address, usrloc);
+
         }
 
         //Seekbar radius toogle 
@@ -63,33 +108,16 @@ namespace P4Travia.Activities
             SeekBar seekbarRadius = FindViewById<SeekBar>(Resource.Id.radius_seekbar);
             TextView textResult = FindViewById<TextView>(Resource.Id.radius_km);
 
+            double r; //Skal bruges til sortActivityProximity
+
             seekbarRadius.ProgressChanged += (s, e) =>
             {
-                textResult.Text = string.Format("{0}", e.Progress);
+ 
+                    textResult.Text = string.Format("{0}", e.Progress);
+                    r = e.Progress;
             };
 
         }
-
-        //Toolbar buttons
-        private void SetButtons()
-        {
-            NotificationButton();
-            LocationSettings();
-        }
-
-        //Buttons
-        public void NotificationButton()
-        {
-            ImageView notification = (ImageView)FindViewById(Resource.Id.notification_bell);
-            notification.Click += Notification_Click;
-        }
-
-        public void LocationSettings()
-        {
-            TextView location_settings = (TextView)FindViewById(Resource.Id.location);
-            location_settings.Click += Location_Settings_Click;
-        }
-
 
         //Clicked buttons
         private void Notification_Click(object sender, EventArgs e)
@@ -104,4 +132,3 @@ namespace P4Travia.Activities
 
     }
 }
-

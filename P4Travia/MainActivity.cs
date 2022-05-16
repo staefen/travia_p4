@@ -10,7 +10,7 @@ using P4Travia.Activities;
 
 namespace P4Travia
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = false)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity, BottomNavigationView.IOnNavigationItemSelectedListener
     {
         //Liste af fragments
@@ -20,8 +20,10 @@ namespace P4Travia
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+
             SetContentView(Resource.Layout.toolbar);
             SetButtons();
+
             SetContentView(Resource.Layout.bottom_nav_bar);
 
             //Elementer i listen som refererer til de fragments vi har lavet
@@ -36,6 +38,14 @@ namespace P4Travia
 
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
             navigation.SetOnNavigationItemSelectedListener(this);
+
+            ImageView notification = (ImageView)FindViewById(Resource.Id.notification_bell);
+            notification.Click += Notification_Click;
+
+            TextView location_settings = (TextView)FindViewById(Resource.Id.location);
+            location_settings.Click += Location_Settings_Click;
+
+
 
         }
 
@@ -96,4 +106,3 @@ namespace P4Travia
         }
     }
 }
-
