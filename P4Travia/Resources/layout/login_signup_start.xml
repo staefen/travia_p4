@@ -1,20 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-       xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="70dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/LogoSignupLogin"
+        android:id="@+id/logoView"/>
     
     <Button
         android:id="@+id/btnLogin1"
+        android:layout_marginTop="80dp"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_gravity="center_vertical"
-        android:layout_marginTop="260dp"
         android:text="@string/login"
         android:textSize="24sp"
+        android:layout_below="@id/logoView"
         android:textAllCaps="false"/>
 
     <Button
@@ -22,8 +35,10 @@
         android:text="@string/signup"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:layout_marginTop="25dp"
         android:textSize="24sp"
+        android:layout_below="@id/btnLogin1"
         android:textAllCaps="false"/>
+
+    </RelativeLayout>
    
 </LinearLayout>

@@ -2,22 +2,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="30dp" >
 
 	<ProgressBar
         android:id="@+id/progressBar6"
         style="?android:attr/progressBarStyleHorizontal"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="30dp"
-        android:layout_marginBottom="70dp" />
+		android:layout_marginTop="30dp" />
 
     <TextView
         android:id="@+id/enter_bio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
         android:text="@string/enter_bio"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="35sp"
@@ -27,22 +26,18 @@
         android:id="@+id/signupBioText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
         android:layout_marginTop="60dp"
         android:text="@string/bio"
         android:textAppearance="?android:attr/textAppearanceMedium"/>
 
 	<EditText
 		android:id="@+id/signupBio"
-		android:layout_marginLeft="30dp"
-		android:layout_marginRight="30dp"
 		android:layout_marginTop="10dp"
 		android:gravity="start"
 		android:padding="5dp"
 		android:layout_width="match_parent"
 		android:layout_height="200dp"
 		android:background="@drawable/curvededges_white"
-		android:imeOptions="actionSend"
         android:inputType="textImeMultiLine"/>
 
     <LinearLayout
@@ -51,13 +46,15 @@
         android:orientation="horizontal"
         android:layout_marginTop="78dp">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
     <Button
         android:id="@+id/btnSkip3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="140dp"
+        android:layout_alignParentLeft="true"
         android:text="@string/skip"
         android:textSize="25sp"
         android:textAllCaps="false"
@@ -69,11 +66,13 @@
         android:id="@+id/btnNext5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_alignParentRight="true"
         android:text="@string/next"
         android:textSize="25sp"
         android:textAllCaps="false"
         android:padding="8dp"/>
+
+        </RelativeLayout>
     </LinearLayout>
 
 </LinearLayout>

@@ -5,20 +5,20 @@
 	android:orientation="vertical"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:padding="40dp">
+	android:padding="30dp">
 
 	<ProgressBar
         android:id="@+id/progressBar4"
         style="?android:attr/progressBarStyleHorizontal"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp" />
+		android:layout_marginTop="30dp" />
 
     <TextView
         android:id="@+id/enterLanguage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:text="@string/enter_languages"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -90,12 +90,15 @@
         android:orientation="horizontal"
         android:layout_marginTop="70dp">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
     <Button
         android:id="@+id/btnSkip1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginRight="140dp"
+        android:layout_alignParentLeft="true"
         android:text="@string/skip"
         android:textSize="25sp"
         android:textAllCaps="false"
@@ -107,11 +110,14 @@
         android:id="@+id/btnNext3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_gravity="center"
         android:text="@string/next"
         android:textSize="25sp"
         android:textAllCaps="false"
         android:padding="8dp"/>
+
+        </RelativeLayout>
     </LinearLayout>
 
 

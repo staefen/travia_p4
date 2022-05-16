@@ -12,10 +12,11 @@ namespace P4Travia.Signup
     public class Signup4 : Activity
     {
         Button signup4;
-        Button skip2;
         string email, password, name, gender, nationality;
         int birthday;
         IList<string> language = new List<string>();
+        EditText locationText;
+        string location;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -27,8 +28,7 @@ namespace P4Travia.Signup
             signup4 = FindViewById<Button>(Resource.Id.btnNext4);
             signup4.Click += Signup4_Click;
 
-            skip2 = FindViewById<Button>(Resource.Id.btnSkip2);
-            skip2.Click += Skip2_Click;
+            locationText = (EditText)FindViewById(Resource.Id.signuplocation);
 
             language = Intent.GetStringArrayListExtra("Language");
             nationality = Intent.GetStringExtra("Nationality");
@@ -42,20 +42,7 @@ namespace P4Travia.Signup
         private void Signup4_Click(object sender, EventArgs e)
         {
 
-            var intent = new Intent(this, typeof(Signup5));
-            intent.PutStringArrayListExtra("Language", language);
-            intent.PutExtra("Nationality", nationality);
-            intent.PutExtra("Gender", gender);
-            intent.PutExtra("Birthday", birthday);
-            intent.PutExtra("Name", name);
-            intent.PutExtra("Email", email);
-            intent.PutExtra("Password", password);
-
-            StartActivity(intent);
-        }
-
-        private void Skip2_Click(object sender, EventArgs e)
-        {
+            location = locationText.Text;
 
             var intent = new Intent(this, typeof(Signup5));
             intent.PutStringArrayListExtra("Language", language);
@@ -65,6 +52,7 @@ namespace P4Travia.Signup
             intent.PutExtra("Name", name);
             intent.PutExtra("Email", email);
             intent.PutExtra("Password", password);
+            //user.Location = location;
 
             StartActivity(intent);
         }
