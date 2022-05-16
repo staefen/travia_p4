@@ -43,16 +43,7 @@ namespace P4Travia
             ConnectViews(view);
             
 
-            // Set our view from the "main" layout resource
-
-            //Retrieves fullname on login
-            InfoListener infoListener = new InfoListener();
-            infoListener.FetchUser();
-
-
-            //CreateData();
-            FetchPost();
-
+        
             return view;
 
         }
@@ -64,24 +55,29 @@ namespace P4Travia
             activityRecyclerView = (RecyclerView)view.FindViewById(Resource.Id.activityRecyclerView);
             FloatingActionButton floatingAddButton = (FloatingActionButton)view.FindViewById(Resource.Id.floatingAddButton);
 
-
-            category = this.Activity.Intent.GetStringExtra("category");
-            categoryTextView.Text = category;
+            //category = this.Activity.Intent.GetStringExtra("category");
+            //categoryTextView.Text = category;
 
             
             floatingAddButton.Click += floatingAddButton_Click;
 
+            //Retrieves fullname on login
+            InfoListener infoListener = new InfoListener();
+            infoListener.FetchUser();
 
+
+            //CreateData();
+            FetchPost();
 
         }
 
         private void floatingAddButton_Click(object sender, EventArgs e)
         {
-            Intent intent = new Intent(this.Activity, typeof(CreatePostActivity));  // Har virket
+            Intent intent = new Intent(this.Activity, typeof(CreatePostActivity));
             StartActivity(intent);
         }
 
-        void FetchPost()
+        void FetchPost() //kald den GetPost
         {
             postEventListener = new PostEventListener();
             postEventListener.FetchPost();
@@ -94,10 +90,9 @@ namespace P4Travia
             ListOfPost = new List<ActivityPost>();
             ListOfPost = e.Posts;
 
-            //Her sorterer vi listen, så den nyeste post altid vises øverst i listen
             if (ListOfPost != null)
             {
-                ListOfPost = ListOfPost.OrderByDescending(o => o.ActivityPostDate).ToList();
+                ListOfPost = ListOfPost.OrderByDescending(o => o.PostDate).ToList();
             }
 
             SetupRecyclerView();
@@ -107,10 +102,10 @@ namespace P4Travia
         void CreateData()
         {
             ListOfPost = new List<ActivityPost>();
-            ListOfPost.Add(new ActivityPost { ActivityDescription = "Is this working? Hallo?", ActivityUserName = "Christian Holfelt"});
-            ListOfPost.Add(new ActivityPost { ActivityDescription = "jlngj wEJFHJ wgljgkl wKJLEGF FGJKWGJ EGJJ GFEF", ActivityUserName = "Johnny Kirkegaard"});
-            ListOfPost.Add(new ActivityPost { ActivityDescription = "Yes my boi", ActivityUserName = "Mufasa Uganda"});
-            ListOfPost.Add(new ActivityPost { ActivityDescription = "Test. Test! Test? Test...", ActivityUserName = "Testo Testorino"});
+            ListOfPost.Add(new ActivityPost { ActivityName = "Is this working? Hallo?", ActivityUserName = "Christian Holfelt" });
+            ListOfPost.Add(new ActivityPost { ActivityName = "jlngj wEJFHJ wgljgkl wKJLEGF FGJKWGJ EGJJ GFEF", ActivityUserName = "Johnny Kirkegaard" });
+            ListOfPost.Add(new ActivityPost { ActivityName = "Yes my boi", ActivityUserName = "Mufasa Uganda" });
+            ListOfPost.Add(new ActivityPost { ActivityName = "Test. Test! Test? Test...", ActivityUserName = "Testo Testorino" });
         }
 
         void SetupRecyclerView()

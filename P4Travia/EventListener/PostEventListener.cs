@@ -29,10 +29,7 @@ namespace P4Travia.EventListener
 
         public void FetchPost()
         {
-            //Retrieve Only Once
-
-            //AppDataHelper.GetFirestore().Collection("posts").Get()
-            //    .AddOnSuccessListener(this);
+     
 
             AppDataHelper.GetFirestore().Collection("posts").AddSnapshotListener(this);
         }
@@ -57,14 +54,7 @@ namespace P4Travia.EventListener
         {
             var snapshot = (QuerySnapshot)Value;
 
-            //Dette tjekker hele listen af posts igennem i databasen
-            if (!snapshot.IsEmpty)
-            {
-                //Her sørger vi for at posts ikke bliver duplikeret
-                if (ListOfPost.Count > 0)
-                {
-                    ListOfPost.Clear();
-                }
+            
 
                 foreach (DocumentSnapshot item in snapshot.Documents)
                 {
@@ -73,16 +63,24 @@ namespace P4Travia.EventListener
 
                     //Hvis en bruger ikke har mangler en eller flere parametre til en post, kan vi risikere at appen crasher
                     //Det kan vi håndtere med følgende:
-                    post.ActivityDescription = item.Get("post_body") != null ? item.Get("post_body").ToString() : "";
 
-                    post.ActivityUserName = item.Get("author") != null ? item.Get("author").ToString() : "";
+                    post.ActivityName = item.Get("name") != null ? item.Get("name").ToString() : "";
+                    post.ActivityDate = item.Get("date") != null ? item.Get("date").ToString() : "";
+                    post.ActivityTime = item.Get("time") != null ? item.Get("time").ToString() : "";
+                    post.ActivityLocation = item.Get("location") != null ? item.Get("location").ToString() : "";
+                    post.ActivityUserName = item.Get("username") != null ? item.Get("username").ToString() : "";
+                    post.ActivityDescription = item.Get("description") != null ? item.Get("description").ToString() : "";
+                    post.ActivitySpots = item.Get("participants") != null ? item.Get("participants").ToString() : "";
+                    string datestring = item.Get("post_date") != null ? item.Get("post_date").ToString() : "";
+                    post.PostDate = DateTime.Parse(datestring);
+
                     post.ActivityImageId = item.Get("image_id") != null ? item.Get("image_id").ToString() : "";
                     post.ActivityOwnerId = item.Get("owner_id") != null ? item.Get("owner_id").ToString() : "";
                     post.ActivityDownloadUrl = item.Get("download_url") != null ? item.Get("download_url").ToString() : "";
-                    string datestring = item.Get("post_date") != null ? item.Get("post_date").ToString() : "";
-                    post.ActivityPostDate = DateTime.Parse(datestring);
 
-                
+
+
+
                     //Efter al data er hentet fra databasen, smider vi det ind i en list
 
                     ListOfPost.Add(post);
@@ -90,7 +88,7 @@ namespace P4Travia.EventListener
 
                 OnPostRetrieved?.Invoke(this, new PostEventArgs { Posts = ListOfPost });
 
-            }
+            
         }
 
     }

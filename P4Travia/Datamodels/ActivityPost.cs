@@ -16,8 +16,8 @@ namespace P4Travia.Datamodels
     {
         public string ActivityName { get; set; }
         public string ActivityId { get; set; }
-        public string ActivityDate { get; set; } //slet
-        public string ActivityTime { get; set; } //slet
+        public string ActivityDate { get; set; } 
+        public string ActivityTime { get; set; } 
         public string ActivitySpots { get; set; }
         // user name skal nok komme fra en User classe
         public string ActivityUserName { get; set; } //måske bare UserName
@@ -27,6 +27,6 @@ namespace P4Travia.Datamodels
         public string ActivityImageId { get; set; }
         public string ActivityDownloadUrl { get; set; }
         public string ActivityOwnerId { get; set; } //måske UserName
-        public DateTime ActivityPostDate { get; set; } //kan giver fejl 
+        public DateTime PostDate { get; set; }
     }
 }

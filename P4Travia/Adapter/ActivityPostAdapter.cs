@@ -46,12 +46,13 @@ namespace P4Travia.Adapter
             // Replace the contents of the view with that element
             var holder = viewHolder as PostAdapterViewHolder;
 
-            //holder.TextView.Text = items[position];
+            //fejl
+            holder.dateTextView.Text = item.ActivityDate;
+            holder.timeTextView.Text = item.ActivityTime;
+            holder.nameTextView.Text = item.ActivityName;
+            holder.spotsLeftTextView.Text = item.ActivitySpots;
+            holder.userNameTextView.Text = item.ActivityUserName;
 
-            holder.usernameTextView.Text = item.ActivityUserName;
-            holder.postBodyTextView.Text = item.ActivityDescription;
-
-            
             GetImage(item.ActivityDownloadUrl, holder.postImageView);
         }
 
@@ -67,56 +68,42 @@ namespace P4Travia.Adapter
 
         public override int ItemCount => items.Count;
 
-        //public override int Count => throw new NotImplementedException();
-
         void OnClick(PostAdapterClickEventArgs args) => ItemClick?.Invoke(this, args);
         void OnLongClick(PostAdapterClickEventArgs args) => ItemLongClick?.Invoke(this, args);
 
-        //public override Java.Lang.Object GetItem(int position)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public override long GetItemId(int position)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public override View GetView(int position, View convertView, ViewGroup parent)
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 
     public class PostAdapterViewHolder : RecyclerView.ViewHolder
     {
-        private Action<PostAdapterClickEventArgs> onClick;
-        private Action<PostAdapterClickEventArgs> onLongClick;
+
+        //private Action<PostAdapterClickEventArgs> onClick;
+        //private Action<PostAdapterClickEventArgs> onLongClick;
 
         //public TextView TextView { get; set; }
 
-        public TextView usernameTextView { get; set; }
-        public TextView postBodyTextView { get; set; }
-        public TextView likeCountTextView { get; set; }
+        public TextView userNameTextView { get; set; }
+        //public TextView postBodyTextView { get; set; }
         public ImageView postImageView { get; set; }
-        public ImageView likeImageView { get; set; }
+        public TextView nameTextView { get; set; }
+        public TextView timeTextView { get; set; }
+        public TextView dateTextView { get; set; }
+        public TextView spotsLeftTextView { get; set; }
 
         public PostAdapterViewHolder(View itemView, Action<PostAdapterClickEventArgs> clickListener,
-                            Action<PostAdapterClickEventArgs> longClickListener, Action<PostAdapterClickEventArgs> likeClickListener) : base(itemView)
+                            Action<PostAdapterClickEventArgs> longClickListener) : base(itemView)
         {
-            usernameTextView = (TextView)itemView.FindViewById(Resource.Id.userNameTextView);
+            userNameTextView = (TextView)itemView.FindViewById(Resource.Id.userNameTextView);
             postImageView = (ImageView)itemView.FindViewById(Resource.Id.eventImageView);
+            nameTextView = (TextView)itemView.FindViewById(Resource.Id.nameTextView);
+            timeTextView = (TextView)itemView.FindViewById(Resource.Id.timeTextView);
+            dateTextView = (TextView)itemView.FindViewById(Resource.Id.dateTextView);
+            spotsLeftTextView = (TextView)itemView.FindViewById(Resource.Id.spotsLeftTextView);
+
             //indsæt alle de andre her
-            
+
 
             itemView.Click += (sender, e) => clickListener(new PostAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
             itemView.LongClick += (sender, e) => longClickListener(new PostAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
-        }
-
-        public PostAdapterViewHolder(View itemView, Action<PostAdapterClickEventArgs> onClick, Action<PostAdapterClickEventArgs> onLongClick) : base(itemView)
-        {
-            this.onClick = onClick;
-            this.onLongClick = onLongClick;
         }
     }
 

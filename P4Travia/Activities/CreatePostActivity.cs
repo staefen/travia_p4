@@ -22,12 +22,14 @@ namespace P4Travia.Activities
         //AndroidX.AppCompat.Widget.Toolbar toolbar;
         ImageView postImage;
         Button postButton;
-        EditText titleEditText;
+        EditText nameEditText;
         EditText dateEditText;
         EditText timeEditText;
         EditText locationEditText;
-        EditText participantsEditText;
         EditText descriptionEditText;
+        EditText spotsEditText;
+
+
 
         TaskCompletionListeners taskCompletionListeners = new TaskCompletionListeners();
         TaskCompletionListeners downloadUrlListener = new TaskCompletionListeners();
@@ -49,17 +51,18 @@ namespace P4Travia.Activities
             SetContentView(Resource.Layout.create_post);
             //toolbar = (AndroidX.AppCompat.Widget.Toolbar)FindViewById(Resource.Id.toolbar);
             //SetSupportActionBar(toolbar);
-           // SupportActionBar.Title = "Create Post";
+            // SupportActionBar.Title = "Create Post";
 
             //AndroidX.AppCompat.App.ActionBar actionBar = SupportActionBar;
             //actionBar.SetDisplayHomeAsUpEnabled(true);
             //actionBar.SetHomeAsUpIndicator(Resource.Drawable.outline_arrowback);
-            titleEditText = (EditText)FindViewById(Resource.Id.editActivityName);
+
+            nameEditText = (EditText)FindViewById(Resource.Id.editActivityName);
             dateEditText = (EditText)FindViewById(Resource.Id.editActivityDate);
             timeEditText = (EditText)FindViewById(Resource.Id.editActivityTime);
             locationEditText = (EditText)FindViewById(Resource.Id.editActivityLocation);
-            participantsEditText = (EditText)FindViewById(Resource.Id.editActivityParticipants);
             descriptionEditText = (EditText)FindViewById(Resource.Id.editActivityDescription);
+            spotsEditText = (EditText)FindViewById(Resource.Id.editActivityParticipants);
 
             postImage = (ImageView)FindViewById(Resource.Id.addImage);
             postImage.Click += PostImage_Click;
@@ -78,15 +81,18 @@ namespace P4Travia.Activities
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
+          
+
             HashMap postMap = new HashMap();
-            postMap.Put("author", AppDataHelper.GetName());
+            postMap.Put("name", nameEditText.Text);
+            postMap.Put("username", AppDataHelper.GetName());
             postMap.Put("owner_id", AppDataHelper.GetFirebaseAuth().CurrentUser.Uid);
-            postMap.Put("post_date_created", DateTime.Now.ToString());
-            postMap.Put("post_title", titleEditText.Text);
-            postMap.Put("post_location", locationEditText.Text);
-            postMap.Put("post_date", dateEditText.Text);
-            postMap.Put("post_participants", participantsEditText.Text);
-            postMap.Put("post_body", descriptionEditText.Text);
+            postMap.Put("location", locationEditText.Text);
+            postMap.Put("date", dateEditText.Text);
+            postMap.Put("time", timeEditText.Text);
+            postMap.Put("participants", spotsEditText.Text);
+            postMap.Put("description", descriptionEditText.Text);
+            postMap.Put("post_date", DateTime.Now.ToString());
 
             DocumentReference newPostRef = AppDataHelper.GetFirestore().Collection("posts").Document();
             string postKey = newPostRef.Id;

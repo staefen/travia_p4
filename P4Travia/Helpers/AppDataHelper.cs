@@ -77,7 +77,7 @@ namespace P4Travia.Helpers
         public static void SaveName(string name)
         {
             editor = preferences.Edit();
-            editor.PutString("name", name);
+            editor.PutString("username", name);
             editor.Apply();
         }
 
@@ -85,8 +85,8 @@ namespace P4Travia.Helpers
         public static string GetName()
         {
 
-            string name = preferences.GetString("name", "");
-            return name;
+            string username = preferences.GetString("username", "");
+            return username;
         }
     }
 }

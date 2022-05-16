@@ -28,8 +28,8 @@ namespace P4Travia.EventListener
             DocumentSnapshot snapshot = (DocumentSnapshot)result;
             if (snapshot.Exists())
             {
-                string fullname = snapshot.Get("fullname").ToString();
-                AppDataHelper.SaveFullName(fullname);
+                string username = snapshot.Get("username").ToString(); //not fullname men username
+                AppDataHelper.SaveName(username); // var før SaveFullName
             }
         }
     }
