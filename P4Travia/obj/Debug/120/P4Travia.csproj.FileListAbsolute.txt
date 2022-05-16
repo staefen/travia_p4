@@ -4,10 +4,6 @@ C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\adb.props
 C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\P4Travia.csproj.AssemblyReference.cache
 C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\stamp\_BuildLibraryImportsCache.stamp
 C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\res.flag
-C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\83\jl\files.cache
-C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\50\jl\files.cache
-C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\64\jl\files.cache
-C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\65\jl\files.cache
 C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\92\jl\files.cache
 C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\93\jl\files.cache
 C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\94\jl\files.cache
@@ -647,3 +643,7 @@ C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\stamp\_ConvertResou
 C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\stamp\_GenerateJavaStubs.stamp
 C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\3\jl\files.cache
+C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\58\jl\files.cache
+C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\73\jl\files.cache
+C:\Users\louis\Source\Repos\travia_p4\P4Travia\obj\Debug\120\lp\74\jl\files.cache
