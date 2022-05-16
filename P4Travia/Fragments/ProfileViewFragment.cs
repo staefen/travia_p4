@@ -9,6 +9,7 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using P4Travia.Datamodels;
 
 namespace P4Travia
 {
@@ -19,6 +20,10 @@ namespace P4Travia
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
+
+            UserDataStorage user = new UserDataStorage;
+            user.UserName = (TextView)itemView.FindViewById(Resource.Id.usernameTextView);
+
             View view = inflater.Inflate(Resource.Layout.profileview, container, false);
             ConnectView(view);
             return view;
