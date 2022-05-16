@@ -1,3 +1,4 @@
+C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\res\drawable\profile_pic_placeholder.png
 C:\Users\chris\source\repos\travia_p4\P4Travia\bin\Debug\P4Travia.dll
 C:\Users\chris\source\repos\travia_p4\P4Travia\bin\Debug\P4Travia.pdb
 C:\Users\chris\source\repos\travia_p4\P4Travia\bin\Debug\com.companyname.p4travia.apk
@@ -188,7 +189,6 @@ C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\res\drawable\tandhj
 C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\res\drawable\hvid_tandhjul.png
 C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\res\drawable\edit_profile_icon.png
 C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\res\layout\edit_profile.xml
-C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\res\drawable\profile_pic_placeholder.png
 C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\res\drawable\round_female_black.png
 C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\res\drawable\round_flag_black.png
 C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\res\drawable\round_language_black.png

@@ -33,6 +33,9 @@ color;obj\Debug\120\res\values\colors.xml
 color;obj\Debug\120\res\values\ic_launcher_background.xml
 com.google.android.material.bottomnavigation.BottomNavigationView;obj\Debug\120\res\layout\bottom_nav_bar.xml
 corners;obj\Debug\120\res\drawable\curvededges_white.xml
+crc64b227089827305775.CircleImageView;obj\Debug\120\res\layout\edit_profile.xml
+crc64b227089827305775.CircleImageView;obj\Debug\120\res\layout\profileview.xml
+crc64b227089827305775.CircleImageView;obj\Debug\120\res\layout\signup_6.xml
 declare-styleable;C:\Users\chris\source\repos\travia_p4\P4Travia\obj\Debug\120\lp\3\jl\res\values\values.xml
 dimen;obj\Debug\120\res\values\dimens.xml
 EditText;obj\Debug\120\res\layout\create_post.xml
