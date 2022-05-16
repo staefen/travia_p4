@@ -55,7 +55,6 @@ ImageView;obj\Debug\120\res\layout\profile.xml
 ImageView;obj\Debug\120\res\layout\signup_4.xml
 ImageView;obj\Debug\120\res\layout\toolbar.xml
 ImageView;obj\Debug\120\res\layout\viewactivity.xml
-include;obj\Debug\120\res\layout\bottom_nav_bar.xml
 include;obj\Debug\120\res\layout\location_settings.xml
 include;obj\Debug\120\res\layout\notification_list.xml
 item;obj\Debug\120\res\menu\navigation.xml
