@@ -7,6 +7,10 @@ using Android.Widget;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.BottomNavigation;
 using P4Travia.Activities;
+using P4Travia.Datamodels;
+using P4Travia.EventListeners;
+using P4Travia.Datamodels;
+using AndroidX.RecyclerView.Widget;
 
 namespace P4Travia
 {
@@ -15,6 +19,9 @@ namespace P4Travia
     {
         //Liste af fragments
         List<AndroidX.Fragment.App.Fragment> fragments;
+        RecyclerView postRecyclerView;
+        List<UserDataStorage> Items;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -23,6 +30,8 @@ namespace P4Travia
             SetContentView(Resource.Layout.toolbar);
             SetButtons();
             SetContentView(Resource.Layout.bottom_nav_bar);
+
+            postRecyclerView = (RecyclerView)FindViewById(Resource.Id.postRecycleView);
 
             //Elementer i listen som refererer til de fragments vi har lavet
             fragments = new List<AndroidX.Fragment.App.Fragment>();
@@ -37,8 +46,27 @@ namespace P4Travia
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
             navigation.SetOnNavigationItemSelectedListener(this);
 
+            // FetchUser();
+        }
+        /*
+        // Henter user profile data
+        void FetchUser()
+        {
+            userListener = new UserListener();
+            userListener.FetchUser();
+            SetupRecyclerView();
         }
 
+        void SetupRecyclerView()
+        {
+            postRecyclerView.SetLayoutManager(new LinearLayoutManager(postRecyclerView.Context));
+            Items = new List<UserDataStorage>();
+            Items.Add(new UserDataStorage { UserName = "HELLO", Email = "MARIA@MAIL"});
+            profileAdapter = new ProfileAdapter(Items);
+            postRecyclerView.SetAdapter(profileAdapter);
+        }*/
+
+        // Footer
         public bool OnNavigationItemSelected(IMenuItem item)
         {
             switch (item.ItemId)
@@ -96,4 +124,3 @@ namespace P4Travia
         }
     }
 }
-
