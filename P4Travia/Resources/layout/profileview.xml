@@ -13,27 +13,28 @@
     android:minWidth="25px"
     android:minHeight="25px">
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="60dp"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/circleImageView2"/>
+    <refractored.controls.CircleImageView
+    android:layout_gravity="center"
+    android:layout_marginTop="60dp"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/viewProfilePic"
+    android:src="@drawable/profile_pic_placeholder"
+    app:civ_border_width="4dp"
+    app:civ_border_color="#E76F51"/>
 
     <EditText
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/username"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/circleImageView2"/>
+        android:layout_below="@+id/viewProfilePic"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,19 +52,20 @@
             <LinearLayout
                 android:id="@+id/callLayout"
                 android:orientation="horizontal"
-                android:layout_gravity="center_vertical"
+                android:layout_gravity="center"
                 android:clickable="true"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4">
                 
                 <ImageView
-                    android:src="@drawable/a_negative"
+                    android:src="@drawable/round_language_black"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"/>
 
                 <TextView
+                    android:id="@+id/displayCountry"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -71,7 +73,7 @@
                     android:textSize="16sp"/>
 
                 <ImageView
-                    android:src="@drawable/a_negative"
+                    android:src="@drawable/round_female_black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -80,6 +82,7 @@
                     android:layout_marginRight="0.0dp" />
 
                 <TextView
+                    android:id="@+id/displayGender"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -88,12 +91,13 @@
                     android:textSize="16sp"/>
 
                 <ImageView
-                    android:src="@drawable/a_negative"
+                    android:src="@drawable/round_flag_black"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"/>
 
                 <TextView
+                    android:id="@+id/displayLanguage"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -109,19 +113,20 @@
 
     <TextView
         android:text="BIOGRAPHY"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/biotitle"
+        android:id="@+id/bioTitle"
         android:layout_below="@+id/profileicons"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="140dp"
-        android:background="@android:drawable/editbox_background"
-        android:id="@+id/bioview"
-        android:layout_below="@+id/biotitle"/>
+        android:gravity="start"
+        android:padding="15dp"
+        android:id="@+id/bioView"
+        android:layout_below="@+id/bioTitle"/>
 
     <Button
         android:text="Edit Profile"
@@ -134,7 +139,7 @@
         android:layout_marginTop="20dp"
         android:id="@+id/editprofilebutton"
         app:icon="@drawable/edit_profile_icon"
-        android:layout_below="@+id/bioview"/>
+        android:layout_below="@+id/bioView"/>
 
     <Button
         android:text="Settings"

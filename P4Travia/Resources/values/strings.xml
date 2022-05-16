@@ -78,7 +78,7 @@
 	<string name="add_photo_desc"> Personalise your profile with a picture of yourself</string>
 		<string-array name="gender_dropdown">
 		<item>She/her</item>
-		<item>He/his</item>  
+		<item>He/him</item>  
 		<item>They/them</item>  
 		<item>Xe/xem</item>  
 		<item>Ve/ver</item>  

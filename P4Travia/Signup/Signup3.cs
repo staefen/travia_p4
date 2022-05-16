@@ -30,31 +30,24 @@ namespace P4Travia.Signup
             switch (view.Id)
             {
                 case Resource.Id.danish:
-                    Toast.MakeText(this, "Danish selected", ToastLength.Short).Show();
                     language.Add("Danish");
                     break;
                 case Resource.Id.norwegian:
-                    Toast.MakeText(this, "Norwegian selected", ToastLength.Short).Show();
                     language.Add("Norwegian");
                     break;
                 case Resource.Id.swedish:
-                    Toast.MakeText(this, "Swedish selected", ToastLength.Short).Show();
                     language.Add("Swedish");
                     break;
                 case Resource.Id.english:
-                    Toast.MakeText(this, "English selected", ToastLength.Short).Show();
                     language.Add("English");
                     break;
                 case Resource.Id.german:
-                    Toast.MakeText(this, "German selected", ToastLength.Short).Show();
                     language.Add("German");
                     break;
                 case Resource.Id.french:
-                    Toast.MakeText(this, "French selected", ToastLength.Short).Show();
                     language.Add("French");
                     break;
                 case Resource.Id.spanish:
-                    Toast.MakeText(this, "Spanish selected", ToastLength.Short).Show();
                     language.Add("Spanish");
                     break;
             }
@@ -99,7 +92,7 @@ namespace P4Travia.Signup
             }
             else
             {*/
-            var intent = new Intent(this, typeof(Signup4));
+            var intent = new Intent(this, typeof(Signup5));
             intent.PutStringArrayListExtra("Language", language);
             intent.PutExtra("Nationality", nationality);
             intent.PutExtra("Gender", gender);
@@ -114,7 +107,7 @@ namespace P4Travia.Signup
 
         private void Skip1_Click(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(Signup4));
+            var intent = new Intent(this, typeof(Signup5));
             intent.PutExtra("Nationality", nationality);
             intent.PutExtra("Gender", gender);
             intent.PutExtra("Birthday", birthday);

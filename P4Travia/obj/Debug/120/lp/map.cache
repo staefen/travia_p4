@@ -1,4 +1,7 @@
+FFImageLoading.Platform.dll
 Jsr305Binding.dll
+Plugin.Media.dll
+Refractored.Controls.CircleImageView.dll
 Square.OkHttp.dll
 Square.OkIO.dll
 Xamarin.AndroidX.Activity.dll
@@ -8,6 +11,7 @@ Xamarin.AndroidX.AppCompat.AppCompatResources.dll
 Xamarin.AndroidX.AppCompat.dll
 Xamarin.AndroidX.Arch.Core.Common.dll
 Xamarin.AndroidX.Arch.Core.Runtime.dll
+Xamarin.AndroidX.AsyncLayoutInflater.dll
 Xamarin.AndroidX.Browser.dll
 Xamarin.AndroidX.CardView.dll
 Xamarin.AndroidX.Collection.dll
@@ -26,6 +30,7 @@ Xamarin.AndroidX.Emoji2.dll
 Xamarin.AndroidX.Emoji2.ViewsHelper.dll
 Xamarin.AndroidX.Fragment.dll
 Xamarin.AndroidX.Interpolator.dll
+Xamarin.AndroidX.Legacy.Support.Core.UI.dll
 Xamarin.AndroidX.Legacy.Support.Core.Utils.dll
 Xamarin.AndroidX.Lifecycle.Common.dll
 Xamarin.AndroidX.Lifecycle.LiveData.Core.dll
@@ -35,11 +40,14 @@ Xamarin.AndroidX.Lifecycle.ViewModel.dll
 Xamarin.AndroidX.Lifecycle.ViewModelSavedState.dll
 Xamarin.AndroidX.Loader.dll
 Xamarin.AndroidX.LocalBroadcastManager.dll
+Xamarin.AndroidX.MultiDex.dll
 Xamarin.AndroidX.Print.dll
 Xamarin.AndroidX.RecyclerView.dll
 Xamarin.AndroidX.ResourceInspection.Annotation.dll
 Xamarin.AndroidX.SavedState.dll
+Xamarin.AndroidX.SlidingPaneLayout.dll
 Xamarin.AndroidX.Startup.StartupRuntime.dll
+Xamarin.AndroidX.SwipeRefreshLayout.dll
 Xamarin.AndroidX.Tracing.Tracing.dll
 Xamarin.AndroidX.Transition.dll
 Xamarin.AndroidX.VectorDrawable.Animated.dll
@@ -57,6 +65,7 @@ Xamarin.Firebase.Components.dll
 Xamarin.Firebase.Database.Collection.dll
 Xamarin.Firebase.Firestore.dll
 Xamarin.Firebase.ProtoliteWellKnownTypes.dll
+Xamarin.Firebase.Storage.dll
 Xamarin.Google.Android.Material.dll
 Xamarin.Google.ErrorProne.Annotations.dll
 Xamarin.Google.Guava.FailureAccess.dll
@@ -79,13 +88,6 @@ Xamarin.Io.PerfMark.PerfMarkApi.dll
 Xamarin.Jetbrains.Annotations.dll
 Xamarin.Kotlin.StdLib.dll
 Xamarin.Protobuf.JavaLite.dll
-Plugin.Media.dll
-Xamarin.AndroidX.AsyncLayoutInflater.dll
-Xamarin.AndroidX.Legacy.Support.Core.UI.dll
-Xamarin.AndroidX.MultiDex.dll
-Xamarin.AndroidX.SlidingPaneLayout.dll
-Xamarin.AndroidX.SwipeRefreshLayout.dll
-Xamarin.Firebase.Storage.dll
 androidx.versionedparcelable.versionedparcelable.aar
 androidx.arch.core.core-runtime.aar
 androidx.lifecycle.lifecycle-runtime.aar

@@ -9,11 +9,13 @@ using Java.Util;
 using Firebase.Auth;
 using P4Travia.EventListeners;
 using P4Travia.Helpers;
-using Android.Runtime;
 using Android.Content;
 using P4Travia.Fragments;
-using System.Collections.Generic;
-using Java.Lang;
+using Android;
+using Firebase.Storage;
+using Plugin.Media;
+using Android.Graphics;
+using Android.Views;
 
 namespace P4Travia.Signup
 {
@@ -23,10 +25,21 @@ namespace P4Travia.Signup
         Button signup6;
         FirebaseFirestore database;
         FirebaseAuth mAuth;
-        TaskCompletionListeners taskCompletionListeners = new TaskCompletionListeners();
         ProgressDialogFragment progressDialogue;
-        EditText locationText;
-        string location;
+        ImageView profileImage;
+
+
+        TaskCompletionListeners taskCompletionListeners = new TaskCompletionListeners();
+        TaskCompletionListeners downloadUrlListener = new TaskCompletionListeners();
+
+        readonly string[] permissionGroup =
+        {
+            Manifest.Permission.ReadExternalStorage,
+            Manifest.Permission.WriteExternalStorage,
+            Manifest.Permission.Camera
+        };
+
+        byte[] fileBytes;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -38,62 +51,151 @@ namespace P4Travia.Signup
             signup6 = FindViewById<Button>(Resource.Id.btnNext6);
             signup6.Click += Signup6_Click;
 
-            locationText = (EditText)FindViewById(Resource.Id.signuplocation);
+            profileImage = (ImageView)FindViewById(Resource.Id.addProfilePic);
+            profileImage.Click += ProfileImage_Click;
 
             database = AppDataHelper.GetFirestore();
             mAuth = AppDataHelper.GetFirebaseAuth();
+
+            RequestPermissions(permissionGroup, 0);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            Finish();
+            return true;
         }
 
 
         private void Signup6_Click(object sender, EventArgs e)
         {
-            location = locationText.Text;
 
-            // info inn i klassen
-            Datamodels.UserDataStorage user = new Datamodels.UserDataStorage();
-            user.Email = Intent.GetStringExtra("Email");
-            user.Password = Intent.GetStringExtra("Password");
-            user.Birthday = Intent.GetIntExtra("Birthday", 1000);
-            user.UserName = Intent.GetStringExtra("Name");
-            user.Nationality = Intent.GetStringExtra("Nationality");
-            user.Gender = Intent.GetStringExtra("Gender");
-            user.Language = Intent.GetStringArrayListExtra("Language");
-            user.Bio = Intent.GetStringExtra("Bio");
-            user.Location = location;
+            HashMap userMap = new HashMap();
+            userMap.Put("username", AppDataHelper.GetName());
+            userMap.Put("owner_id", AppDataHelper.GetFirebaseAuth().CurrentUser.Uid);
+            userMap.Put("upload_date", DateTime.Now.ToString());
 
-            // user inn i databasen
-            ShowProgressDialogue("Registering...");
-            mAuth.CreateUserWithEmailAndPassword(user.Email, user.Password).AddOnSuccessListener(this, taskCompletionListeners)
-                .AddOnFailureListener(this, taskCompletionListeners);
+            DocumentReference newProfileRef = AppDataHelper.GetFirestore().Collection("profile_images_id").Document();
+            string postKey = newProfileRef.Id;
 
-            taskCompletionListeners.Success += (success, args) =>
+            userMap.Put("profile_image_id", postKey);
+
+
+            ShowProgressDialogue("Creating Account ...");
+
+            // Save Post Image to Firebase Storaage
+            StorageReference storageReference = null;
+            if (fileBytes != null)
             {
-                HashMap userMap = new HashMap();
-                userMap.Put("mail", user.Email);
-                userMap.Put("birthday", user.Birthday);
-                userMap.Put("username", user.UserName);
-                userMap.Put("nationality", user.Nationality);
-                userMap.Put("gender", user.Gender);
-                userMap.Put("language", (Java.Lang.Object)user.Language);
-                userMap.Put("bio", user.Bio);
+                storageReference = FirebaseStorage.Instance.GetReference("profileImages/" + postKey);
+                storageReference.PutBytes(fileBytes)
+                    .AddOnSuccessListener(taskCompletionListeners)
+                    .AddOnFailureListener(taskCompletionListeners);
+            }
 
-                DocumentReference userReference = database.Collection("users").Document(mAuth.CurrentUser.Uid);
-                userReference.Set(userMap);
+            // Image Upload Success Callback
+            taskCompletionListeners.Success += (obj, args) =>
+            {
+                if (storageReference != null)
+                {
+                    storageReference.GetDownloadUrl().AddOnSuccessListener(downloadUrlListener);
+                }
+            };
+
+            // Image Download URL Callback
+            downloadUrlListener.Success += (obj, args) =>
+            {
+                string downloadUrl = args.Result.ToString();
+                userMap.Put("profile_download_url", downloadUrl);
+
+                // Save post to Firebase Firestore
+                newProfileRef.Set(userMap);
                 CloseProgressDialogue();
                 StartActivity(typeof(MainActivity));
                 Finish();
             };
 
 
-            // Registration Failure Callback
-            taskCompletionListeners.Failure += (failure, args) =>
+            // Image Upload Failure Callback
+            taskCompletionListeners.Failure += (obj, args) =>
             {
-                CloseProgressDialogue();
-                Toast.MakeText(this, "Registration Failed : " + args.Cause, ToastLength.Short).Show();
+                Toast.MakeText(this, "Upload was not completed", ToastLength.Short).Show();
             };
+        }
+
+        private void ProfileImage_Click(object sender, EventArgs e)
+        {
+            AndroidX.AppCompat.App.AlertDialog.Builder photoAlert = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+            photoAlert.SetMessage("Change Photo");
+
+            photoAlert.SetNegativeButton("Take Photo", (thisalert, args) =>
+            {
+                // Capture Image
+                TakePhoto();
+            });
+
+            photoAlert.SetPositiveButton("Upload Photo", (thisAlert, args) =>
+            {
+                // Choose Image
+                SelectPhoto();
+            });
+
+            photoAlert.Show();
+        }
+
+        async void TakePhoto()
+        {
+            await CrossMedia.Current.Initialize();
+            var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
+            {
+                PhotoSize = Plugin.Media.Abstractions.PhotoSize.Medium,
+                CompressionQuality = 20,
+                Directory = "Sample",
+                Name = GenerateRandomString(6) + "travia.jpg"
+            });
+
+            if (file == null)
+            {
+                return;
+            }
+
+            //Converts file.path to byte array and set the resulting bitmap to imageview
+            byte[] imageArray = System.IO.File.ReadAllBytes(file.Path);
+            fileBytes = imageArray;
+
+            Bitmap bitmap = BitmapFactory.DecodeByteArray(imageArray, 0, imageArray.Length);
+            profileImage.SetImageBitmap(bitmap);
 
         }
 
+        async void SelectPhoto()
+        {
+            await CrossMedia.Current.Initialize();
+
+            if (!CrossMedia.Current.IsPickPhotoSupported)
+            {
+                Toast.MakeText(this, "Upload not supported", ToastLength.Short).Show();
+                return;
+            }
+
+            var file = await CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
+            {
+                PhotoSize = Plugin.Media.Abstractions.PhotoSize.Medium,
+                CompressionQuality = 30,
+            });
+
+            if (file == null)
+            {
+                return;
+            }
+
+            byte[] imageArray = System.IO.File.ReadAllBytes(file.Path);
+            fileBytes = imageArray;
+
+            Bitmap bitmap = BitmapFactory.DecodeByteArray(imageArray, 0, imageArray.Length);
+            profileImage.SetImageBitmap(bitmap);
+
+        }
 
         void ShowProgressDialogue(string status)
         {
@@ -111,5 +213,27 @@ namespace P4Travia.Signup
                 progressDialogue = null;
             }
         }
+
+
+        string GenerateRandomString(int lenght)
+        {
+            System.Random rand = new System.Random();
+            char[] allowchars = "ABCDEFGHIJKLOMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".ToCharArray();
+            string sResult = "";
+            for (int i = 0; i <= lenght; i++)
+            {
+                sResult += allowchars[rand.Next(0, allowchars.Length)];
+            }
+
+            return sResult;
+        }
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
+        {
+            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+
     }
 }

@@ -1,21 +1,31 @@
 ﻿using Android.App;
 using Android.OS;
 using Android.Widget;
+using Firebase.Firestore;
 using System;
+using AndroidX.AppCompat.App;
+using DocumentReference = Firebase.Firestore.DocumentReference;
+using Java.Util;
+using Firebase.Auth;
+using P4Travia.EventListeners;
+using P4Travia.Helpers;
 using Android.Runtime;
 using Android.Content;
-using System.Collections.Generic;
+using P4Travia.Fragments;
+
 
 namespace P4Travia.Signup
 {
-    [Activity(Label = "Signup4")]
-    public class Signup4 : Activity
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = false)]
+    public class Signup4 : AppCompatActivity
     {
         Button signup4;
-        Button skip2;
-        string email, password, name, gender, nationality;
-        int birthday;
-        IList<string> language = new List<string>();
+        FirebaseFirestore database;
+        FirebaseAuth mAuth;
+        TaskCompletionListeners taskCompletionListeners = new TaskCompletionListeners();
+        ProgressDialogFragment progressDialogue;
+        EditText locationText;
+        string location;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -27,54 +37,78 @@ namespace P4Travia.Signup
             signup4 = FindViewById<Button>(Resource.Id.btnNext4);
             signup4.Click += Signup4_Click;
 
-            skip2 = FindViewById<Button>(Resource.Id.btnSkip2);
-            skip2.Click += Skip2_Click;
+            locationText = (EditText)FindViewById(Resource.Id.signuplocation);
 
-            language = Intent.GetStringArrayListExtra("Language");
-            nationality = Intent.GetStringExtra("Nationality");
-            gender = Intent.GetStringExtra("Gender");
-            email = Intent.GetStringExtra("Email");
-            password = Intent.GetStringExtra("Password");
-            birthday = Intent.GetIntExtra("Birthday", 000000);
-            name = Intent.GetStringExtra("Name");
+            database = AppDataHelper.GetFirestore();
+            mAuth = AppDataHelper.GetFirebaseAuth();
         }
+
 
         private void Signup4_Click(object sender, EventArgs e)
         {
+            location = locationText.Text;
 
-            var intent = new Intent(this, typeof(Signup5));
-            intent.PutStringArrayListExtra("Language", language);
-            intent.PutExtra("Nationality", nationality);
-            intent.PutExtra("Gender", gender);
-            intent.PutExtra("Birthday", birthday);
-            intent.PutExtra("Name", name);
-            intent.PutExtra("Email", email);
-            intent.PutExtra("Password", password);
+            // info inn i klassen
+            Datamodels.UserDataStorage user = new Datamodels.UserDataStorage();
+            user.Email = Intent.GetStringExtra("Email");
+            user.Password = Intent.GetStringExtra("Password");
+            user.Birthday = Intent.GetIntExtra("Birthday", 1000);
+            user.UserName = Intent.GetStringExtra("Name");
+            user.Nationality = Intent.GetStringExtra("Nationality");
+            user.Gender = Intent.GetStringExtra("Gender");
+            user.Language = Intent.GetStringArrayListExtra("Language");
+            user.Bio = Intent.GetStringExtra("Bio");
+            user.Location = location;
 
-            StartActivity(intent);
+            // user inn i databasen
+            ShowProgressDialogue("Saving Information...");
+            mAuth.CreateUserWithEmailAndPassword(user.Email, user.Password).AddOnSuccessListener(this, taskCompletionListeners)
+                .AddOnFailureListener(this, taskCompletionListeners);
+
+            taskCompletionListeners.Success += (success, args) =>
+            {
+                HashMap userMap = new HashMap();
+                userMap.Put("mail", user.Email);
+                userMap.Put("birthday", user.Birthday);
+                userMap.Put("username", user.UserName);
+                userMap.Put("nationality", user.Nationality);
+                userMap.Put("gender", user.Gender);
+                userMap.Put("language", (Java.Lang.Object)user.Language);
+                userMap.Put("bio", user.Bio);
+
+                DocumentReference userReference = database.Collection("users").Document(mAuth.CurrentUser.Uid);
+                userReference.Set(userMap);
+                CloseProgressDialogue();
+                StartActivity(typeof(Signup6));
+                Finish();
+            };
+
+
+            // Registration Failure Callback
+            taskCompletionListeners.Failure += (failure, args) =>
+            {
+                CloseProgressDialogue();
+                Toast.MakeText(this, "Registration Failed : " + args.Cause, ToastLength.Short).Show();
+            };
+
         }
 
-        private void Skip2_Click(object sender, EventArgs e)
+
+        void ShowProgressDialogue(string status)
         {
-
-            var intent = new Intent(this, typeof(Signup5));
-            intent.PutStringArrayListExtra("Language", language);
-            intent.PutExtra("Nationality", nationality);
-            intent.PutExtra("Gender", gender);
-            intent.PutExtra("Birthday", birthday);
-            intent.PutExtra("Name", name);
-            intent.PutExtra("Email", email);
-            intent.PutExtra("Password", password);
-
-            StartActivity(intent);
+            progressDialogue = new ProgressDialogFragment(status);
+            var trans = SupportFragmentManager.BeginTransaction();
+            progressDialogue.Cancelable = false;
+            progressDialogue.Show(trans, "Progress");
         }
 
-
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
+        void CloseProgressDialogue()
         {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            if (progressDialogue != null)
+            {
+                progressDialogue.Dismiss();
+                progressDialogue = null;
+            }
         }
     }
 }

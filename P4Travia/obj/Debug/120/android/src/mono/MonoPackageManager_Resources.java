@@ -3,9 +3,12 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "P4Travia.dll" comes first in this list. */
 		"P4Travia.dll",
+		"FFImageLoading.dll",
+		"FFImageLoading.Platform.dll",
 		"Jsr305Binding.dll",
 		"Microsoft.Bcl.AsyncInterfaces.dll",
 		"Plugin.Media.dll",
+		"Refractored.Controls.CircleImageView.dll",
 		"Square.OkHttp.dll",
 		"Square.OkIO.dll",
 		"System.Text.Encodings.Web.dll",
