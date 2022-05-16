@@ -48,9 +48,9 @@ namespace P4Travia
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
             navigation.SetOnNavigationItemSelectedListener(this);
 
-            FetchUser();
+           // FetchUser();
         }
-
+        /*
         // Henter user profile data
         void FetchUser()
         {
@@ -66,7 +66,7 @@ namespace P4Travia
             Items.Add(new UserDataStorage { UserName = "HELLO", Email = "MARIA@MAIL"});
             profileAdapter = new ProfileAdapter(Items);
             postRecyclerView.SetAdapter(profileAdapter);
-        }
+        }*/
 
         // Footer
         public bool OnNavigationItemSelected(IMenuItem item)

@@ -56,7 +56,6 @@ ImageView;obj/Debug/res/layout/bottom_nav_bar.xml
 ImageView;obj/Debug/res/layout/browse.xml
 ImageView;obj/Debug/res/layout/create_post.xml
 ImageView;obj/Debug/res/layout/mainpage.xml
-ImageView;obj/Debug/res/layout/post.xml
 ImageView;obj/Debug/res/layout/profile.xml
 ImageView;obj/Debug/res/layout/profileview.xml
 ImageView;obj/Debug/res/layout/signup_4.xml

@@ -1,16 +1,18 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_3" PreferredExecutionTarget="Android.RF8N73DG4TB" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
   <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/MainActivity.cs">
     <Files>
-      <File FileName="P4Travia/Signup/Signup4.cs" Line="1" Column="1" />
-      <File FileName="P4Travia/ProfileAdapter.cs" Line="16" Column="10" />
-      <File FileName="P4Travia/MainActivity.cs" Line="65" Column="49" />
+      <File FileName="P4Travia/Signup/Signup4.cs" Line="14" Column="24" />
+      <File FileName="P4Travia/MainActivity.cs" Line="5" Column="21" />
+      <File FileName="P4Travia/Fragments/ProfileFragment.cs" Line="1" Column="1" />
+      <File FileName="P4Travia/Fragments/ProfileViewFragment.cs" Line="39" Column="21" />
+      <File FileName="P4Travia/Signup/Signup6.cs" Line="19" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -34,6 +36,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.P4Travia PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_3" />
-  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.RF8N73DG4TB" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

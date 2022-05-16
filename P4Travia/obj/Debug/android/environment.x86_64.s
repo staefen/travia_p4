@@ -1910,7 +1910,7 @@ application_config:
 
 	.type	.L.autostr.6, @object
 .L.autostr.6:
-	.asciz	"1141b55c-d46c-4587-9cbc-973013737d34"
+	.asciz	"35755cdb-1023-468c-aa17-f135a0404033"
 	.size	.L.autostr.6, 37
 
 	.type	.L.autostr.7, @object

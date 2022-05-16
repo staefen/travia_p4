@@ -10,6 +10,13 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using Android.Views;
+using Android.Widget;
+using AndroidX.RecyclerView.Widget;
+using P4Travia.Datamodels;
+using System;
+using System.Collections.Generic;
+using Android;
 
 namespace P4Travia
 {
@@ -17,12 +24,25 @@ namespace P4Travia
     {
         Button editProfilebutton;
         Button settingsButton;
+        //TextView usernameTV;
+
+        public TextView usernameTV { get; set; }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             View view = inflater.Inflate(Resource.Layout.profileview, container, false);
             ConnectView(view);
+            SeView(view);
             return view;
+        }
+
+        // Replace the contents of a view (invoked by the layout manager)
+        private void SeView(View view)
+        {
+            UserDataStorage user = new UserDataStorage();
+            usernameTV.Text = user.UserName;
+
+            usernameTV = (TextView)view.FindViewById(Resource.Id.usernameTextView);
         }
 
         private void ConnectView(View view)
