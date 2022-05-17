@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -35,7 +36,7 @@ namespace P4Travia
 
         private void EditProfileButton_Click(object sender, EventArgs e)
         {
-            AndroidX.Fragment.App.Fragment ProfileFragment = new EditProfileFragment();
+            AndroidX.Fragment.App.Fragment ProfileFragment = new ProfileFragment();
             var transaction = FragmentManager.BeginTransaction()
                 .Replace(Resource.Id.fragmentcontainer, ProfileFragment)
                 .Commit();

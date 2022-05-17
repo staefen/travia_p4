@@ -364,6 +364,10 @@
     <Compile Include="EventListener\PostEventListener.cs" />
     <Compile Include="Activities\ViewProfile.cs" />
     <Compile Include="Activities\ViewActivity.cs" />
+    <Compile Include="Adapter\ActivityPostAdapter.cs" />
+    <Compile Include="Datamodels\ActivityPost.cs" />
+    <Compile Include="EventListener\InfoListener.cs" />
+    <Compile Include="Fragments\BrowseActivitiesFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="google-services %282%29.json" />
@@ -1076,6 +1080,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_adaptive_fore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Adapter\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
