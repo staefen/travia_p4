@@ -2,10 +2,12 @@ adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_round.xml
 androidx.appcompat.widget.Toolbar;obj/Debug/res/layout/bottom_nav_bar.xml
 androidx.appcompat.widget.Toolbar;obj/Debug/res/layout/toolbar.xml
-androidx.cardview.widget.CardView;obj/Debug/res/layout/browse.xml
+androidx.cardview.widget.CardView;obj/Debug/res/layout/browseactivities.xml
 androidx.cardview.widget.CardView;obj/Debug/res/layout/location_settings.xml
 androidx.cardview.widget.CardView;obj/Debug/res/layout/mainpage.xml
 androidx.cardview.widget.CardView;obj/Debug/res/layout/viewactivity.xml
+androidx.coordinatorlayout.widget.CoordinatorLayout;obj/Debug/res/layout/browse_activities.xml
+androidx.recyclerview.widget.RecyclerView;obj/Debug/res/layout/browse_activities.xml
 androidx.recyclerview.widget.RecyclerView;obj/Debug/res/layout/myactivities.xml
 androidx.recyclerview.widget.RecyclerView;obj/Debug/res/layout/toolbar.xml
 attr;/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/lp/3/jl/res/values/values.xml
@@ -32,10 +34,8 @@ CheckBox;obj/Debug/res/layout/signup_3.xml
 color;obj/Debug/res/values/colors.xml
 color;obj/Debug/res/values/ic_launcher_background.xml
 com.google.android.material.bottomnavigation.BottomNavigationView;obj/Debug/res/layout/bottom_nav_bar.xml
+com.google.android.material.floatingactionbutton.FloatingActionButton;obj/Debug/res/layout/browse_activities.xml
 corners;obj/Debug/res/drawable/curvededges_white.xml
-crc64b227089827305775.CircleImageView;obj/Debug/res/layout/edit_profile.xml
-crc64b227089827305775.CircleImageView;obj/Debug/res/layout/profileview.xml
-crc64b227089827305775.CircleImageView;obj/Debug/res/layout/signup_6.xml
 declare-styleable;/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/lp/3/jl/res/values/values.xml
 dimen;obj/Debug/res/values/dimens.xml
 EditText;obj/Debug/res/layout/create_post.xml
@@ -58,7 +58,7 @@ HorizontalScrollView;obj/Debug/res/layout/edit_profile.xml
 HorizontalScrollView;obj/Debug/res/layout/profileview.xml
 ImageView;obj/Debug/res/layout/activity_main.xml
 ImageView;obj/Debug/res/layout/bottom_nav_bar.xml
-ImageView;obj/Debug/res/layout/browse.xml
+ImageView;obj/Debug/res/layout/browseactivities.xml
 ImageView;obj/Debug/res/layout/create_post.xml
 ImageView;obj/Debug/res/layout/edit_profile.xml
 ImageView;obj/Debug/res/layout/login_signup_start.xml
@@ -72,7 +72,8 @@ item;obj/Debug/res/menu/navigation.xml
 item;obj/Debug/res/values/strings.xml
 item;obj/Debug/res/values/styles.xml
 LinearLayout;obj/Debug/res/layout/activity_main.xml
-LinearLayout;obj/Debug/res/layout/browse.xml
+LinearLayout;obj/Debug/res/layout/browse_activities.xml
+LinearLayout;obj/Debug/res/layout/browseactivities.xml
 LinearLayout;obj/Debug/res/layout/create_post.xml
 LinearLayout;obj/Debug/res/layout/edit_profile.xml
 LinearLayout;obj/Debug/res/layout/location_settings.xml
@@ -147,7 +148,8 @@ style;obj/Debug/res/values/styles.xml
 Switch;obj/Debug/res/layout/location_settings.xml
 TextView;obj/Debug/res/layout/activity_main.xml
 TextView;obj/Debug/res/layout/bottom_nav_bar.xml
-TextView;obj/Debug/res/layout/browse.xml
+TextView;obj/Debug/res/layout/browse_activities.xml
+TextView;obj/Debug/res/layout/browseactivities.xml
 TextView;obj/Debug/res/layout/create_post.xml
 TextView;obj/Debug/res/layout/edit_profile.xml
 TextView;obj/Debug/res/layout/location_settings.xml

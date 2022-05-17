@@ -3989,6 +3989,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v12.0": [
+      "Microsoft.Bcl.AsyncInterfaces >= 5.0.0",
       "Refractored.Controls.CircleImageView >= 1.0.1",
       "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.AndroidX.AppCompat >= 1.2.0.5",
@@ -4035,6 +4036,10 @@
     "frameworks": {
       "monoandroid12.0": {
         "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
           "Refractored.Controls.CircleImageView": {
             "target": "Package",
             "version": "[1.0.1, )"

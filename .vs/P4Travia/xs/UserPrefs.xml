@@ -4,17 +4,7 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Fragments/ProfileViewFragment.cs">
-    <Files>
-      <File FileName="P4Travia/Resources/layout/signup_3.xml" Line="92" Column="42" />
-      <File FileName="P4Travia/Resources/layout/signup_6.xml" Line="25" Column="36" />
-      <File FileName="P4Travia/Resources/layout/signup_5.xml" Line="7" Column="1" />
-      <File FileName="P4Travia/Resources/layout/signup_1.xml" Line="50" Column="6" />
-      <File FileName="P4Travia/Resources/layout/signup_start.xml" Line="76" Column="18" />
-      <File FileName="P4Travia/Resources/values/strings.xml" Line="54" Column="30" />
-      <File FileName="P4Travia/Fragments/BrowseActivitiesFragment.cs" Line="121" Column="2" />
-      <File FileName="P4Travia/Fragments/ProfileViewFragment.cs" Line="25" Column="25" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -23,8 +13,12 @@
               <Node name="Adapter" expanded="True" />
               <Node name="Datamodels" expanded="True" />
               <Node name="Fragments" expanded="True" />
+              <Node name="Helpers" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True">
+                  <Node name="browse_activities.xml" selected="True" />
+                </Node>
                 <Node name="values" expanded="True" />
               </Node>
             </Node>

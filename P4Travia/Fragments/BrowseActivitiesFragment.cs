@@ -39,7 +39,7 @@ namespace P4Travia
         {
             base.OnCreate(savedInstanceState);
 
-            View view = inflater.Inflate(Resource.Layout.browseActivities, container, false);
+            View view = inflater.Inflate(Resource.Layout.browse_activities, container, false);
             ConnectViews(view);
 
 

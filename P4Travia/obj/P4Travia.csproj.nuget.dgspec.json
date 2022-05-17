@@ -32,6 +32,10 @@
       "frameworks": {
         "monoandroid12.0": {
           "dependencies": {
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Refractored.Controls.CircleImageView": {
               "target": "Package",
               "version": "[1.0.1, )"

@@ -103,7 +103,6 @@
 	<string name="birthday_text">Birthday (DDMMYY)</string>
 	<string name="password_text">* Must be at least 6 characters and contain 1 number and 1 capital letter</string>
 
-
 	<!-- View activity -->
 	<string name="location">location</string>
 	<string name="organising_user">Organising user</string>
