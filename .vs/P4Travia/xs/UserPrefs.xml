@@ -1,26 +1,29 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Resources/layout/signup_4.xml">
+    <Files>
+      <File FileName="P4Travia/Resources/layout/signup_3.xml" Line="89" Column="38" />
+      <File FileName="P4Travia/Resources/layout/signup_4.xml" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="P4Travia" expanded="True">
             <Node name="P4Travia" expanded="True">
-              <Node name="Adapter" expanded="True" />
+              <Node name="Activities" expanded="True" />
               <Node name="Datamodels" expanded="True" />
-              <Node name="Fragments" expanded="True" />
               <Node name="Helpers" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True">
                 <Node name="layout" expanded="True">
-                  <Node name="browse_activities.xml" selected="True" />
+                  <Node name="signup_4.xml" selected="True" />
                 </Node>
                 <Node name="values" expanded="True" />
               </Node>
+              <Node name="Signup" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -30,8 +33,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
-  <MonoDevelop.Ide.ItemProperties.P4Travia PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_3" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredDevice="pixel_3" PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredTheme="AppTheme" />
+  <MultiItemStartupConfigurations />
 </Properties>

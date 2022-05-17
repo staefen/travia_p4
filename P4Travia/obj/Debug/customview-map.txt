@@ -2,9 +2,9 @@ adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_round.xml
 androidx.appcompat.widget.Toolbar;obj/Debug/res/layout/bottom_nav_bar.xml
 androidx.appcompat.widget.Toolbar;obj/Debug/res/layout/toolbar.xml
-androidx.cardview.widget.CardView;obj/Debug/res/layout/browseactivities.xml
 androidx.cardview.widget.CardView;obj/Debug/res/layout/location_settings.xml
 androidx.cardview.widget.CardView;obj/Debug/res/layout/mainpage.xml
+androidx.cardview.widget.CardView;obj/Debug/res/layout/post.xml
 androidx.cardview.widget.CardView;obj/Debug/res/layout/viewactivity.xml
 androidx.coordinatorlayout.widget.CoordinatorLayout;obj/Debug/res/layout/browse_activities.xml
 androidx.recyclerview.widget.RecyclerView;obj/Debug/res/layout/browse_activities.xml
@@ -58,11 +58,11 @@ HorizontalScrollView;obj/Debug/res/layout/edit_profile.xml
 HorizontalScrollView;obj/Debug/res/layout/profileview.xml
 ImageView;obj/Debug/res/layout/activity_main.xml
 ImageView;obj/Debug/res/layout/bottom_nav_bar.xml
-ImageView;obj/Debug/res/layout/browseactivities.xml
 ImageView;obj/Debug/res/layout/create_post.xml
 ImageView;obj/Debug/res/layout/edit_profile.xml
 ImageView;obj/Debug/res/layout/login_signup_start.xml
 ImageView;obj/Debug/res/layout/mainpage.xml
+ImageView;obj/Debug/res/layout/post.xml
 ImageView;obj/Debug/res/layout/profileview.xml
 ImageView;obj/Debug/res/layout/toolbar.xml
 ImageView;obj/Debug/res/layout/viewactivity.xml
@@ -73,13 +73,13 @@ item;obj/Debug/res/values/strings.xml
 item;obj/Debug/res/values/styles.xml
 LinearLayout;obj/Debug/res/layout/activity_main.xml
 LinearLayout;obj/Debug/res/layout/browse_activities.xml
-LinearLayout;obj/Debug/res/layout/browseactivities.xml
 LinearLayout;obj/Debug/res/layout/create_post.xml
 LinearLayout;obj/Debug/res/layout/edit_profile.xml
 LinearLayout;obj/Debug/res/layout/location_settings.xml
 LinearLayout;obj/Debug/res/layout/login.xml
 LinearLayout;obj/Debug/res/layout/login_signup_start.xml
 LinearLayout;obj/Debug/res/layout/notification_list.xml
+LinearLayout;obj/Debug/res/layout/post.xml
 LinearLayout;obj/Debug/res/layout/profileview.xml
 LinearLayout;obj/Debug/res/layout/progress_dialog.xml
 LinearLayout;obj/Debug/res/layout/settings.xml
@@ -93,6 +93,7 @@ LinearLayout;obj/Debug/res/layout/signup_start.xml
 LinearLayout;obj/Debug/res/layout/toolbar.xml
 LinearLayout;obj/Debug/res/layout/viewactivity.xml
 menu;obj/Debug/res/menu/navigation.xml
+path;obj/Debug/res/drawable/add_icon.xml
 paths;/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/lp/58/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 paths;obj/Debug/res/xml/file_paths.xml
 ProgressBar;obj/Debug/res/layout/progress_dialog.xml
@@ -115,6 +116,7 @@ RelativeLayout;obj/Debug/res/layout/login_signup_start.xml
 RelativeLayout;obj/Debug/res/layout/mainpage.xml
 RelativeLayout;obj/Debug/res/layout/myactivities.xml
 RelativeLayout;obj/Debug/res/layout/notification_list.xml
+RelativeLayout;obj/Debug/res/layout/post.xml
 RelativeLayout;obj/Debug/res/layout/profileview.xml
 RelativeLayout;obj/Debug/res/layout/signup_1.xml
 RelativeLayout;obj/Debug/res/layout/signup_2.xml
@@ -149,7 +151,6 @@ Switch;obj/Debug/res/layout/location_settings.xml
 TextView;obj/Debug/res/layout/activity_main.xml
 TextView;obj/Debug/res/layout/bottom_nav_bar.xml
 TextView;obj/Debug/res/layout/browse_activities.xml
-TextView;obj/Debug/res/layout/browseactivities.xml
 TextView;obj/Debug/res/layout/create_post.xml
 TextView;obj/Debug/res/layout/edit_profile.xml
 TextView;obj/Debug/res/layout/location_settings.xml
@@ -157,6 +158,7 @@ TextView;obj/Debug/res/layout/login.xml
 TextView;obj/Debug/res/layout/mainpage.xml
 TextView;obj/Debug/res/layout/myactivities.xml
 TextView;obj/Debug/res/layout/notification_list.xml
+TextView;obj/Debug/res/layout/post.xml
 TextView;obj/Debug/res/layout/profileview.xml
 TextView;obj/Debug/res/layout/progress_dialog.xml
 TextView;obj/Debug/res/layout/settings.xml
@@ -169,3 +171,4 @@ TextView;obj/Debug/res/layout/signup_6.xml
 TextView;obj/Debug/res/layout/signup_start.xml
 TextView;obj/Debug/res/layout/toolbar.xml
 TextView;obj/Debug/res/layout/viewactivity.xml
+vector;obj/Debug/res/drawable/add_icon.xml
