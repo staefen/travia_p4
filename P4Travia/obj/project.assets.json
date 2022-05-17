@@ -4005,27 +4005,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chris\\.nuget\\packages\\": {}
+    "/Users/MariaKristineTommer/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj",
+      "projectUniqueName": "/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/P4Travia.csproj",
       "projectName": "P4Travia",
-      "projectPath": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\P4Travia.csproj",
-      "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chris\\source\\repos\\travia_p4\\P4Travia\\obj\\",
+      "projectPath": "/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/P4Travia.csproj",
+      "packagesPath": "/Users/MariaKristineTommer/.nuget/packages/",
+      "outputPath": "/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/MariaKristineTommer/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid12.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4098,7 +4096,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.AppCompat from 1.4.1.1 to 1.2.0.5. Reference the package directly from the project to select a different version. \r\n P4Travia -> Xamarin.AndroidX.ConstraintLayout 2.1.3.1 -> Xamarin.AndroidX.AppCompat (>= 1.4.1.1) \r\n P4Travia -> Xamarin.AndroidX.AppCompat (>= 1.2.0.5)",
+      "message": "Detected package downgrade: Xamarin.AndroidX.AppCompat from 1.4.1.1 to 1.2.0.5. Reference the package directly from the project to select a different version. \n P4Travia -> Xamarin.AndroidX.ConstraintLayout 2.1.3.1 -> Xamarin.AndroidX.AppCompat (>= 1.4.1.1) \n P4Travia -> Xamarin.AndroidX.AppCompat (>= 1.2.0.5)",
       "libraryId": "Xamarin.AndroidX.AppCompat",
       "targetGraphs": [
         "MonoAndroid,Version=v12.0"

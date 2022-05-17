@@ -648,3 +648,13 @@
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/res/mipmap-xxxhdpi/ic_launcher_round1.png
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/res/mipmap-xxxhdpi/ic_launcher_adaptive_fore.png
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/res/mipmap-xxhdpi/ic_launcher_round1.png
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/res/mipmap-xxhdpi/ic_launcher_adaptive_fore.png
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/res/mipmap-xhdpi/ic_launcher_round1.png
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/res/mipmap-xhdpi/ic_launcher_adaptive_fore.png
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/res/mipmap-mdpi/ic_launcher_round2.png
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/res/mipmap-mdpi/ic_launcher_adaptive_fore.png
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/res/mipmap-hdpi/ic_launcher_round1.png
+/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/res/mipmap-hdpi/ic_launcher_adaptive_fore.png
