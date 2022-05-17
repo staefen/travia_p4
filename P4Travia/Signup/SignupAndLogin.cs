@@ -7,7 +7,7 @@ using System;
 
 namespace P4Travia.Signup
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = false)]
     public class SignupAndLogin : AppCompatActivity
     {
         Button login1;

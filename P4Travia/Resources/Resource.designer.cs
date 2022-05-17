@@ -1013,6 +1013,21 @@ namespace P4Travia
 			// aapt resource value: 0x7F0A0007
 			public const int round_notifications_none_white_48 = 2131361799;
 			
+			// aapt resource value: 0x7F0E0008
+			public const int round_room_white_18 = 2131623944;
+			
+			// aapt resource value: 0x7F0E0009
+			public const int round_room_white_20 = 2131623945;
+			
+			// aapt resource value: 0x7F0E000A
+			public const int round_room_white_24 = 2131623946;
+			
+			// aapt resource value: 0x7F0E000B
+			public const int round_room_white_36 = 2131623947;
+			
+			// aapt resource value: 0x7F0E000C
+			public const int round_room_white_48 = 2131623948;
+			
 			static Mipmap()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
