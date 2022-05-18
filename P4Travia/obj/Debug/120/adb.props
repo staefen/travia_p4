@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 AdbTarget=-s BH900KJ78Z
+=======
+AdbTarget=-s 2b296da33c017ece
+>>>>>>> dca436b2cce7b68c6b6039fc2eb0a6eb94122620
 AdbOptions=

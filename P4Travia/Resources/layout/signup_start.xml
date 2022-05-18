@@ -13,7 +13,8 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="30dp"
+        android:progress="10"/>
 
     <TextView
         android:id="@+id/letsstart"
@@ -37,7 +38,7 @@
         android:id="@+id/signupEmailText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="50dp"
         android:text="@string/email"
         android:textAppearance="?android:attr/textAppearanceMedium"/>
 
@@ -64,6 +65,15 @@
         android:background="@android:drawable/editbox_background" />
 
     <TextView
+        android:id="@+id/PasswordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/password_text"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TextView
         android:id="@+id/confirmPasswordText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

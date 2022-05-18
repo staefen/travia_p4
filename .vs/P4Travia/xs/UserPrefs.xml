@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_3" PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Resources/layout/signup_4.xml">
+    <Files>
+      <File FileName="P4Travia/Resources/layout/signup_3.xml" Line="92" Column="42" />
+      <File FileName="P4Travia/Resources/layout/signup_4.xml" Line="33" Column="1" />
+      <File FileName="P4Travia/Resources/layout/signup_6.xml" Line="25" Column="36" />
+      <File FileName="P4Travia/Resources/layout/signup_5.xml" Line="7" Column="1" />
+      <File FileName="P4Travia/Resources/layout/signup_1.xml" Line="50" Column="6" />
+      <File FileName="P4Travia/Resources/layout/signup_start.xml" Line="76" Column="18" />
+      <File FileName="P4Travia/Resources/values/strings.xml" Line="54" Column="30" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="P4Travia" expanded="True">
+            <Node name="P4Travia" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True">
+                  <Node name="signup_4.xml" selected="True" />
+                </Node>
+                <Node name="values" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
+</Properties>

@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace P4Travia.Activities
 {
-	[Activity (Label = "ViewActivity", MainLauncher = true)]			
+	[Activity (Label = "ViewActivity", MainLauncher = false)]	
 	public class ViewActivity : Activity
 	{
 		protected override void OnCreate (Bundle savedInstanceState)

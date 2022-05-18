@@ -51,7 +51,7 @@
 	<string name="account_settings">Account</string>
 
 	<!-- Sign up -->
-	<string name="letsstart">Let us start!</string>
+	<string name="letsstart">Lets start!</string>
 	<string name="letsstart_desc">This will be used as your login</string>
 	<string name="next">Next </string>
 	<string name="username">Username </string>
@@ -101,6 +101,7 @@
 	<string name="spanish">Spanish</string>
 	<string name="confirm">Confirm</string>
 	<string name="birthday_text">Birthday (DDMMYY)</string>
+	<string name="password_text">* Must be at least 6 characters and contain 1 number and 1 capital letter</string>
 
 
 	<!-- View activity -->
