@@ -10,6 +10,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using FFImageLoading;
 
 namespace P4Travia.Activities
 {
@@ -22,6 +23,7 @@ namespace P4Travia.Activities
         TextView eventLocationTextView;
         TextView eventDescriptionTextView;
         TextView userNameTextView;
+        ImageView eventimageView;
 
 
         string eventName;
@@ -29,10 +31,14 @@ namespace P4Travia.Activities
         string eventTime;
         string eventLocation;
         string eventDescription;
-        string userName;
+        string userName; //null
+        string imageId;
+        string downloadUrl;
 
-	
-		protected override void OnCreate (Bundle savedInstanceState)
+
+
+
+        protected override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
 			SetContentView(Resource.Layout.viewactivity);
@@ -45,6 +51,12 @@ namespace P4Travia.Activities
             eventLocationTextView = (TextView)FindViewById(Resource.Id.locationTextView);
             eventDescriptionTextView = (TextView)FindViewById(Resource.Id.descriptionTextView);
             userNameTextView = (TextView)FindViewById(Resource.Id.userNameTextView);
+            eventimageView = (ImageView)FindViewById(Resource.Id.activityimageView);
+
+            imageId= Intent.GetStringExtra("image_id");
+            downloadUrl= Intent.GetStringExtra("download_url");
+
+            GetImage(downloadUrl, eventimageView);
 
             eventName = Intent.GetStringExtra("activity name");
             eventNameTextView.Text = eventName;
@@ -55,7 +67,7 @@ namespace P4Travia.Activities
             eventDescription = Intent.GetStringExtra("description");
             eventDescriptionTextView.Text = eventDescription;
 
-            userNameTextView.Text = Intent.GetStringExtra("username");
+            userName = Intent.GetStringExtra("username");
             userNameTextView.Text = userName;
 
 
@@ -67,6 +79,14 @@ namespace P4Travia.Activities
 
 
 
+        }
+
+        void GetImage(string url, ImageView imageView)
+        {
+            ImageService.Instance.LoadUrl(url)
+                .Retry(3, 200) //Vil prøve at downloade et billede 3 gange med et delay på 200 ms
+                .DownSample(400, 400) //Compressing Image - Size er 400 x 400 for at reducere billedets størrelse
+                .Into(imageView); //Sender billedet til et ImageView
         }
 
         public void SetButton()

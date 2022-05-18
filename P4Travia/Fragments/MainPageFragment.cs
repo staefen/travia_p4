@@ -20,8 +20,13 @@ namespace P4Travia
         ImageView allButton;
         ImageView foodButton;
         ImageView musicButton;
-        BrowseActivitiesFragment browseActivitiesFragment;
-
+        ImageView natureButton;
+        ImageView sportButton;
+        ImageView cultureButton;
+        ImageView creativityButton;
+        ImageView otherButton;
+        BrowseActivitiesFragment fragment;
+        Bundle bundle;
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
@@ -37,43 +42,100 @@ namespace P4Travia
             allButton = (ImageView)view.FindViewById(Resource.Id.allimage);
             foodButton = (ImageView)view.FindViewById(Resource.Id.foodrounded);
             musicButton = (ImageView)view.FindViewById(Resource.Id.musicrounded);
-
+            natureButton = (ImageView)view.FindViewById(Resource.Id.natureimage);
+            sportButton = (ImageView)view.FindViewById(Resource.Id.sportsimage);
+            cultureButton = (ImageView)view.FindViewById(Resource.Id.cultureimage);
+            creativityButton = (ImageView)view.FindViewById(Resource.Id.creativityimage);
+            otherButton = (ImageView)view.FindViewById(Resource.Id.otherimage);
 
             allButton.Click += AllButton_Click;
             foodButton.Click += FoodButton_Click;
             musicButton.Click += MusicButton_Click;
+            natureButton.Click += NatureButton_Click;
+            sportButton.Click += SportButton_Click;
+            cultureButton.Click += CultureButton_Click;
+            creativityButton.Click += CreativityButton_Click;
+            otherButton.Click += OtherButton_Click;
         }
 
         private void MusicButton_Click(object sender, EventArgs e)
         {
-            Intent intent = new Intent(this.Activity, typeof(BrowseActivitiesFragment));
-            intent.PutExtra("category", "Music");
-            browseActivitiesFragment = new BrowseActivitiesFragment();
-            var transaction = FragmentManager.BeginTransaction()
-                .Replace(Resource.Id.fragmentcontainer, browseActivitiesFragment, "BrowseActivitiesFragment")
-                .Commit();
+            bundle.PutString("category", "Music");
+            fragment.Arguments = bundle;
 
+            var transaction = FragmentManager.BeginTransaction()
+                .Replace(Resource.Id.fragmentcontainer, fragment)
+                .Commit();
         }
 
         private void AllButton_Click(object sender, EventArgs e)
         {
-            Intent intent = new Intent(this.Activity, typeof(BrowseActivitiesFragment));
-            intent.PutExtra("category", "All");
-            StartActivity(intent);
+            bundle.PutString("category", "All");
+            fragment.Arguments = bundle;
 
+            var transaction = FragmentManager.BeginTransaction()
+                .Replace(Resource.Id.fragmentcontainer, fragment)
+                .Commit();
         }
 
         private void FoodButton_Click(object sender, EventArgs e)
         {
-            Intent intent = new Intent(this.Activity, typeof(BrowseActivitiesFragment));
-            intent.PutExtra("category", "Food");
-            browseActivitiesFragment = new BrowseActivitiesFragment();
-            var transaction = FragmentManager.BeginTransaction()
-                .Replace(Resource.Id.fragmentcontainer, browseActivitiesFragment, "BrowseActivitiesFragment")
-                .Commit();
+            bundle.PutString("category", "Food");
+            fragment.Arguments = bundle;
 
+            var transaction = FragmentManager.BeginTransaction()
+                .Replace(Resource.Id.fragmentcontainer, fragment)
+                .Commit();
         }
 
-    }
+        private void NatureButton_Click(object sender, EventArgs e)
+        {
+            bundle.PutString("category", "Nature");
+            fragment.Arguments = bundle;
 
+            var transaction = FragmentManager.BeginTransaction()
+                .Replace(Resource.Id.fragmentcontainer, fragment)
+                .Commit();
+        }
+
+        private void SportButton_Click(object sender, EventArgs e)
+        {
+            bundle.PutString("category", "Sport");
+            fragment.Arguments = bundle;
+
+            var transaction = FragmentManager.BeginTransaction()
+                .Replace(Resource.Id.fragmentcontainer, fragment)
+                .Commit();
+        }
+
+        private void CreativityButton_Click(object sender, EventArgs e)
+        {
+            bundle.PutString("category", "Creativity");
+            fragment.Arguments = bundle;
+
+            var transaction = FragmentManager.BeginTransaction()
+                .Replace(Resource.Id.fragmentcontainer, fragment)
+                .Commit();
+        }
+
+        private void CultureButton_Click(object sender, EventArgs e)
+        {
+            bundle.PutString("category", "Culture");
+            fragment.Arguments = bundle;
+
+            var transaction = FragmentManager.BeginTransaction()
+                .Replace(Resource.Id.fragmentcontainer, fragment)
+                .Commit();
+        }
+
+        private void OtherButton_Click(object sender, EventArgs e)
+        {
+            bundle.PutString("category", "Other");
+            fragment.Arguments = bundle;
+
+            var transaction = FragmentManager.BeginTransaction()
+                .Replace(Resource.Id.fragmentcontainer, fragment)
+                .Commit();
+        }
+    }
 }

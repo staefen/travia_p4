@@ -57,8 +57,9 @@ namespace P4Travia
             activityRecyclerView = (RecyclerView)view.FindViewById(Resource.Id.activityRecyclerView);
             FloatingActionButton floatingAddButton = (FloatingActionButton)view.FindViewById(Resource.Id.floatingAddButton);
 
-            //category = this.Activity.Intent.GetStringExtra("category");
-            //categoryTextView.Text = category;
+            //Retrieves category from last fragment
+            string category = Arguments.GetString("category");
+            categoryTextView.Text = categoryTextView.Text + category;
 
 
             floatingAddButton.Click += floatingAddButton_Click;
@@ -128,7 +129,8 @@ namespace P4Travia
             intent.PutExtra("location", activityPost.ActivityLocation);
             intent.PutExtra("description", activityPost.ActivityDescription);
             intent.PutExtra("username", activityPost.ActivityUserName);
-           
+            intent.PutExtra("download_url", activityPost.ActivityDownloadUrl);
+            intent.PutExtra("image_id", activityPost.ActivityId);
 
             StartActivity(intent);
         }

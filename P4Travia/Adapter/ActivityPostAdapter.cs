@@ -46,7 +46,7 @@ namespace P4Travia.Adapter
             // Replace the contents of the view with that element
             var holder = viewHolder as PostAdapterViewHolder;
 
-            //fejl
+            
             holder.dateTextView.Text = item.ActivityDate;
             holder.timeTextView.Text = item.ActivityTime;
             holder.nameTextView.Text = item.ActivityName;

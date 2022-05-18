@@ -11,6 +11,7 @@
 		<ImageView
 			android:layout_width="match_parent"
 			android:layout_height="130dp"
+			android:id="@+id/activityimageView"
 			android:src="@android:drawable/ic_menu_gallery"/>
 		<androidx.cardview.widget.CardView
 			android:layout_width="match_parent"
@@ -28,7 +29,7 @@
 			<ImageView
 				android:layout_marginLeft="20dp"
 				android:layout_marginTop="55dp"
-				android:src="@android:drawable/ic_menu_gallery"
+				android:src="@mipmap/round_calendar_today_black_18"
 				android:layout_width="20dp"
 				android:layout_height="20dp"
 			/>
@@ -36,14 +37,14 @@
 			<ImageView
 				android:layout_marginLeft="20dp"
 				android:layout_marginTop="75dp"
-				android:src="@android:drawable/ic_menu_gallery"
+				android:src="@mipmap/round_schedule_black_18"
 				android:layout_width="20dp"
 				android:layout_height="20dp"
 			/>
 			<ImageView
 				android:layout_marginLeft="20dp"
 				android:layout_marginTop="95dp"
-				android:src="@android:drawable/ic_menu_gallery"
+				android:src="@mipmap/round_room_black_18"
 				android:layout_width="20dp"
 				android:layout_height="20dp"
 			/>
@@ -106,7 +107,7 @@
 			<ImageView
 				android:layout_marginLeft="20dp"
 				android:layout_marginTop="350dp"
-				android:src="@android:drawable/ic_menu_gallery"
+				android:src="@mipmap/round_person_black_18"
 				android:layout_width="30dp"
 				android:layout_height="30dp"
 			/>
@@ -130,7 +131,7 @@
 			<ImageView
 				android:layout_marginLeft="20dp"
 				android:layout_marginTop="430dp"
-				android:src="@android:drawable/ic_menu_gallery"
+				android:src="@mipmap/round_person_black_18"
 				android:layout_width="30dp"
 				android:layout_height="30dp"
 			/>
@@ -146,7 +147,7 @@
 			<ImageView
 				android:layout_marginLeft="20dp"
 				android:layout_marginTop="470dp"
-				android:src="@android:drawable/ic_menu_gallery"
+				android:src="@mipmap/round_person_black_18"
 				android:layout_width="30dp"
 				android:layout_height="30dp"
 			/>
@@ -162,7 +163,7 @@
 			<ImageView
 				android:layout_marginLeft="20dp"
 				android:layout_marginTop="510dp"
-				android:src="@android:drawable/ic_menu_gallery"
+				android:src="@mipmap/round_person_black_18"
 				android:layout_width="30dp"
 				android:layout_height="30dp"
 			/>
