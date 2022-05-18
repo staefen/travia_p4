@@ -19,9 +19,12 @@ namespace P4Travia.Activities
 		{
 			base.OnCreate(savedInstanceState);
 
-			// SetExploreButton();
-
 			SetContentView(Resource.Layout.bottom_nav_bar);
+			SetContentView(Resource.Layout.notification_list);
+
+			SetButtons();
+
+			SetExploreButton();
 
 			TextView location_settings = (TextView)FindViewById(Resource.Id.location);
 			location_settings.Click += Location_Settings_Click;
@@ -29,7 +32,7 @@ namespace P4Travia.Activities
 			ImageView notification = (ImageView)FindViewById(Resource.Id.notification_bell);
 			notification.Click += Notification_Click;
 		}
-		/*
+		
 		//omdirigere fra notification til homepage
 		public void SetExploreButton()
 		{
@@ -39,6 +42,7 @@ namespace P4Travia.Activities
 		private void GoToHomepage()
 		{
 			Button homepage = (Button)FindViewById(Resource.Id.explore_button);
+			homepage.Background.SetColorFilter(Android.Graphics.Color.ParseColor("#E76F51"), Android.Graphics.PorterDuff.Mode.Multiply);
 			homepage.Click += Homepage_Click;
 		}
 
@@ -47,7 +51,26 @@ namespace P4Travia.Activities
 			StartActivity(typeof(MainActivity));//her skal MainActivity indsættes
 		}
 
-		*/
+		//Toolbar buttons
+		private void SetButtons()
+		{
+			NotificationButton();
+			LocationSettings();
+		}
+
+		//Buttons
+		public void NotificationButton()
+		{
+			ImageView notification = (ImageView)FindViewById(Resource.Id.notification_bell);
+			notification.Click += Notification_Click;
+		}
+
+		public void LocationSettings()
+		{
+			TextView location_settings = (TextView)FindViewById(Resource.Id.location);
+			location_settings.Click += Location_Settings_Click;
+		}
+
 
 
 

@@ -20,7 +20,6 @@ namespace P4Travia.Activities
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.location_settings);
-            //SetButtons();
             SetSeekbar();
             SetSWitchButtons();
             SetLocationChange();
@@ -52,16 +51,17 @@ namespace P4Travia.Activities
                 {
                     try
                     {
+                        //Burde fixes, goer at der springes til main naar switch toggles
 
                         TextView changedLocation = FindViewById<TextView>(Resource.Id.location);
                         changedLocation.Text = usrloc.City;
+
+                        Intent intent = new Intent(this, typeof(MainActivity));
+                        intent.PutExtra("No Location", usrloc.City);
+                        StartActivity(intent);
                     }
 
                     catch { }
-                }
-                else
-                {
-
                 }
             };
 
@@ -83,6 +83,7 @@ namespace P4Travia.Activities
         {
             EditText changeLocation = FindViewById<EditText>(Resource.Id.change_location);
             Button applyButton = FindViewById<Button>(Resource.Id.apply_button);
+            applyButton.Background.SetColorFilter(Android.Graphics.Color.ParseColor("#E76F51"), Android.Graphics.PorterDuff.Mode.Multiply);
             TextView changedLocation = FindViewById<TextView>(Resource.Id.location);
 
             string address = null;
@@ -93,6 +94,11 @@ namespace P4Travia.Activities
                 changedLocation.Text = location;
 
                address = location;
+
+                Intent intent = new Intent(this, typeof(MainActivity));
+                intent.PutExtra("No Location", location);
+
+                StartActivity(intent);
             };
 
             LocationHandler lh = new LocationHandler();

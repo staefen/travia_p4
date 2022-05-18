@@ -46,7 +46,24 @@ namespace P4Travia
             location_settings.Click += Location_Settings_Click;
 
 
+            LocationOnMainPage();
+            CurrentLocationOnMainPage();
+        }
 
+        private void CurrentLocationOnMainPage()
+        {
+            string strLocation;
+            TextView location_mp = FindViewById<TextView>(Resource.Id.location);
+            strLocation = (string)Intent.GetStringExtra("No Location");
+            location_mp.Text = strLocation;
+        }
+
+        private void LocationOnMainPage()
+        {
+            string strLocation;
+            TextView location_mp = FindViewById<TextView>(Resource.Id.location);
+            strLocation = (string)Intent.GetStringExtra("No Location");
+            location_mp.Text = strLocation;
         }
 
         public bool OnNavigationItemSelected(IMenuItem item)
