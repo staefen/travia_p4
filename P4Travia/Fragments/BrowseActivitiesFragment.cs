@@ -46,6 +46,8 @@ namespace P4Travia
 
             return view;
 
+
+
         }
 
         private void ConnectViews(View view)
@@ -113,9 +115,21 @@ namespace P4Travia
             activityRecyclerView.SetLayoutManager(new AndroidX.RecyclerView.Widget.LinearLayoutManager(activityRecyclerView.Context));
             activityPostAdapter = new ActivityPostAdapter(ListOfPost);
             activityRecyclerView.SetAdapter(activityPostAdapter);
-
+            activityPostAdapter.ItemClick += post_ItemClick;
         }
 
+        private void post_ItemClick(object sender, PostAdapterClickEventArgs e)
+        {
+            var activityPost = ListOfPost[e.Position];
+            Intent intent = new Intent(this.Activity, typeof(ViewActivity));
+            intent.PutExtra("activity name", activityPost.ActivityName);
+            intent.PutExtra("date", activityPost.ActivityDate);
+            intent.PutExtra("time", activityPost.ActivityTime);
+            intent.PutExtra("location", activityPost.ActivityLocation);
+            intent.PutExtra("description", activityPost.ActivityDescription);
+
+            StartActivity(intent);
+        }
     }
 
 }

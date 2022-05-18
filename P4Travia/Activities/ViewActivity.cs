@@ -15,14 +15,52 @@ namespace P4Travia.Activities
 {
 	[Activity (Label = "ViewActivity", MainLauncher = false)]	
 	public class ViewActivity : Activity
-	{
+    {
+        TextView eventNameTextView;
+        TextView eventDateTextView;
+        TextView eventTimeTextView;
+        TextView eventLocationTextView;
+        TextView eventDescriptionTextView;
+
+
+        string eventName;
+        string eventDate;
+        string eventTime;
+        string eventLocation;
+        string eventDescription;
+
+	
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
 			SetContentView(Resource.Layout.viewactivity);
             SetButton();
 
-		}
+
+            eventNameTextView = (TextView)FindViewById(Resource.Id.activityNameTextView);
+            eventTimeTextView = (TextView)FindViewById(Resource.Id.timeTextView);
+            eventDateTextView = (TextView)FindViewById(Resource.Id.dateTextView);
+            eventLocationTextView = (TextView)FindViewById(Resource.Id.locationTextView);
+            eventDescriptionTextView = (TextView)FindViewById(Resource.Id.descriptionTextView);
+
+            eventName = Intent.GetStringExtra("activity name");
+            eventNameTextView.Text = eventName;
+
+            eventDate = Intent.GetStringExtra("date");
+            eventDateTextView.Text = eventDate;
+
+            eventTime = Intent.GetStringExtra("time");
+            eventTimeTextView.Text = eventTime;
+
+            eventLocation = Intent.GetStringExtra("location");
+            eventLocationTextView.Text = eventLocation;
+
+            eventDescription = Intent.GetStringExtra("description");
+            eventDescriptionTextView.Text = eventDescription;
+
+
+
+        }
 
         public void SetButton()
         {

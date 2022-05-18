@@ -84,7 +84,7 @@ namespace P4Travia.Helpers
         //Retrieves the users name when opening the app (Other parameters can be added)
         public static string GetName()
         {
-
+            // det er en lille forskel fra facepost her 
             string username = preferences.GetString("username", "");
             return username;
         }
