@@ -114,11 +114,11 @@ namespace P4Travia
         {
             activityRecyclerView.SetLayoutManager(new AndroidX.RecyclerView.Widget.LinearLayoutManager(activityRecyclerView.Context));
             activityPostAdapter = new ActivityPostAdapter(ListOfPost);
+            activityPostAdapter.ItemClick += ActivityAdapter_ItemClick;
             activityRecyclerView.SetAdapter(activityPostAdapter);
-            activityPostAdapter.ItemClick += post_ItemClick;
         }
 
-        private void post_ItemClick(object sender, PostAdapterClickEventArgs e)
+        private void ActivityAdapter_ItemClick (object sender, PostAdapterClickEventArgs e)
         {
             var activityPost = ListOfPost[e.Position];
             Intent intent = new Intent(this.Activity, typeof(ViewActivity));
@@ -127,6 +127,8 @@ namespace P4Travia
             intent.PutExtra("time", activityPost.ActivityTime);
             intent.PutExtra("location", activityPost.ActivityLocation);
             intent.PutExtra("description", activityPost.ActivityDescription);
+            intent.PutExtra("username", activityPost.ActivityUserName);
+           
 
             StartActivity(intent);
         }

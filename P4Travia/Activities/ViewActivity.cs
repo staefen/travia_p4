@@ -21,6 +21,7 @@ namespace P4Travia.Activities
         TextView eventTimeTextView;
         TextView eventLocationTextView;
         TextView eventDescriptionTextView;
+        TextView userNameTextView;
 
 
         string eventName;
@@ -28,6 +29,7 @@ namespace P4Travia.Activities
         string eventTime;
         string eventLocation;
         string eventDescription;
+        string userName;
 
 	
 		protected override void OnCreate (Bundle savedInstanceState)
@@ -42,21 +44,26 @@ namespace P4Travia.Activities
             eventDateTextView = (TextView)FindViewById(Resource.Id.dateTextView);
             eventLocationTextView = (TextView)FindViewById(Resource.Id.locationTextView);
             eventDescriptionTextView = (TextView)FindViewById(Resource.Id.descriptionTextView);
+            userNameTextView = (TextView)FindViewById(Resource.Id.userNameTextView);
 
             eventName = Intent.GetStringExtra("activity name");
             eventNameTextView.Text = eventName;
-
-            eventDate = Intent.GetStringExtra("date");
-            eventDateTextView.Text = eventDate;
-
-            eventTime = Intent.GetStringExtra("time");
-            eventTimeTextView.Text = eventTime;
 
             eventLocation = Intent.GetStringExtra("location");
             eventLocationTextView.Text = eventLocation;
 
             eventDescription = Intent.GetStringExtra("description");
             eventDescriptionTextView.Text = eventDescription;
+
+            userNameTextView.Text = Intent.GetStringExtra("username");
+            userNameTextView.Text = userName;
+
+
+            eventTime = Intent.GetStringExtra("time");
+            eventTimeTextView.Text = eventTime;
+
+            eventDate = Intent.GetStringExtra("date");
+            eventDateTextView.Text = eventDate;
 
 
 
