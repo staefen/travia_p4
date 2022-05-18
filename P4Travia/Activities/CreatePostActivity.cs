@@ -60,6 +60,7 @@ namespace P4Travia.Activities
             locationEditText = (EditText)FindViewById(Resource.Id.editActivityLocation);
             participantsEditText = (EditText)FindViewById(Resource.Id.editActivityParticipants);
             descriptionEditText = (EditText)FindViewById(Resource.Id.editActivityDescription);
+            
 
             postImage = (ImageView)FindViewById(Resource.Id.addImage);
             postImage.Click += PostImage_Click;
@@ -78,15 +79,17 @@ namespace P4Travia.Activities
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
+           
             HashMap postMap = new HashMap();
-            postMap.Put("author", AppDataHelper.GetName());
+            postMap.Put("name", titleEditText.Text);
+            postMap.Put("username", AppDataHelper.GetName());
             postMap.Put("owner_id", AppDataHelper.GetFirebaseAuth().CurrentUser.Uid);
-            postMap.Put("post_date_created", DateTime.Now.ToString());
-            postMap.Put("post_title", titleEditText.Text);
-            postMap.Put("post_location", locationEditText.Text);
-            postMap.Put("post_date", dateEditText.Text);
-            postMap.Put("post_participants", participantsEditText.Text);
-            postMap.Put("post_body", descriptionEditText.Text);
+            postMap.Put("location", locationEditText.Text);
+            postMap.Put("date", dateEditText.Text);
+            postMap.Put("time", timeEditText.Text);
+            postMap.Put("participants", participantsEditText.Text);
+            postMap.Put("description", descriptionEditText.Text);
+            postMap.Put("post_date", DateTime.Now.ToString());
 
             DocumentReference newPostRef = AppDataHelper.GetFirestore().Collection("posts").Document();
             string postKey = newPostRef.Id;
