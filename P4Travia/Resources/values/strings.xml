@@ -51,7 +51,7 @@
 	<string name="account_settings">Account</string>
 
 	<!-- Sign up -->
-	<string name="letsstart">Lets start!</string>
+	<string name="letsstart">Let us start!</string>
 	<string name="letsstart_desc">This will be used as your login</string>
 	<string name="next">Next </string>
 	<string name="username">Username </string>
