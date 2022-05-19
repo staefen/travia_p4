@@ -36,7 +36,6 @@ color;obj/Debug/res/values/ic_launcher_background.xml
 com.google.android.material.bottomnavigation.BottomNavigationView;obj/Debug/res/layout/bottom_nav_bar.xml
 com.google.android.material.floatingactionbutton.FloatingActionButton;obj/Debug/res/layout/browse_activities.xml
 corners;obj/Debug/res/drawable/curvededges_white.xml
-crc64b227089827305775.CircleImageView;obj/Debug/res/layout/signup_6.xml
 declare-styleable;/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/lp/3/jl/res/values/values.xml
 dimen;obj/Debug/res/values/dimens.xml
 EditText;obj/Debug/res/layout/create_post.xml
