@@ -57,7 +57,7 @@ namespace P4Travia
             
             //Retrieves category from last fragment
             string category = Arguments.GetString("category");
-            categoryTextView.Text = categoryTextView.Text + category;
+            categoryTextView.Text = categoryTextView.Text +category;
 
 
             floatingAddButton.Click += floatingAddButton_Click;

@@ -25,8 +25,6 @@ namespace P4Travia
         ImageView cultureButton;
         ImageView creativityButton;
         ImageView otherButton;
-        BrowseActivitiesFragment fragment;
-        Bundle bundle;
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
@@ -60,6 +58,8 @@ namespace P4Travia
 
         private void MusicButton_Click(object sender, EventArgs e)
         {
+            BrowseActivitiesFragment fragment = new BrowseActivitiesFragment();
+            Bundle bundle = new Bundle();
             bundle.PutString("category", "Music");
             fragment.Arguments = bundle;
 
@@ -70,6 +70,8 @@ namespace P4Travia
 
         private void AllButton_Click(object sender, EventArgs e)
         {
+            BrowseActivitiesFragment fragment = new BrowseActivitiesFragment();
+            Bundle bundle = new Bundle();
             bundle.PutString("category", "All");
             fragment.Arguments = bundle;
 
@@ -80,6 +82,8 @@ namespace P4Travia
 
         private void FoodButton_Click(object sender, EventArgs e)
         {
+            BrowseActivitiesFragment fragment = new BrowseActivitiesFragment();
+            Bundle bundle = new Bundle();
             bundle.PutString("category", "Food");
             fragment.Arguments = bundle;
 
@@ -90,6 +94,8 @@ namespace P4Travia
 
         private void NatureButton_Click(object sender, EventArgs e)
         {
+            BrowseActivitiesFragment fragment = new BrowseActivitiesFragment();
+            Bundle bundle = new Bundle();
             bundle.PutString("category", "Nature");
             fragment.Arguments = bundle;
 
@@ -100,6 +106,8 @@ namespace P4Travia
 
         private void SportButton_Click(object sender, EventArgs e)
         {
+            BrowseActivitiesFragment fragment = new BrowseActivitiesFragment();
+            Bundle bundle = new Bundle();
             bundle.PutString("category", "Sport");
             fragment.Arguments = bundle;
 
@@ -110,6 +118,8 @@ namespace P4Travia
 
         private void CreativityButton_Click(object sender, EventArgs e)
         {
+            BrowseActivitiesFragment fragment = new BrowseActivitiesFragment();
+            Bundle bundle = new Bundle();
             bundle.PutString("category", "Creativity");
             fragment.Arguments = bundle;
 
@@ -120,6 +130,8 @@ namespace P4Travia
 
         private void CultureButton_Click(object sender, EventArgs e)
         {
+            BrowseActivitiesFragment fragment = new BrowseActivitiesFragment();
+            Bundle bundle = new Bundle();
             bundle.PutString("category", "Culture");
             fragment.Arguments = bundle;
 
@@ -130,6 +142,8 @@ namespace P4Travia
 
         private void OtherButton_Click(object sender, EventArgs e)
         {
+            BrowseActivitiesFragment fragment = new BrowseActivitiesFragment();
+            Bundle bundle = new Bundle();
             bundle.PutString("category", "Other");
             fragment.Arguments = bundle;
 
