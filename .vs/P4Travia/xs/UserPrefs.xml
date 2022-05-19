@@ -1,6 +1,8 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
-  <MonoDevelop.Ide.ItemProperties.P4Travia PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_3" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Resources/layout/create_post.xml">
     <Files>
       <File FileName="P4Travia/EventListener/PostEventListener.cs" Line="34" Column="58" />
@@ -35,10 +37,8 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.P4Travia PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredDevice="pixel_3" AndroidDesignerPreferredTheme="AppTheme" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
 </Properties>
