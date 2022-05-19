@@ -29,8 +29,7 @@ namespace P4Travia
         ActivityPostAdapter activityPostAdapter;
         List<ActivityPost> ListOfPost;
         PostEventListener postEventListener;
-
-
+        ImageView backBtn;
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
@@ -39,12 +38,7 @@ namespace P4Travia
             View view = inflater.Inflate(Resource.Layout.browse_activities, container, false);
             ConnectViews(view);
 
-
-
             return view;
-
-
-
         }
 
         private void ConnectViews(View view)
@@ -54,7 +48,10 @@ namespace P4Travia
             activityRecyclerView = (RecyclerView)view.FindViewById(Resource.Id.activityRecyclerView);
             FloatingActionButton floatingAddButton = (FloatingActionButton)view.FindViewById(Resource.Id.floatingAddButton);
 
-            
+
+            backBtn = (ImageView)view.FindViewById(Resource.Id.backBrowse);
+            backBtn.Click += backBtn_Click;
+
             //Retrieves category from last fragment
             string category = Arguments.GetString("category");
             categoryTextView.Text = categoryTextView.Text +category;
@@ -70,6 +67,14 @@ namespace P4Travia
             //CreateData();
             FetchPost();
 
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            AndroidX.Fragment.App.Fragment MainPageFragment = new MainPageFragment();
+            var transaction = FragmentManager.BeginTransaction()
+                .Replace(Resource.Id.fragmentcontainer, MainPageFragment)
+                .Commit();
         }
 
         private void floatingAddButton_Click(object sender, EventArgs e)

@@ -1903,7 +1903,7 @@ application_config:
 
 	.type	.L.autostr.6, %object
 .L.autostr.6:
-	.asciz	"c498042d-0b9a-4877-9a29-36483ebf31bd"
+	.asciz	"12927dc6-72a9-428f-973f-65610970b61f"
 	.size	.L.autostr.6, 37
 
 	.type	.L.autostr.7, %object
@@ -2078,8 +2078,8 @@ application_config:
 
 	.type	.L.autostr.41, %object
 .L.autostr.41:
-	.asciz	"com.companyname.p4travia"
-	.size	.L.autostr.41, 25
+	.asciz	"com.companyname.p4travia2"
+	.size	.L.autostr.41, 26
 
 
 	.ident	"Xamarin.Android remotes/origin/d17-2 @ bbba5a21f3b649a761b22d83959758b4d30df672"

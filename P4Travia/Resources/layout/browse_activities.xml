@@ -6,12 +6,9 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="7.6dp">
-
+      <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
         <TextView
             android:id="@+id/category"
             android:textSize="20dp"
@@ -21,6 +18,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
+        <ImageView
+            android:id="@+id/backBrowse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/round_arrow_back_black_36"
+            android:contentDescription="@string/description"/>
+        </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="7.6dp"
+        android:layout_marginTop="30dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/activityRecyclerView"
@@ -28,8 +42,7 @@
             android:layout_height="match_parent"
             android:scrollbars="vertical"/>
 
-
-    </LinearLayout>
+</LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
