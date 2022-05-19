@@ -165,7 +165,19 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:padding="10dp"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/cancelActivityBtn"
+            android:text="@android:string/cancel"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:backgroundTint="#C4C4C4"
+            android:layout_width="200dp"
             android:layout_height="wrap_content" />
 
     </LinearLayout>

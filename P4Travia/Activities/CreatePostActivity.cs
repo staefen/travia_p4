@@ -22,6 +22,7 @@ namespace P4Travia.Activities
         //AndroidX.AppCompat.Widget.Toolbar toolbar;
         ImageView postImage;
         Button postButton;
+        Button cancelButton;
         EditText titleEditText;
         EditText dateEditText;
         EditText timeEditText;
@@ -67,6 +68,9 @@ namespace P4Travia.Activities
 
             postButton = (Button)FindViewById(Resource.Id.postActivityBtn);
             postButton.Click += SubmitButton_Click;
+
+            cancelButton = (Button)FindViewById(Resource.Id.cancelActivityBtn);
+            cancelButton.Click += Cancel_Click;
 
             RequestPermissions(permissionGroup, 0);
         }
@@ -181,6 +185,26 @@ namespace P4Travia.Activities
             Bitmap bitmap = BitmapFactory.DecodeByteArray(imageArray, 0, imageArray.Length);
             postImage.SetImageBitmap(bitmap);
 
+        }
+
+        private void Cancel_Click(object sender, EventArgs e)
+        {
+            AndroidX.AppCompat.App.AlertDialog.Builder alert = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+            alert.SetTitle("Cancel");
+            alert.SetMessage("Are you sure?");
+
+            //Delete post from Firestore
+            alert.SetNegativeButton("Yes", (o, args) =>
+            {
+                StartActivity(typeof(MainPageFragment));
+            });
+
+            alert.SetPositiveButton("No", (o, args) =>
+            {
+                return;
+            });
+
+            alert.Show();
         }
 
         async void SelectPhoto()
