@@ -25,7 +25,6 @@ namespace P4Travia.Activities
         TextView userNameTextView;
         ImageView eventimageView;
 
-
         string eventName;
         string eventDate;
         string eventTime;
@@ -34,9 +33,6 @@ namespace P4Travia.Activities
         string userName; //null
         string imageId;
         string downloadUrl;
-
-
-
 
         protected override void OnCreate (Bundle savedInstanceState)
 		{
@@ -76,8 +72,6 @@ namespace P4Travia.Activities
 
             eventDate = Intent.GetStringExtra("date");
             eventDateTextView.Text = eventDate;
-
-
 
         }
 
