@@ -5,9 +5,74 @@
 	.section	.data.mono_aot_mode_name, "aw", @progbits
 	.p2align	3
 mono_aot_mode_name:
+<<<<<<< HEAD
+	.quad	.L.env.str.2
+	.section	.rodata.env.str.3,"aMS",@progbits,1
+	.type	.L.env.str.3, @object
+.L.env.str.3:
+	.asciz	"MONO_GC_PARAMS"
+	.size	.L.env.str.3, 15
+	.section	.rodata.env.str.4,"aMS",@progbits,1
+	.type	.L.env.str.4, @object
+.L.env.str.4:
+	.asciz	"major=marksweep-conc"
+	.size	.L.env.str.4, 21
+	.section	.rodata.env.str.5,"aMS",@progbits,1
+	.type	.L.env.str.5, @object
+.L.env.str.5:
+	.asciz	"MONO_LOG_LEVEL"
+	.size	.L.env.str.5, 15
+	.section	.rodata.env.str.6,"aMS",@progbits,1
+	.type	.L.env.str.6, @object
+.L.env.str.6:
+	.asciz	"info"
+	.size	.L.env.str.6, 5
+	.section	.rodata.env.str.7,"aMS",@progbits,1
+	.type	.L.env.str.7, @object
+.L.env.str.7:
+	.asciz	"XAMARIN_BUILD_ID"
+	.size	.L.env.str.7, 17
+	.section	.rodata.env.str.8,"aMS",@progbits,1
+	.type	.L.env.str.8, @object
+.L.env.str.8:
+	.asciz	"113c806c-52f0-430e-978b-5b09a086a725"
+	.size	.L.env.str.8, 37
+	.section	.rodata.env.str.9,"aMS",@progbits,1
+	.type	.L.env.str.9, @object
+.L.env.str.9:
+	.asciz	"XA_HTTP_CLIENT_HANDLER_TYPE"
+	.size	.L.env.str.9, 28
+	.section	.rodata.env.str.10,"aMS",@progbits,1
+	.type	.L.env.str.10, @object
+.L.env.str.10:
+	.asciz	"Xamarin.Android.Net.AndroidClientHandler"
+	.size	.L.env.str.10, 41
+	.section	.rodata.env.str.11,"aMS",@progbits,1
+	.type	.L.env.str.11, @object
+.L.env.str.11:
+	.asciz	"XA_TLS_PROVIDER"
+	.size	.L.env.str.11, 16
+	.section	.rodata.env.str.12,"aMS",@progbits,1
+	.type	.L.env.str.12, @object
+.L.env.str.12:
+	.asciz	"btls"
+	.size	.L.env.str.12, 5
+	.section	.rodata.env.str.13,"aMS",@progbits,1
+	.type	.L.env.str.13, @object
+.L.env.str.13:
+	.asciz	"__XA_PACKAGE_NAMING_POLICY__"
+	.size	.L.env.str.13, 29
+	.section	.rodata.env.str.14,"aMS",@progbits,1
+	.type	.L.env.str.14, @object
+.L.env.str.14:
+	.asciz	"LowercaseCrc64"
+	.size	.L.env.str.14, 15
+	.section	.data.app_environment_variables,"aw",@progbits
+=======
 	.quad	.L.autostr.0
 	.size	mono_aot_mode_name, 8
 
+>>>>>>> dca436b2cce7b68c6b6039fc2eb0a6eb94122620
 	.type	app_environment_variables, @object
 	.global	app_environment_variables
 

@@ -16,13 +16,15 @@
         <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        
+
         android:text="You don't have any notifications yet!"
         android:gravity="center"/>
 
         <Button
             android:id="@+id/explore_button"
             android:text="Go Explore"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="430dp"

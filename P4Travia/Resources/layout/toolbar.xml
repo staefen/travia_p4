@@ -26,7 +26,7 @@
 
             <TextView
                 android:id="@+id/location"
-                android:text="Aalborg"
+                android:text="No Location"
                 android:textSize="20sp"
                 android:textColor="#ffff"
                 android:layout_centerInParent="true"

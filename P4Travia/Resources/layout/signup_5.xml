@@ -10,8 +10,7 @@
         style="?android:attr/progressBarStyleHorizontal"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="30dp"
-        android:progress="70"/>
+		android:layout_marginTop="30dp" />
 
     <TextView
         android:id="@+id/enter_bio"
@@ -45,7 +44,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+<<<<<<< HEAD
         android:layout_marginTop="50dp">
+=======
+        android:layout_marginTop="78dp">
+>>>>>>> main
 
         <RelativeLayout
             android:layout_width="match_parent"

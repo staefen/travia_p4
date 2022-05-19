@@ -146,6 +146,8 @@
             <Button
                 android:id="@+id/apply_button"
                 android:text="Apply"
+                android:textAllCaps="false"
+                android:textColor="#ffff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
