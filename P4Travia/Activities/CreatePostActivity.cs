@@ -81,67 +81,6 @@ namespace P4Travia.Activities
             return true;
         }
 
-        private void SubmitButton_Click(object sender, EventArgs e)
-        {
-           
-            HashMap postMap = new HashMap();
-            postMap.Put("name", titleEditText.Text);
-            postMap.Put("username", AppDataHelper.GetName());
-            postMap.Put("owner_id", AppDataHelper.GetFirebaseAuth().CurrentUser.Uid);
-            postMap.Put("location", locationEditText.Text);
-            postMap.Put("date", dateEditText.Text);
-            postMap.Put("time", timeEditText.Text);
-            postMap.Put("participants", participantsEditText.Text);
-            postMap.Put("description", descriptionEditText.Text);
-            postMap.Put("post_date", DateTime.Now.ToString());
-
-            DocumentReference newPostRef = AppDataHelper.GetFirestore().Collection("posts").Document();
-            string postKey = newPostRef.Id;
-
-            postMap.Put("image_id", postKey);
-
-
-            ShowProgressDialogue("Posting ...");
-
-            // Save Post Image to Firebase Storaage
-            StorageReference storageReference = null;
-            if (fileBytes != null)
-            {
-                storageReference = FirebaseStorage.Instance.GetReference("postImages/" + postKey);
-                storageReference.PutBytes(fileBytes)
-                    .AddOnSuccessListener(taskCompletionListeners)
-                    .AddOnFailureListener(taskCompletionListeners);
-            }
-
-            // Image Upload Success Callback
-            taskCompletionListeners.Success += (obj, args) =>
-            {
-                if (storageReference != null)
-                {
-                    storageReference.GetDownloadUrl().AddOnSuccessListener(downloadUrlListener);
-                }
-            };
-
-            // Image Download URL Callback
-            downloadUrlListener.Success += (obj, args) =>
-            {
-                string downloadUrl = args.Result.ToString();
-                postMap.Put("download_url", downloadUrl);
-
-                // Save post to Firebase Firestore
-                newPostRef.Set(postMap);
-                CloseProgressDialogue();
-                Finish();
-            };
-
-
-            // Image Upload Failure Callback
-            taskCompletionListeners.Failure += (obj, args) =>
-            {
-                Toast.MakeText(this, "Upload was not completed", ToastLength.Short).Show();
-            };
-        }
-
         private void PostImage_Click(object sender, EventArgs e)
         {
             AndroidX.AppCompat.App.AlertDialog.Builder photoAlert = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
@@ -149,13 +88,11 @@ namespace P4Travia.Activities
 
             photoAlert.SetNegativeButton("Take Photo", (thisalert, args) =>
             {
-                // Capture Image
                 TakePhoto();
             });
 
             photoAlert.SetPositiveButton("Upload Photo", (thisAlert, args) =>
             {
-                // Choose Image
                 SelectPhoto();
             });
 
@@ -235,6 +172,62 @@ namespace P4Travia.Activities
             postImage.SetImageBitmap(bitmap);
 
         }
+
+
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
+            DocumentReference newPostRef = AppDataHelper.GetFirestore().Collection("posts").Document();
+            string postKey = newPostRef.Id;
+
+            HashMap postMap = new HashMap();
+            postMap.Put("name", titleEditText.Text);
+            postMap.Put("username", AppDataHelper.GetName());
+            postMap.Put("owner_id", AppDataHelper.GetFirebaseAuth().CurrentUser.Uid);
+            postMap.Put("location", locationEditText.Text);
+            postMap.Put("date", dateEditText.Text);
+            postMap.Put("time", timeEditText.Text);
+            postMap.Put("participants", participantsEditText.Text);
+            postMap.Put("description", descriptionEditText.Text);
+            postMap.Put("post_date", DateTime.Now.ToString());
+            postMap.Put("image_id", postKey);
+
+            ShowProgressDialogue("Posting ...");
+
+            StorageReference storageReference = null;
+            if (fileBytes != null)
+            {
+                storageReference = FirebaseStorage.Instance.GetReference("postImages/" + postKey);
+                storageReference.PutBytes(fileBytes)
+                    .AddOnSuccessListener(taskCompletionListeners)
+                    .AddOnFailureListener(taskCompletionListeners);
+            }
+
+            taskCompletionListeners.Success += (obj, args) =>
+            {
+                if (storageReference != null)
+                {
+                    storageReference.GetDownloadUrl().AddOnSuccessListener(downloadUrlListener);
+                }
+            };
+
+            downloadUrlListener.Success += (obj, args) =>
+            {
+                string downloadUrl = args.Result.ToString();
+                postMap.Put("download_url", downloadUrl);
+
+                newPostRef.Set(postMap);
+                CloseProgressDialogue();
+                Finish();
+            };
+
+
+            // Image Upload Failure Callback
+            taskCompletionListeners.Failure += (obj, args) =>
+            {
+                Toast.MakeText(this, "Upload was not completed", ToastLength.Short).Show();
+            };
+        }
+
 
         void ShowProgressDialogue(string status)
         {

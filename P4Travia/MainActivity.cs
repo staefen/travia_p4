@@ -7,6 +7,7 @@ using Android.Widget;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.BottomNavigation;
 using P4Travia.Activities;
+using Android.Runtime;
 
 namespace P4Travia
 {
@@ -37,6 +38,31 @@ namespace P4Travia
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
             navigation.SetOnNavigationItemSelectedListener(this);
 
+            ImageView notification = (ImageView)FindViewById(Resource.Id.notification_bell);
+            notification.Click += Notification_Click;
+
+            TextView location_settings = (TextView)FindViewById(Resource.Id.location);
+            location_settings.Click += Location_Settings_Click;
+
+            LocationOnMainPage();
+            CurrentLocationOnMainPage();
+
+        }
+
+        private void CurrentLocationOnMainPage()
+        {
+            string strLocation;
+            TextView location_mp = FindViewById<TextView>(Resource.Id.location);
+            strLocation = (string)Intent.GetStringExtra("No Location");
+            location_mp.Text = strLocation;
+        }
+
+        private void LocationOnMainPage()
+        {
+            string strLocation;
+            TextView location_mp = FindViewById<TextView>(Resource.Id.location);
+            strLocation = (string)Intent.GetStringExtra("No Location");
+            location_mp.Text = strLocation;
         }
 
         public bool OnNavigationItemSelected(IMenuItem item)
@@ -80,6 +106,8 @@ namespace P4Travia
         public void LocationSettings()
         {
             TextView location_settings = (TextView)FindViewById(Resource.Id.location);
+
+            
             location_settings.Click += Location_Settings_Click;
         }
 
@@ -88,11 +116,13 @@ namespace P4Travia
         private void Notification_Click(object sender, EventArgs e)
         {
             StartActivity(typeof(NotificationActivity));
+            Toast.MakeText(this, "Bøgse", ToastLength.Short).Show();
         }
 
         private void Location_Settings_Click(object sender, EventArgs e)
         {
             StartActivity(typeof(LocationActivity));
         }
+
     }
 }

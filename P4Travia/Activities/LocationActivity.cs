@@ -23,7 +23,7 @@ namespace P4Travia.Activities
             SetSeekbar();
             SetSWitchButtons();
             SetLocationChange();
-
+            SetButtonsToolbar();
         }
     
 
@@ -125,15 +125,24 @@ namespace P4Travia.Activities
 
         }
 
+        public void SetButtonsToolbar()
+        {
+            ImageView notification = (ImageView)FindViewById(Resource.Id.notification_bell);
+            notification.Click += Notification_Click;
+
+            TextView location = (TextView)FindViewById(Resource.Id.location);
+            location.Click += Location_Click;
+        }
+
         //Clicked buttons
+        private void Location_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(LocationActivity));
+        }
+
         private void Notification_Click(object sender, EventArgs e)
         {
             StartActivity(typeof(NotificationActivity));
-        }
-
-        private void Location_Settings_Click(object sender, EventArgs e)
-        {
-            StartActivity(typeof(LocationActivity));
         }
 
     }
