@@ -196,7 +196,7 @@ namespace P4Travia.Activities
             //Delete post from Firestore
             alert.SetNegativeButton("Yes", (o, args) =>
             {
-                StartActivity(typeof(MainPageFragment));
+                StartActivity(typeof(MainActivity));
             });
 
             alert.SetPositiveButton("No", (o, args) =>

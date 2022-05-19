@@ -124,6 +124,7 @@
 	<string name="time_post">Time</string>
 	<string name="date_post">Date</string>
 	<string name="title_post">Title</string>
+	<string name="cancel">Cancel</string>
 
 	<!-- Dialog Fragment -->
 	<string name="on_hold">Please wait...</string>

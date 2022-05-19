@@ -1,14 +1,16 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.d78e9cf4" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/EventListener/PostEventListener.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
+  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_3" PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Resources/layout/create_post.xml">
     <Files>
       <File FileName="P4Travia/EventListener/PostEventListener.cs" Line="34" Column="58" />
+      <File FileName="P4Travia/Fragments/EditProfileFragment.cs" Line="216" Column="10" />
+      <File FileName="P4Travia/Activities/CreatePostActivity.cs" Line="194" Column="37" />
+      <File FileName="P4Travia/Resources/layout/create_post.xml" Line="59" Column="36" />
+      <File FileName="P4Travia/Resources/values/strings.xml" Line="120" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,14 +18,13 @@
           <Node name="P4Travia" expanded="True">
             <Node name="P4Travia" expanded="True">
               <Node name="Activities" expanded="True" />
-              <Node name="Datamodels" expanded="True" />
-              <Node name="EventListener" expanded="True">
-                <Node name="PostEventListener.cs" selected="True" />
-              </Node>
+              <Node name="Fragments" expanded="True" />
               <Node name="Helpers" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True" />
+                <Node name="layout" expanded="True">
+                  <Node name="create_post.xml" selected="True" />
+                </Node>
                 <Node name="values" expanded="True" />
               </Node>
               <Node name="Signup" expanded="True" />
@@ -36,6 +37,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
-  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.d78e9cf4" AndroidDesignerPreferredDevice="pixel_3" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

@@ -94,6 +94,10 @@ LinearLayout;obj/Debug/res/layout/toolbar.xml
 LinearLayout;obj/Debug/res/layout/viewactivity.xml
 menu;obj/Debug/res/menu/navigation.xml
 path;obj/Debug/res/drawable/add_icon.xml
+path;obj/Debug/res/drawable/round_calendar_today_20.xml
+path;obj/Debug/res/drawable/round_calendar_today_24.xml
+path;obj/Debug/res/drawable/round_schedule_20.xml
+path;obj/Debug/res/drawable/round_schedule_24.xml
 paths;/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/Debug/lp/58/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 paths;obj/Debug/res/xml/file_paths.xml
 ProgressBar;obj/Debug/res/layout/progress_dialog.xml
@@ -172,3 +176,7 @@ TextView;obj/Debug/res/layout/signup_start.xml
 TextView;obj/Debug/res/layout/toolbar.xml
 TextView;obj/Debug/res/layout/viewactivity.xml
 vector;obj/Debug/res/drawable/add_icon.xml
+vector;obj/Debug/res/drawable/round_calendar_today_20.xml
+vector;obj/Debug/res/drawable/round_calendar_today_24.xml
+vector;obj/Debug/res/drawable/round_schedule_20.xml
+vector;obj/Debug/res/drawable/round_schedule_24.xml

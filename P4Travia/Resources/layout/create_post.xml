@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -170,7 +170,7 @@
 
         <Button
             android:id="@+id/cancelActivityBtn"
-            android:text="@android:string/cancel"
+            android:text="@string/cancel"
             android:textSize="18sp"
             android:layout_alignParentBottom="true"
             android:layout_gravity="center"
