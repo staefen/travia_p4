@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright 2018 Google LLC -->
 <!--  -->
@@ -26,5 +27,16 @@
             <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
     </application>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="androidx.constraintlayout.widget" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="30" />
+
+    <application />
+>>>>>>> 6b8c368525024663575076e1444b0025b15d7239
 
 </manifest>

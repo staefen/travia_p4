@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Needed for DNS resolution.  Present in OpenJDK, but not Android
 -dontwarn javax.naming.**
 
@@ -16,3 +17,9 @@
 # Okhttp warnings.
 -dontwarn okio.**
 -dontwarn com.google.j2objc.annotations.**
+=======
+# b/35135904 Ensure that proguard will not strip the mResultGuardian.
+-keepclassmembers class com.google.android.gms.common.api.internal.BasePendingResult {
+  com.google.android.gms.common.api.internal.BasePendingResult$ReleasableResultGuardian mResultGuardian;
+}
+>>>>>>> 6b8c368525024663575076e1444b0025b15d7239

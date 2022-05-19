@@ -5,7 +5,9 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:background="@color/white">
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -151,15 +153,20 @@
             android:gravity="start"
             android:padding="5dp"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="70dp"
             android:inputType="textMultiLine"
             android:background="@drawable/curvededges_white" />
+
         <Button
             android:id="@+id/postActivityBtn"
             android:text="@string/post"
+            android:textSize="18sp"
             android:layout_alignParentBottom="true"
-            android:layout_width="match_parent"
-            android:layout_height="45dp" />
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
