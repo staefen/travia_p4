@@ -1,9 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="firebase.com.protolitewrapper" android:versionCode="1" android:versionName="1.0">
-
-    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="29" />
-=======
 <!--
  Copyright (C) 2012 The Android Open Source Project
 
@@ -26,6 +21,5 @@
     <application>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     </application>
->>>>>>> 6b8c368525024663575076e1444b0025b15d7239
 
 </manifest>

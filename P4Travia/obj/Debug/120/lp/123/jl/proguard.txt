@@ -1,9 +1,3 @@
-<<<<<<< HEAD
--dontwarn com.google.firebase.components.Component$Instantiation
--dontwarn com.google.firebase.components.Component$ComponentType
-
--keep class * implements com.google.firebase.components.ComponentRegistrar
-=======
 # Copyright (C) 2015 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,4 +20,3 @@
 
 # Make sure we keep annotations for CoordinatorLayout's DefaultBehavior
 -keepattributes *Annotation*
->>>>>>> 6b8c368525024663575076e1444b0025b15d7239

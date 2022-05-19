@@ -1,19 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.google.firebase.firestore" android:versionName="23.0.3">
-
-    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="29" />
-    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-    <!-- <uses-sdk android:minSdkVersion="14" /> -->
-
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <application>
-        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false">
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
-        </service>
-=======
 <!--
  Copyright (C) 2012 The Android Open Source Project
 
@@ -35,7 +20,6 @@
 
     <application>
         <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
->>>>>>> 6b8c368525024663575076e1444b0025b15d7239
     </application>
 
 </manifest>

@@ -63,9 +63,9 @@ namespace P4Travia
             editProfilePic.Click += EditProfilePicture_Click;
 
             editBioText = (EditText)view.FindViewById(Resource.Id.editBioText);
-            editBioText.Text = thisProfile.Bio;
+            //editBioText.Text = thisProfile.Bio;
 
-            GetImage(thisProfile.DownloadUrl, editProfilePic);
+            //GetImage(thisProfile.DownloadUrl, editProfilePic);
 
         }
 

@@ -36,9 +36,9 @@ namespace P4Travia
 
         private void EditProfileButton_Click(object sender, EventArgs e)
         {
-            AndroidX.Fragment.App.Fragment ProfileViewFragment = new ProfileViewFragment();
+            AndroidX.Fragment.App.Fragment EditProfileFragment = new EditProfileFragment();
             var transaction = FragmentManager.BeginTransaction()
-                .Replace(Resource.Id.fragmentcontainer, ProfileViewFragment)
+                .Replace(Resource.Id.fragmentcontainer, EditProfileFragment)
                 .Commit();
         }
 
