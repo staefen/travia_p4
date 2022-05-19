@@ -31,9 +31,6 @@ namespace P4Travia
         PostEventListener postEventListener;
 
 
-        // Varibales
-        string category;
-
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
@@ -57,6 +54,7 @@ namespace P4Travia
             activityRecyclerView = (RecyclerView)view.FindViewById(Resource.Id.activityRecyclerView);
             FloatingActionButton floatingAddButton = (FloatingActionButton)view.FindViewById(Resource.Id.floatingAddButton);
 
+            
             //Retrieves category from last fragment
             string category = Arguments.GetString("category");
             categoryTextView.Text = categoryTextView.Text + category;
