@@ -116,7 +116,6 @@ namespace P4Travia
         private void Notification_Click(object sender, EventArgs e)
         {
             StartActivity(typeof(NotificationActivity));
-            Toast.MakeText(this, "Bøgse", ToastLength.Short).Show();
         }
 
         private void Location_Settings_Click(object sender, EventArgs e)
