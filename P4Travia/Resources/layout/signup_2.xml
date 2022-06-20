@@ -13,7 +13,8 @@
 		style="?android:attr/progressBarStyleHorizontal"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="30dp" />
+		android:layout_marginTop="30dp"
+		android:progress="37"/>
 
 	<TextView
 		android:id="@+id/moreInfo"
@@ -72,7 +73,9 @@
         android:text="@string/next"
         android:textSize="25sp"
         android:padding="8dp"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+		android:background="@color/colorPrimary"
+        android:textColor="@color/white"/>
     
     </RelativeLayout>
 

@@ -10,7 +10,8 @@
         style="?android:attr/progressBarStyleHorizontal"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="30dp" />
+		android:layout_marginTop="30dp"
+        android:progress="70"/>
 
     <TextView
         android:id="@+id/enterLocation"
@@ -51,6 +52,8 @@
         android:text="@string/next"
         android:textSize="25sp"
         android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
         android:padding="8dp"/>
 
     </RelativeLayout>

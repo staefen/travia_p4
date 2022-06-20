@@ -51,7 +51,7 @@
 	<string name="account_settings">Account</string>
 
 	<!-- Sign up -->
-	<string name="letsstart">Let us start!</string>
+	<string name="letsstart">Lets start!</string>
 	<string name="letsstart_desc">This will be used as your login</string>
 	<string name="next">Next </string>
 	<string name="username">Username </string>
@@ -59,7 +59,7 @@
 	<string name="name_birthday_desc">This information will be visible to other users</string>
 	<string name="name">Name</string>
 	<string name="more_info">Tell us more about you!</string>
-	<string name="gender">Gender</string>
+	<string name="gender">Pronouns</string>
 	<string name="nationality">Nationality</string>
 	<string name="enter_languages">What languages do you speak?</string>
 	<string name="languages">Languages</string>
@@ -80,9 +80,6 @@
 		<item>She/her</item>
 		<item>He/him</item>  
 		<item>They/them</item>  
-		<item>Xe/xem</item>  
-		<item>Ve/ver</item>  
-		<item>Per/per</item>
     </string-array>
 	<string-array name="nationality_dropdown">
 		<item>Denmark</item>
