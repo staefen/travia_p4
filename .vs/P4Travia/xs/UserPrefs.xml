@@ -1,13 +1,7 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
-  <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.d78e9cf4" />
-  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredDevice="pixel_3" PreferredExecutionTarget="Android.d78e9cf4" AndroidDesignerPreferredTheme="AppTheme" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Resources/layout/activity_main.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Resources/values/strings.xml">
     <Files>
-      <File FileName="P4Travia/Resources/layout/signup_3.xml" Line="1" Column="1" />
-      <File FileName="P4Travia/Resources/layout/signup_2.xml" Line="28" Column="24" />
-      <File FileName="P4Travia/Resources/layout/activity_main.xml" Line="3" Column="62" />
+      <File FileName="P4Travia/Resources/values/strings.xml" Line="81" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,9 +15,10 @@
               <Node name="Fragments" expanded="True" />
               <Node name="Helpers" expanded="True" />
               <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True">
-                  <Node name="activity_main.xml" selected="True" />
-                </Node>
+                <Node name="drawable" expanded="True" />
+                <Node name="layout" expanded="True" />
+                <Node name="mipmap-anydpi-v26" expanded="True" />
+                <Node name="mipmap-hdpi" expanded="True" />
                 <Node name="values" expanded="True" />
               </Node>
             </Node>
@@ -35,6 +30,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.P4Travia PreferredExecutionTarget="Android.d78e9cf4" AndroidDesignerPreferredDevice="pixel_3" AndroidDesignerPreferredTheme="AppTheme" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.d78e9cf4" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
