@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Activities/CreatePostActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Resources/layout/signup_start.xml">
     <Files>
       <File FileName="P4Travia/EventListener/PostEventListener.cs" Line="47" Column="1" />
       <File FileName="P4Travia/Fragments/EditProfileFragment.cs" Line="212" Column="14" />
@@ -14,16 +14,15 @@
       <File FileName="P4Travia/Activities/ViewActivity.cs" Line="117" Column="38" />
       <File FileName="P4Travia/Activities/ViewProfile.cs" Line="1" Column="1" />
       <File FileName="P4Travia/Helpers/AppDataHelper.cs" Line="18" Column="1" />
-      <File FileName="P4Travia/Activities/CreatePostActivity.cs" Line="41" Column="11" />
+      <File FileName="P4Travia/Signup/Signup1.cs" Line="1" Column="1" />
+      <File FileName="P4Travia/Resources/layout/signup_start.xml" Line="12" Column="57" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="P4Travia" expanded="True">
             <Node name="P4Travia" expanded="True">
-              <Node name="Activities" expanded="True">
-                <Node name="CreatePostActivity.cs" selected="True" />
-              </Node>
+              <Node name="Activities" expanded="True" />
               <Node name="Adapter" expanded="True" />
               <Node name="Assets" expanded="True" />
               <Node name="EventListener" expanded="True" />
@@ -42,13 +41,13 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.P4Travia AndroidDesignerPreferredDevice="pixel_3" PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredTheme="AppTheme" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_oreo_8_0_-_api_26" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.3.0.3.3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.P4Travia PreferredExecutionTarget="Android.pixel_2_oreo_8_0_-_api_26" AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_3" />
 </Properties>
