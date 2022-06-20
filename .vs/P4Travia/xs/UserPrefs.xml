@@ -1,14 +1,24 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Resources/values/strings.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Activities/LocationActivity.cs">
     <Files>
       <File FileName="P4Travia/Resources/values/strings.xml" Line="81" Column="24" />
+      <File FileName="P4Travia/Activities/LocationActivity.cs" Line="93" Column="47" />
+      <File FileName="P4Travia/Resources/layout/notification_list.xml" Line="1" Column="1" />
+      <File FileName="P4Travia/Resources/layout/bottom_nav_bar.xml" Line="1" Column="1" />
+      <File FileName="P4Travia/MainActivity.cs" Line="58" Column="17" />
+      <File FileName="P4Travia/Fragments/ProfileViewFragment.cs" Line="1" Column="1" />
+      <File FileName="P4Travia/Signup/Signup6.cs" Line="44" Column="1" />
+      <File FileName="P4Travia/Signup/Signup5.cs" Line="41" Column="50" />
+      <File FileName="P4Travia/Signup/Signup4.cs" Line="83" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="P4Travia" expanded="True">
             <Node name="P4Travia" expanded="True">
-              <Node name="Activities" expanded="True" />
+              <Node name="Activities" expanded="True">
+                <Node name="LocationActivity.cs" selected="True" />
+              </Node>
               <Node name="Adapter" expanded="True" />
               <Node name="Assets" expanded="True" />
               <Node name="EventListener" expanded="True" />
@@ -17,9 +27,6 @@
               <Node name="Resources" expanded="True">
                 <Node name="drawable" expanded="True" />
                 <Node name="layout" expanded="True" />
-                <Node name="mipmap-anydpi-v26" expanded="True" />
-                <Node name="mipmap-hdpi" expanded="True" />
-                <Node name="values" expanded="True" />
               </Node>
             </Node>
           </Node>

@@ -27,6 +27,7 @@ namespace P4Travia.Signup
         FirebaseAuth mAuth;
         ProgressDialogFragment progressDialogue;
         ImageView profileImage;
+        string location;
 
 
         TaskCompletionListeners taskCompletionListeners = new TaskCompletionListeners();
@@ -53,6 +54,8 @@ namespace P4Travia.Signup
 
             profileImage = (ImageView)FindViewById(Resource.Id.addProfilePic);
             profileImage.Click += ProfileImage_Click;
+
+            location = Intent.GetStringExtra("Location");
 
             database = AppDataHelper.GetFirestore();
             mAuth = AppDataHelper.GetFirebaseAuth();
@@ -111,7 +114,11 @@ namespace P4Travia.Signup
                 // Save post to Firebase Firestore
                 newProfileRef.Set(userMap);
                 CloseProgressDialogue();
-                StartActivity(typeof(MainActivity));
+
+                var intent = new Intent(this, typeof(MainActivity));
+                intent.PutExtra("Location", location);
+                StartActivity(intent);
+
                 Finish();
             };
 

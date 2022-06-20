@@ -79,7 +79,11 @@ namespace P4Travia.Signup
                 DocumentReference userReference = database.Collection("users").Document(mAuth.CurrentUser.Uid);
                 userReference.Set(userMap);
                 CloseProgressDialogue();
-                StartActivity(typeof(Signup6));
+
+                var intent = new Intent(this, typeof(Signup6));
+                intent.PutExtra("Location", location);
+                StartActivity(intent);
+
                 Finish();
             };
 

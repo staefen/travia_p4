@@ -55,9 +55,9 @@ namespace P4Travia.Activities
 
                         TextView changedLocation = FindViewById<TextView>(Resource.Id.location);
                         changedLocation.Text = usrloc.City;
-
+                        
                         Intent intent = new Intent(this, typeof(MainActivity));
-                        intent.PutExtra("No Location", usrloc.City);
+                        intent.PutExtra("Location", usrloc.City);
                         StartActivity(intent);
                     }
 
@@ -96,7 +96,7 @@ namespace P4Travia.Activities
                address = location;
 
                 Intent intent = new Intent(this, typeof(MainActivity));
-                intent.PutExtra("No Location", location);
+                intent.PutExtra("Location", location);
 
                 StartActivity(intent);
             };

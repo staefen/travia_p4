@@ -53,8 +53,15 @@ namespace P4Travia
         {
             string strLocation;
             TextView location_mp = FindViewById<TextView>(Resource.Id.location);
-            strLocation = (string)Intent.GetStringExtra("No Location");
+            strLocation = Intent.GetStringExtra("Location");
+
+            if (strLocation == null)
+            {
+                strLocation = "Set Location";
+            }
+
             location_mp.Text = strLocation;
+
         }
 
         private void LocationOnMainPage()
