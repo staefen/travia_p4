@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFF9F1"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     
@@ -32,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:id="@+id/username"
+        android:id="@+id/displayUsername"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/viewProfilePic"/>
 
@@ -40,7 +41,7 @@
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:layout_height="50dp"
-        android:layout_below="@+id/username"
+        android:layout_below="@+id/displayUsername"
         android:id="@+id/profileicons">
 
         <HorizontalScrollView
@@ -69,7 +70,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="Country"
                     android:textSize="16sp"/>
 
                 <ImageView
@@ -87,7 +87,6 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:layout_gravity="center_vertical"
-                    android:text="Gender"
                     android:textSize="16sp"/>
 
                 <ImageView
@@ -102,7 +101,6 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:layout_gravity="center_vertical"
-                    android:text="Language"
                     android:textSize="16sp"/>
 
             </LinearLayout>

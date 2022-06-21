@@ -1,16 +1,11 @@
 ﻿<Properties StartupConfiguration="{5B5C8EC3-B378-491A-847F-1AA2A2BB768D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="P4Travia/Activities/LocationActivity.cs">
-    <Files>
-      <File FileName="P4Travia/Activities/LocationActivity.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="P4Travia" expanded="True">
             <Node name="P4Travia" expanded="True">
-              <Node name="Activities" expanded="True">
-                <Node name="LocationActivity.cs" selected="True" />
-              </Node>
+              <Node name="Activities" expanded="True" />
               <Node name="Adapter" expanded="True" />
               <Node name="EventListener" expanded="True" />
               <Node name="Fragments" expanded="True" />
