@@ -4006,20 +4006,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/MariaKristineTommer/.nuget/packages/": {}
+    "/Users/stephenhuynh/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/P4Travia.csproj",
+      "projectUniqueName": "/Users/stephenhuynh/Library/CloudStorage/OneDrive-Personligt/Interaktionsdesign/4. Semester/P4/travia_p4/P4Travia/P4Travia.csproj",
       "projectName": "P4Travia",
-      "projectPath": "/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/P4Travia.csproj",
-      "packagesPath": "/Users/MariaKristineTommer/.nuget/packages/",
-      "outputPath": "/Users/MariaKristineTommer/Documents/GitHub/travia_p4/P4Travia/obj/",
+      "projectPath": "/Users/stephenhuynh/Library/CloudStorage/OneDrive-Personligt/Interaktionsdesign/4. Semester/P4/travia_p4/P4Travia/P4Travia.csproj",
+      "packagesPath": "/Users/stephenhuynh/.nuget/packages/",
+      "outputPath": "/Users/stephenhuynh/Library/CloudStorage/OneDrive-Personligt/Interaktionsdesign/4. Semester/P4/travia_p4/P4Travia/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/MariaKristineTommer/.config/NuGet/NuGet.Config"
+        "/Users/stephenhuynh/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid12.0"
